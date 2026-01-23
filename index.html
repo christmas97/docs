@@ -73,16 +73,17 @@
         max-width: 960px;
         margin: 0 auto;
         display: grid;
-        gap: 20px;
+        gap: 16px;
         align-items: center;
-        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        text-align: center;
       }
 
       .hero__badge {
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        padding: 10px 18px 10px 12px;
+        padding: 12px 20px 12px 14px;
         border-radius: 999px;
         background: #ffffff;
         border: 1px solid var(--border);
@@ -93,8 +94,8 @@
       }
 
       .hero__badge img {
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         border-radius: 12px;
         border: 2px solid var(--orange);
         background: var(--cream);
@@ -118,12 +119,6 @@
         max-width: 560px;
       }
 
-      .hero__stripe {
-        height: 6px;
-        width: 120px;
-        border-radius: 999px;
-        background: linear-gradient(90deg, var(--orange), var(--blue));
-      }
 
       main {
         max-width: 920px;
@@ -214,7 +209,7 @@
 
       @media (min-width: 900px) {
         .hero {
-          grid-template-columns: auto minmax(0, 1fr);
+          gap: 18px;
         }
       }
     </style>
@@ -227,11 +222,8 @@
             <img src="icon-9-1024.png" alt="Double You app icon" />
             Double You
           </div>
-          <div>
-            <div class="hero__stripe" aria-hidden="true"></div>
-            <h1 class="hero__title">Terms of Use <span>&amp;</span> Privacy Policy</h1>
-            <p class="hero__subtitle">Everything you need to know about how the Double You mobile app handles your data and protects your trust.</p>
-          </div>
+          <h1 class="hero__title">Terms of Use <span>&amp;</span> Privacy Policy</h1>
+          <p class="hero__subtitle">Everything you need to know about how the Double You mobile app handles your data and protects your trust.</p>
         </div>
       </header>
 
