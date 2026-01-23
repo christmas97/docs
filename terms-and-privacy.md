@@ -10,7 +10,7 @@ Last updated: January 10, 2025
 
 **Contact Information:**
 
-- Email: info@sunriseforecast.com
+- Email: diesel.weasel197@gmail.com
 - Company: CHRISTMAS SERVICES SRL
 - Location: Romania (European Union)
 
@@ -151,7 +151,7 @@ OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP.
 
 If you have any questions about these Terms, please contact us:
 
-**Email:** info@sunriseforecast.com
+**Email:** diesel.weasel197@gmail.com
 
 **Company:** CHRISTMAS SERVICES SRL  
 Romania (European Union)
@@ -172,7 +172,7 @@ Last updated: January 10, 2025
 
 **Contact Information:**
 
-- Email: info@sunriseforecast.com
+- Email: diesel.weasel197@gmail.com
 - Company: CHRISTMAS SERVICES SRL
 - Location: Romania (European Union)
 
