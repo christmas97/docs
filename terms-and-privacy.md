@@ -280,3 +280,49 @@ The App requires access to your device's camera and storage to function. This ac
 #### On-Device Processing
 
  All video recording, editing, compositing, and exporting happens entirely on your device. Your creative content never leaves your device unless you explicitly choose to share it through your device's native sharing features.
+
+#### Crash Data Storage (Sentry)
+
+ Crash reports and diagnostic data are sent to and stored by Sentry in the **European Union (EU)**. We have configured Sentry to scrub/block IP addresses and we do not intentionally send personal data or content to Sentry.
+
+#### Security Measures
+
+ We use reasonable administrative, technical, and organizational safeguards to protect the limited information we process. However, no method of transmission or storage is 100% secure, so we cannot guarantee absolute security.
+
+### 6. Data Retention
+
+ We do not store your videos, photos, or edited content on our servers. Your content remains on your device unless you choose to share it.
+
+ Crash reports and diagnostic data sent to Sentry are retained for up to **30 days**, after which they are deleted or anonymized by Sentry.
+
+### 7. Children's Privacy
+
+ The App is not intended for children under 13 years old (or under 16 in the European Economic Area). We do not target children under 13 and we do not knowingly collect personal information from children. If you believe a child has provided information to us, please contact us and we will delete it.
+
+### 8. Your Privacy Rights
+
+ Because we collect very limited information, some privacy rights may not apply in practice. We will honor applicable requests as required by law.
+
+#### European Economic Area (EEA), United Kingdom (UK), and Switzerland
+
+ You may have rights to access, correct, delete, restrict, or object to processing of your personal information, and to data portability. You may also withdraw consent where processing is based on consent. To exercise these rights, contact us using the details below. You also have the right to lodge a complaint with your local data protection authority.
+
+#### United States (State Privacy Laws)
+
+ Depending on your state of residence, you may have rights to access, delete, and correct personal information and to opt out of certain processing. **We do not sell or share personal information**, and we do not use personal data for targeted advertising or profiling.
+
+### 9. International Data Transfers
+
+ Our company is based in Romania (EU). Crash report data collected via Sentry is processed and stored in the EU. If you access the App from outside the EU, your crash report data may be processed in the EU. Apple and Google may process payment-related data under their own privacy policies.
+
+### 10. Changes to This Privacy Policy
+
+ We may update this Privacy Policy from time to time. We will update the "Last updated" date at the top of this document and, if changes are material, we may provide additional notice.
+
+### 11. Contact Us
+
+ If you have any questions or requests regarding this Privacy Policy, please contact us:
+
+ **Email:** info@sunset-score.com  
+ **Company:** CHRISTMAS SERVICES SRL  
+ Romania (European Union)
