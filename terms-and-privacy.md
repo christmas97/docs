@@ -1,4 +1,4 @@
-Last updated: January 10, 2025
+Last updated: January 29, 2026
 
 ## Terms of Use
 
@@ -160,7 +160,7 @@ Romania (European Union)
 
 ## Privacy Policy
 
-Last updated: January 10, 2025
+Last updated: January 29, 2026
 
 ### Introduction
 
@@ -215,12 +215,16 @@ Last updated: January 10, 2025
 
 **Legal basis for processing (GDPR):** Legitimate interest in maintaining and improving app stability.
 
+#### Contacting Us
+
+ If you contact us by email, we receive your email address and any information you include in your message. We use this only to respond to you and provide support.
+
 ### 2. Information We Do NOT Collect
 
 Double You is designed to protect your privacy. We want to be explicitly clear about what we do NOT collect:
 
 - **Videos and Photos:** All video recording, editing, masking, and exporting happens entirely on your device. Your videos never leave your phone unless you choose to share them yourself.
-- **Personal Information:** We do not collect names, email addresses, phone numbers, or any personal identifiers.
+- **Personal Information:** We do not collect names, email addresses, phone numbers, or any personal identifiers through the App.
 - **Location Data:** We do not access or collect your GPS location or any location-based data.
 - **Contacts:** We do not access your contacts or address book.
 - **Browsing History:** We do not track your browsing activity.
