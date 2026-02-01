@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Sunset Forecast</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+      :root {
+        color-scheme: light;
+        --orange: #fc4b15;
+        --blue: #b7d9ff;
+        --cream: #f7ede4;
+        --ink: #141312;
+        --muted: #4f4a46;
+        --card: #ffffff;
+        --border: rgba(20, 19, 18, 0.1);
+        --shadow: 0 24px 60px rgba(20, 19, 18, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        background: linear-gradient(130deg, #fffdf9 0%, var(--cream) 35%, #ffffff 55%, var(--blue) 100%);
+        color: var(--ink);
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        width: 55vw;
+        height: 55vw;
+        border-radius: 999px;
+        filter: blur(20px);
+        opacity: 0.35;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      body::before {
+        top: -20vw;
+        right: -10vw;
+        background: radial-gradient(circle, rgba(252, 75, 21, 0.55), rgba(252, 75, 21, 0));
+        animation: floatOne 18s ease-in-out infinite;
+      }
+
+      body::after {
+        bottom: -30vw;
+        left: -15vw;
+        background: radial-gradient(circle, rgba(183, 217, 255, 0.85), rgba(183, 217, 255, 0));
+        animation: floatTwo 20s ease-in-out infinite;
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        padding: 56px 20px 32px;
+      }
+
+      .hero {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 16px;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .hero__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 25px rgba(20, 19, 18, 0.1);
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        width: fit-content;
+      }
+
+      .hero__title {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(32px, 4.6vw, 54px);
+        line-height: 1.05;
+        margin: 8px 0 8px;
+      }
+
+      .hero__title span {
+        color: var(--orange);
+      }
+
+      .hero__subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        max-width: 560px;
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto 72px;
+        padding: 0 20px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 22px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        animation: rise 0.8s ease-out both;
+      }
+
+      #content h1,
+      #content h2 {
+        margin-top: 36px;
+        font-size: 24px;
+        color: var(--orange);
+        font-family: "Fraunces", "Times New Roman", serif;
+      }
+
+      #content h3 {
+        margin-top: 28px;
+        font-size: 20px;
+      }
+
+      #content h4 {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      p,
+      li {
+        line-height: 1.6;
+      }
+
+      ul,
+      ol {
+        padding-left: 22px;
+      }
+
+      .meta {
+        font-weight: bold;
+      }
+
+      a {
+        color: var(--orange);
+      }
+
+      .loading {
+        color: var(--muted);
+        letter-spacing: 0.2px;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatOne {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          transform: translate3d(-20px, 15px, 0);
+        }
+      }
+
+      @keyframes floatTwo {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          transform: translate3d(20px, -10px, 0);
+        }
+      }
+
+      @media (min-width: 900px) {
+        .hero {
+          gap: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="hero">
+          <div class="hero__badge">Sunset Forecast</div>
+          <h1 class="hero__title"><span>Privacy</span> Policy</h1>
+          <p class="hero__subtitle">How the Sunset Forecast app handles your data and protects your privacy.</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="card">
+          <div id="content" class="loading">Loading policy content...</div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const content = document.getElementById('content');
+
+      const renderError = () => {
+        content.classList.remove('loading');
+        content.innerHTML = '<p>Unable to load the policy right now. Please try again later.</p>';
+      };
+
+      fetch('privacy-policy.md', { cache: 'no-store' })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Failed to load policy markdown.');
+          }
+          return response.text();
+        })
+        .then((markdown) => {
+          content.classList.remove('loading');
+          content.innerHTML = marked.parse(markdown);
+        })
+        .catch((error) => {
+          console.error(error);
+          renderError();
+        });
+    </script>
+  </body>
+</html>
