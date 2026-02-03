@@ -7,7 +7,7 @@ This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), descr
 - Visit our website at [www.sunriseforecast.com](http://www.sunriseforecast.com), or any website of ours that links to this Privacy Notice
 - Engage with us in other related ways, including any sales, marketing, or events
 
-**Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at [info@sunriseforecast.com](mailto:info@sunriseforecast.com).
+**Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ## SUMMARY OF KEY POINTS
 
@@ -18,6 +18,10 @@ This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), descr
 **Do we process any sensitive personal information?** Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
 
 **Do we collect any information from third parties?** We do not collect any information from third parties.
+
+**Do we use cookies, ads, or Google Analytics?** No. We do not use cookies or third-party advertising, and we do not use Google Analytics.
+
+**Do we use crash reporting?** Yes. We use Sentry for crash reporting and diagnostics with IP addresses anonymized and a 30-day retention period.
 
 **How do we process your information?** We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so.
 
@@ -31,7 +35,7 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 
 **What are your rights?** Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information.
 
-**How do you exercise your rights?** The easiest way to exercise your rights is by visiting email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com), or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+**How do you exercise your rights?** The easiest way to exercise your rights is by visiting email at [info@sunset-score.com](mailto:info@sunset-score.com), or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
 
 ## TABLE OF CONTENTS
 
@@ -39,7 +43,6 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 - [2. HOW DO WE PROCESS YOUR INFORMATION?](#processInfo)
 - [3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?](#legalBases)
 - [4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#shareInfo)
-- [5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?](#cookiesTracking)
 - [6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?](#transferInfo)
 - [7. HOW LONG DO WE KEEP YOUR INFORMATION?](#infoRetention)
 - [8. HOW DO WE KEEP YOUR INFORMATION SAFE?](#infoSafety)
@@ -58,21 +61,17 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 
 *In Short:* We collect personal information that you provide to us.
 
-We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.
+We collect personal information that you voluntarily provide to us when you contact us, request information about our Services, or make purchases through the app stores.
 
 **Personal Information Provided by You.** The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
 
 - email addresses
-- billing addresses
-- phone numbers
 - names
-- mailing addresses
-- debit/credit card numbers
-- usernames
+- phone numbers (if you choose to provide them)
 
 **Sensitive Information.** We do not process sensitive information.
 
-**Payment Data.** We may collect data necessary to process your payment if you choose to make purchases, such as your payment instrument number, and the security code associated with your payment instrument. All payment data is handled and stored by Stripe. You may find their privacy notice link(s) here: [https://stripe.com/en-ca/privacy](https://stripe.com/en-ca/privacy).
+**Payment Data.** Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store). We do not receive your full payment instrument details. Any payment data you provide is handled by Apple or Google in accordance with their privacy policies.
 
 All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
 
@@ -80,21 +79,22 @@ All personal information that you provide to us must be true, complete, and accu
 
 *In Short:* Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.
 
-We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
+We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services.
 
-Like many businesses, we also collect information through cookies and similar technologies.
+We do not use cookies or similar tracking technologies, and we do not serve ads.
 
 The information we collect includes:
 
-- **Log and Usage Data.** Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called "crash dumps"), and hardware settings).
+- **Log and Usage Data.** Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called "crash dumps"), and hardware settings). IP addresses are anonymized in our crash reports.
 - **Device Data.** We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.
 - **Location Data.** We collect location data such as information about your device's location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.
+- **Crash and Diagnostics Data (Sentry).** We use Sentry to collect anonymous crash reports and diagnostic data to improve app stability. IP addresses are anonymized. Crash reports are retained for up to 30 days.
 
 Google API: Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes).
 
 Postmark: Our use of information received from Postmark will adhere to [Postmark's Terms of Service](https://postmarkapp.com/terms-of-service), [Privacy Policy](https://postmarkapp.com/privacy-policy), and [EU Privacy Policy](https://postmarkapp.com/eu-privacy).
 
-Stripe: Our use of information received from Stripe will adhere to [Stripe's Services Agreement](https://stripe.com/en-ro/legal/ssa), [Terms of Service](https://stripe.com/en-ro/legal/ssa), and [Consumer Terms](https://stripe.com/en-ca/legal/consumer).
+Apple/Google: Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store) under their respective terms and privacy policies.
 
 ## 2. HOW DO WE PROCESS YOUR INFORMATION?
 
@@ -102,7 +102,6 @@ Stripe: Our use of information received from Stripe will adhere to [Stripe's Ser
 
 We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
 
-- **To facilitate account creation and authentication and otherwise manage user accounts.** We may process your information so you can create and log in to your account, as well as keep your account in working order.
 - **To deliver and facilitate delivery of services to the user.** We may process your information to provide you with the requested service.
 - **To respond to user inquiries/offer support to users.** We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
 - **To send administrative information to you.** We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
@@ -111,10 +110,8 @@ We process your personal information for a variety of reasons, depending on how 
 - **To send you marketing and promotional communications.** We may process the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. You can opt out of our marketing emails at any time. For more information, see ["WHAT ARE YOUR PRIVACY RIGHTS?"](#privacyRights) below.
 - **To protect our Services.** We may process your information as part of our efforts to keep our Services safe and secure, including fraud monitoring and prevention.
 - **To identify usage trends.** We may process information about how you use our Services to better understand how they are being used so we can improve them.
-- **To determine the effectiveness of our marketing and promotional campaigns.** We may process your information to better understand how to provide marketing and promotional campaigns that are most relevant to you.
 - **To save or protect an individual's vital interest.** We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.
 - **Personalization of Forecasts or Alerts.** As we expand our service, we may use location and user preferences to personalize forecast alerts, allowing users to be notified of particularly beautiful sunrises or sunsets based on their chosen cities.
-- **For Security and Fraud Prevention.** We use email addresses in our passwordless login system to verify users and prevent unauthorized access to accounts, keeping user data secure.
 - **For Marketing or Service Improvement.** Occasionally, we may use information on how users interact with our platform to identify popular features and improve our services. We may also use email to notify users about new features or updates if they have opted in to receive such communications.
 
 ## 3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
@@ -167,13 +164,11 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 The categories of third parties we may share personal information with are as follows:
 
 - Cloud Computing Services
-- Data Analytics Services
-- Payment Processors
-- Retargeting Platforms
-- User Account Registration & Authentication Services
+- Payment and Subscription Platforms (Apple, Google)
 - Data Storage Service Providers
 - Website Hosting Service Providers
 - Performance Monitoring Tools
+- Error Monitoring Tools (Sentry)
 
 We also may need to share your personal information in the following situations:
 
@@ -181,39 +176,6 @@ We also may need to share your personal information in the following situations:
 - **When we use Google Maps Platform APIs.** We may share your information with certain Google Maps Platform APIs (e.g., Google Maps API, Places API). Google Maps uses GPS, Wi-Fi, and cell towers to estimate your location. GPS is accurate to about 20 meters, while Wi-Fi and cell towers help improve accuracy when GPS signals are weak, like indoors. This data helps Google Maps provide directions, but it is not always perfectly precise. We obtain and store on your device ("cache") your location for six (6) months. You may revoke your consent anytime by contacting us at the contact details provided at the end of this document.
 - **Affiliates.** We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Notice. Affiliates include our parent company and any subsidiaries, joint venture partners, or other companies that we control or that are under common control with us.
 - **Business Partners.** We may share your information with our business partners to offer you certain products, services, or promotions.
-
-## 5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
-
-*In Short:* We may use cookies and other tracking technologies to collect and store your information.
-
-We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Some online tracking technologies help us maintain the security of our Services and your account, prevent crashes, fix bugs, save your preferences, and assist with basic site functions.
-
-We also permit third parties and service providers to use online tracking technologies on our Services for analytics and advertising, including to help manage and display advertisements, to tailor advertisements to your interests, or to send abandoned shopping cart reminders (depending on your communication preferences). The third parties and service providers use their technology to provide advertising about products and services tailored to your interests which may appear either on our Services or on other websites.
-
-To the extent these online tracking technologies are deemed to be a "sale"/"sharing" (which includes targeted advertising, as defined under the applicable laws) under applicable US state laws, you can opt out of these online tracking technologies by submitting a request as described below under section [DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?](#usRights)
-
-Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice.
-
-### Google Analytics
-
-We use **Google Analytics** to track and analyze the use of the Services. To comply with GDPR requirements, we have enabled **IP anonymization** within Google Analytics. This ensures that your IP address is truncated within the European Economic Area (EEA) before being transferred to Google servers outside the EEA. This means your full IP address is never stored by Google.
-
-For more information on how Google Analytics processes data, please review their [Privacy Policy](https://policies.google.com/privacy) and [Data Protection Terms](https://privacy.google.com/businesses/compliance/).
-
-You can opt out of Google Analytics tracking by visiting the [Google Analytics Opt-Out Page](https://tools.google.com/dlpage/gaoptout) or by adjusting your preferences in our cookie settings menu.
-
-If you decline cookies through our cookie consent banner, Google Analytics will not be used during your visit.
-
-When you first visit our website, you will see a cookie banner asking for your consent to use Cookies. You can choose:
-
-- **Yes:** Allow Cookies, this will enable Google Analytics to collect data about your visit.
-- **No:** Decline Cookies, this will disable Google Analytics; the website will remain fully functional.
-
-### Cookie Retention
-
-The cookies used on our website are retained for **150 days** or until you modify your preferences through our **Cookie Settings** menu. This allows you full control over your data and ensures transparency.
-
-You can update your cookie preferences at any time by clicking "Edit Cookie Preferences" in the top right corner dropdown menu on our website.
 
 ## 6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?
 
@@ -225,13 +187,13 @@ If you are a resident in the European Economic Area (EEA), United Kingdom (UK), 
 
 **European Commission's Standard Contractual Clauses:**
 
-We have implemented measures to protect your personal information, including by using the European Commission's Standard Contractual Clauses for transfers of personal information between our group companies and between us and our third-party providers. These clauses require all recipients to protect all personal information that they process originating from the EEA or UK in accordance with European data protection laws and regulations. Our Data Processing Agreements that include Standard Contractual Clauses are available here: [https://stripe.com/en-ca/legal/dpa](https://stripe.com/en-ca/legal/dpa). We have implemented similar appropriate safeguards with our third-party service providers and partners and further details can be provided upon request.
+We have implemented measures to protect your personal information, including by using the European Commission's Standard Contractual Clauses for transfers of personal information between our group companies and between us and our third-party providers. These clauses require all recipients to protect all personal information that they process originating from the EEA or UK in accordance with European data protection laws and regulations. We have implemented similar appropriate safeguards with our third-party service providers and partners and further details can be provided upon request.
 
 ## 7. HOW LONG DO WE KEEP YOUR INFORMATION?
 
 *In Short:* We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.
 
-We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than twelve (12) months past the termination of the user's account.
+We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than twelve (12) months after your last interaction with the Services. Crash reports are retained for up to 30 days.
 
 When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
 
@@ -245,11 +207,11 @@ We have implemented appropriate and reasonable technical and organizational secu
 
 *In Short:* We do not knowingly collect data from or market to children under 18 years of age.
 
-We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at [info@sunriseforecast.com](mailto:info@sunriseforecast.com).
+We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ## 10. WHAT ARE YOUR PRIVACY RIGHTS?
 
-*In Short:* Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.
+*In Short:* Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information.
 
 In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact) below.
 
@@ -263,19 +225,9 @@ If you are located in Switzerland, you may contact the [Federal Data Protection 
 
 However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.
 
-**Opting out of marketing and promotional communications:** You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact) below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.
+**Opting out of marketing and promotional communications:** You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact) below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of the Services, to respond to service requests, or for other non-marketing purposes.
 
-### Account Information
-
-If you would at any time like to review or change the information in your account or terminate your account, you can:
-
-- Log in to your account settings and update your user account.
-
-Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
-
-**Cookies and similar technologies:** Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services.
-
-If you have questions or comments about your privacy rights, you may email us at [info@sunriseforecast.com](mailto:info@sunriseforecast.com).
+If you have questions or comments about your privacy rights, you may email us at [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ## 11. CONTROLS FOR DO-NOT-TRACK FEATURES
 
@@ -293,7 +245,7 @@ We have collected the following categories of personal information in the past t
 
 | Category | Examples | Collected |
 | --- | --- | --- |
-| A. Identifiers | Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name | YES |
+| A. Identifiers | Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, and email address | YES |
 | B. Personal information as defined in the California Customer Records statute | Name, contact information, education, employment, employment history, and financial information | YES |
 | C. Protected classification characteristics under state or federal law | Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data | NO |
 | D. Commercial information | Transaction information, purchase history, financial details, and payment information | YES |
@@ -314,11 +266,11 @@ We may also collect other personal information outside of these categories throu
 
 We will use and retain the collected personal information as needed to provide the Services or for:
 
-- Category A - As long as the user has an account with us
-- Category B - As long as the user has an account with us
-- Category D - As long as the user has an account with us
-- Category F - As long as the user has an account with us
-- Category G - As long as the user has an account with us
+- Category A - As long as necessary to provide the Services and comply with legal obligations
+- Category B - As long as necessary to provide the Services and comply with legal obligations
+- Category D - As long as necessary to provide the Services and comply with legal obligations
+- Category F - As long as necessary to provide the Services and comply with legal obligations
+- Category G - As long as necessary to provide the Services and comply with legal obligations
 
 ### Sources of Personal Information
 
@@ -345,10 +297,7 @@ The categories of third parties to whom we disclosed personal information for a 
 
 We have sold or shared the following categories of personal information to third parties in the preceding twelve (12) months:
 
-The categories of third parties to whom we sold personal information are:
-
-- User Account Registration & Authentication Services
-- Data Analytics Services
+We do not sell or share personal information.
 
 ### Your Rights
 
@@ -369,9 +318,7 @@ Depending upon the state where you live, you may also have the following rights:
 
 ### How to Exercise Your Rights
 
-To exercise these rights, you can contact us by visiting email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com), by emailing us at info@sunriseforecast.com, or by referring to the contact details at the bottom of this document.
-
-You can opt out from the selling of your personal information, targeted advertising, or profiling by disabling cookies in Cookie Preference Settings.
+To exercise these rights, you can contact us by visiting email at [info@sunset-score.com](mailto:info@sunset-score.com), by emailing us at info@sunset-score.com, or by referring to the contact details at the bottom of this document.
 
 We will honor your opt-out preferences if you enact the [Global Privacy Control (GPC)](https://globalprivacycontrol.org) opt-out signal on your browser.
 
@@ -401,8 +348,7 @@ If you do not wish to provide the personal information necessary to fulfill thei
 
 - offer you the products or services that you want
 - respond to or help with your requests
-- manage your account with us
-- confirm your identity and protect your account
+- confirm your identity and protect your information
 
 At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section [HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#reviewUpdateDelete)
 
@@ -428,15 +374,15 @@ We may update this Privacy Notice from time to time. The updated version will be
 
 We have made every effort to ensure this Privacy Policy fully explains our data practices and your rights. If any information or disclosure is unintentionally missing, please understand that this is not deliberate. We are committed to promptly addressing any omissions or clarifications needed to comply with applicable data protection laws. If you have any questions or identify missing information, please reach out to us, and we will update this Privacy Policy as necessary.
 
-If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO) by email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com)
+If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO) by email at [info@sunset-score.com](mailto:info@sunset-score.com)
 
-If you are a resident in the European Economic Area or Switzerland, we are the "data controller" of your personal information. We have appointed the administrator of SunriseForecast.com and CHRISTMAS SERVICES SRL to be our representative in the EEA and Switzerland. You can contact them directly regarding our processing of your information, by email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com).
+If you are a resident in the European Economic Area or Switzerland, we are the "data controller" of your personal information. We have appointed the administrator of SunriseForecast.com and CHRISTMAS SERVICES SRL to be our representative in the EEA and Switzerland. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com).
 
-If you are a resident in the United Kingdom, we are the "data controller" of your personal information. We have appointed the administrator of SunriseForecast.com and CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com)
+If you are a resident in the United Kingdom, we are the "data controller" of your personal information. We have appointed the administrator of SunriseForecast.com and CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com)
 
 ## 16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
-Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com).
+Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: email at [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ---
 
@@ -454,17 +400,17 @@ We operate the website [www.sunriseforecast.com](www.sunriseforecast.com) (the "
 
 SunriseForecast.com is an online platform dedicated to helping users anticipate the beauty of upcoming sunrises and sunsets in their chosen location. By entering a city, users can receive a tailored forecast indicating how visually striking the sunrises and sunsets are expected to be in the coming days. Our forecasts are designed for sunrise and sunset enthusiasts, photographers, and anyone interested in planning their day around these natural events.
 
-**Product and Features** Using passwordless email login for easy and secure access, SunriseForecast.com allows users to conveniently search for and access sunrise and sunset forecasts for any city they wish to explore. The platform is designed to be accessible and user-friendly, enabling individuals to enjoy the site’s features without the hassle of managing passwords. As our service evolves, we plan to introduce optional alerts that will notify users of especially beautiful sunrises or sunsets based on their preferences. These alerts will allow subscribers to stay informed and capture these memorable moments wherever they are.
+**Product and Features** SunriseForecast.com allows users to conveniently search for and access sunrise and sunset forecasts for any city they wish to explore. No account or login is required. The platform is designed to be accessible and user-friendly. As our service evolves, we plan to introduce optional alerts that will notify users of especially beautiful sunrises or sunsets based on their preferences. These alerts will allow subscribers to stay informed and capture these memorable moments wherever they are.
 
 **Disclaimer on Forecast Accuracy** While SunriseForecast.com aims to provide the most accurate beauty forecasts possible, the natural variability and complexity of weather and atmospheric conditions mean that these predictions are not guaranteed. We use various environmental factors and models to estimate the beauty of sunrises and sunsets, but we cannot account for every change in weather patterns or local conditions. As a result, users should view these forecasts as guidance rather than guaranteed outcomes.
 
-You can contact us by email at [info@sunriseforecast.com](mailto:info@sunriseforecast.com)
+You can contact us by email at [info@sunset-score.com](mailto:info@sunset-score.com)
 
 These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and CHRISTMAS SERVICES SRL, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
 
 Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.
 
-The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.
+The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use the Services.
 
 We recommend that you print a copy of these Legal Terms for your records.
 
@@ -473,7 +419,7 @@ We recommend that you print a copy of these Legal Terms for your records.
 1. [OUR SERVICES](#our-services)
 2. [INTELLECTUAL PROPERTY RIGHTS](#intellectual-property-rights)
 3. [USER REPRESENTATIONS](#user-representations)
-4. [USER REGISTRATION](#user-registration)
+4. [NO ACCOUNT REQUIRED](#no-account-required)
 5. [PURCHASES AND PAYMENT](#purchases-and-payment)
 6. [SUBSCRIPTIONS](#subscriptions)
 7. [PROHIBITED ACTIVITIES](#prohibited-activities)
@@ -524,7 +470,7 @@ solely for your personal, non-commercial use.
 
 Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
 
-If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: info@sunriseforecast.com. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
+If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: info@sunset-score.com. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
 
 We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.
 
@@ -549,35 +495,38 @@ You are solely responsible for your Submissions and you expressly agree to reimb
 
 ## 3. USER REPRESENTATIONS
 
-By using the Services, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary; (3) you have the legal capacity and you agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Services through automated or non-human means, whether through a bot, script or otherwise; (6) you will not use the Services for any illegal or unauthorized purpose; and (7) your use of the Services will not violate any applicable law or regulation.
+By using the Services, you represent and warrant that: (1) all information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update it as necessary; (3) you have the legal capacity and you agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Services through automated or non-human means, whether through a bot, script or otherwise; (6) you will not use the Services for any illegal or unauthorized purpose; and (7) your use of the Services will not violate any applicable law or regulation.
 
-If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Services (or any portion thereof).
+If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your access to the Services and refuse any and all current or future use of the Services (or any portion thereof).
 
-## 4. USER REGISTRATION
+## 4. NO ACCOUNT REQUIRED
 
-You may be required to register to use the Services. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.
+We do not require account creation or login to use the Services.
 
 ## 5. PURCHASES AND PAYMENT
 
 We accept the following forms of payment:
 
-You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Services. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in US dollars.
+- Apple App Store
+- Google Play Store
 
-You agree to pay all charges at the prices then in effect for your purchases and any applicable shipping fees, and you authorize us to charge your chosen payment provider for any such amounts upon placing your order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment.
+You agree to provide current, complete, and accurate purchase information for all purchases made via the Services. Payment processing is handled by Apple or Google, and your payment method details are governed by their terms and privacy policies. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in US dollars.
 
-We reserve the right to refuse any order placed through the Services. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order. These restrictions may include orders placed by or under the same customer account, the same payment method, and/or orders that use the same billing or shipping address. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers, or distributors.
+You agree to pay all charges at the prices then in effect for your purchases and any applicable fees, and you authorize Apple or Google (as applicable) to charge your chosen payment method upon placing your order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment.
+
+We reserve the right to refuse any order placed through the Services. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order. These restrictions may include orders placed by or under the same payment method and/or billing address. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers, or distributors.
 
 ## 6. SUBSCRIPTIONS
 
 ### Billing and Renewal
 
-Your subscription will continue and automatically renew unless canceled. You consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel the applicable order. The length of your billing cycle will depend on the type of subscription plan you choose when you subscribed to the Services.
+Your subscription will continue and automatically renew unless canceled. You consent to Apple or Google (as applicable) charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel the applicable order. The length of your billing cycle will depend on the type of subscription plan you choose when you subscribed to the Services.
 
 ### Cancellation and Refunds
 
-You can cancel your subscription at any time by logging into your account. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at [info@sunriseforecast.com](mailto:info@sunriseforecast.com).
+You can cancel your subscription at any time in your Apple App Store or Google Play subscription settings. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at [info@sunset-score.com](mailto:info@sunset-score.com).
 
-**Refund Policy:** As per EU consumer protection laws, if you are a resident of the European Union, you have the right to withdraw from your purchase within 14 days ("cooling-off period") of completing the transaction, provided you have not accessed or used the digital content or services. Once you log in to the service or access its content, you agree to waive this right, and no refunds will be issued.
+**Refund Policy:** As per EU consumer protection laws, if you are a resident of the European Union, you have the right to withdraw from your purchase within 14 days ("cooling-off period") of completing the transaction, provided you have not accessed or used the digital content or services. Once you access the service or its content, you agree to waive this right, and no refunds will be issued.
 
 Please note that for non-EU residents, all purchases are final and non-refundable, except as required by applicable laws in your jurisdiction.
 
@@ -592,7 +541,7 @@ You may not access or use the Services for any purpose other than that for which
 As a user of the Services, you agree not to:
 
 - Systematically retrieve data or other content from the Services to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.
-- Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.
+- Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive information or access credentials.
 - Circumvent, disable, or otherwise interfere with security-related features of the Services, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Services and/or the Content contained therein.
 - Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Services.
 - Use any information obtained from the Services in order to harass, abuse, or harm another person.
@@ -602,7 +551,7 @@ As a user of the Services, you agree not to:
 - Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Services or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Services.
 - Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.
 - Delete the copyright or other proprietary rights notice from any Content.
-- Attempt to impersonate another user or person or use the username of another user.
+- Attempt to impersonate another person.
 - Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats ("gifs"), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as "spyware" or "passive collection mechanisms" or "pcms").
 - Interfere with, disrupt, or create an undue burden on the Services or the networks or services connected to the Services.
 - Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you.
@@ -611,12 +560,12 @@ As a user of the Services, you agree not to:
 - Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Services.
 - Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Services, or use or launch any unauthorized script or other software.
 - Use a buying agent or purchasing agent to make purchases on the Services.
-- Make any unauthorized use of the Services, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.
+- Make any unauthorized use of the Services, including collecting email addresses of users by electronic or other means for the purpose of sending unsolicited email.
 - Use the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise.
-- Sell or otherwise transfer your profile.
+- Sell or otherwise transfer your access.
 - Use the Services to advertise or offer to sell goods and services.
 - Engage in data scraping, crawling, or data extraction.
-- Attempt to gain unauthorized access to other users’ accounts or the platform’s internal systems.
+- Attempt to gain unauthorized access to other users’ data or the platform’s internal systems.
 - Use automated tools (bots) to access or interact with the site.
 - Engage in any behavior that disrupts or negatively impacts other users’ experience on the platform.
 - Engage in any behavior that misleads, fraudulently represents, or promotes harmful activities.
@@ -658,13 +607,14 @@ We may accept, reject, or remove reviews in our sole discretion. We have absolut
 
 ## 11. THIRD-PARTY WEBSITES AND CONTENT
 
-The Services may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API, Postmark, and Stripe, to provide location-based features, email delivery, and payment processing, respectively. By using these features, you agree to be bound by the respective third-party's Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:
+The Services may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API, Postmark, and Apple/Google app store services, to provide location-based features, email delivery, and subscription/payment processing, respectively. By using these features, you agree to be bound by the respective third-party's Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:
 
 - **Google Maps:** [Google’s Terms of Service](https://maps.google.com/help/terms_maps/) and [Google’s Privacy Policy](https://policies.google.com/privacy).
 - **Postmark:** [Postmark's Terms of Service](https://postmarkapp.com/terms-of-service), [Privacy Policy](https://postmarkapp.com/privacy-policy), and [EU Privacy Policy](https://postmarkapp.com/eu-privacy).
-- **Stripe:** [Stripe Services Agreement](https://stripe.com/en-ro/legal/ssa) and [Privacy Policy](https://stripe.com/en-ro/privacy).
+- **Apple:** [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
+- **Google:** [Google Privacy Policy](https://policies.google.com/privacy)
 
-By accessing third-party services integrated within our platform, such as the Google Maps API, Postmark, and Stripe, you acknowledge and agree to be bound by the respective third-party's terms and policies, even while using our Services. All Third-Party Content is provided on an "as-is" basis, and we make no warranties or representations of any kind regarding its accuracy, reliability, or completeness. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases, which are exclusively between you and the applicable third party. We expressly disclaim all liability for any harm, damages, or losses that may arise from your use of, reliance on, or interaction with any Third-Party Websites or Third-Party Content. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites. We recommend that you review the privacy policies and terms of service for any Third-Party Websites or Third-Party Content before engaging with them, as their data practices may differ from ours. Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes).
+By accessing third-party services integrated within our platform, such as the Google Maps API, Postmark, and Apple/Google app store services, you acknowledge and agree to be bound by the respective third-party's terms and policies, even while using our Services. All Third-Party Content is provided on an "as-is" basis, and we make no warranties or representations of any kind regarding its accuracy, reliability, or completeness. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases, which are exclusively between you and the applicable third party. We expressly disclaim all liability for any harm, damages, or losses that may arise from your use of, reliance on, or interaction with any Third-Party Websites or Third-Party Content. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites. We recommend that you review the privacy policies and terms of service for any Third-Party Websites or Third-Party Content before engaging with them, as their data practices may differ from ours. Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes).
 
 ## 12. SERVICES MANAGEMENT
 
@@ -676,9 +626,9 @@ We care about data privacy and security. Please review our Privacy Policy: [www.
 
 ## 14. TERM AND TERMINATION
 
-These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.
+These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.
 
-If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
+If we terminate or suspend your access for any reason, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
 
 ## 15. MODIFICATIONS AND INTERRUPTIONS
 
@@ -756,4 +706,4 @@ If any provision or part of a provision of these Legal Terms is determined to be
 
 We strive to ensure that these Terms and Conditions comprehensively cover all relevant aspects of your interaction with our Services. However, if any provision or detail necessary for compliance is inadvertently omitted, this omission is unintentional. We reserve the right to amend these Terms and Conditions as needed to address any identified gaps or to ensure continued compliance with applicable laws. Please contact us if you have questions or notice any missing information, and we will address it promptly.
 
-In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at: [info@sunriseforecast.com](mailto:info@sunriseforecast.com)
+In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at: [info@sunset-score.com](mailto:info@sunset-score.com)
