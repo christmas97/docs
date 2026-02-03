@@ -4,7 +4,7 @@ Last updated November 11, 2024
 
 This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
-- Visit our website at [www.sunriseforecast.com](http://www.sunriseforecast.com), or any website of ours that links to this Privacy Notice
+- Use our mobile app, Sunset Score, on iOS or Android, or any other product of ours that links to this Privacy Notice
 - Engage with us in other related ways, including any sales, marketing, or events
 
 **Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
@@ -187,9 +187,9 @@ We have made every effort to ensure this Privacy Policy fully explains our data 
 
 If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO) by email at [info@sunset-score.com](mailto:info@sunset-score.com)
 
-If you are a resident in the European Economic Area or Switzerland, we are the "data controller" of your personal information. We have appointed the administrator of SunriseForecast.com and CHRISTMAS SERVICES SRL to be our representative in the EEA and Switzerland. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com).
+If you are a resident in the European Economic Area or Switzerland, we are the "data controller" of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the EEA and Switzerland. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com).
 
-If you are a resident in the United Kingdom, we are the "data controller" of your personal information. We have appointed the administrator of SunriseForecast.com and CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com)
+If you are a resident in the United Kingdom, we are the "data controller" of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com)
 
 ## 16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
@@ -205,15 +205,15 @@ Last updated November 11, 2024
 
 We are **CHRISTMAS SERVICES SRL** ("Company," "we," "us," "our").
 
-We operate the website [www.sunriseforecast.com](www.sunriseforecast.com) (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
+We provide the Sunset Score mobile app for iOS and Android (the "App"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
 
-### Description of SunriseForecast.com and Its Services
+### Description of Sunset Score and Its Services
 
-SunriseForecast.com is an online platform dedicated to helping users anticipate the beauty of upcoming sunrises and sunsets in their chosen location. By entering a city, users can receive a tailored forecast indicating how visually striking the sunrises and sunsets are expected to be in the coming days. Our forecasts are designed for sunrise and sunset enthusiasts, photographers, and anyone interested in planning their day around these natural events.
+Sunset Score is a mobile app dedicated to helping users anticipate the beauty of upcoming sunrises and sunsets in their chosen location. By entering a city, users can receive a tailored forecast indicating how visually striking the sunrises and sunsets are expected to be in the coming days. Our forecasts are designed for sunrise and sunset enthusiasts, photographers, and anyone interested in planning their day around these natural events.
 
-**Product and Features** SunriseForecast.com allows users to conveniently search for and access sunrise and sunset forecasts for any city they wish to explore. No account or login is required. The platform is designed to be accessible and user-friendly. As our service evolves, we plan to introduce optional alerts that will notify users of especially beautiful sunrises or sunsets based on their preferences. These alerts will allow subscribers to stay informed and capture these memorable moments wherever they are.
+**Product and Features** Sunset Score allows users to conveniently search for and access sunrise and sunset forecasts for any city they wish to explore. No account or login is required. The app is designed to be accessible and user-friendly. As our service evolves, we plan to introduce optional client-side notifications, configurable in the app, that alert users when high beauty-score sunrises or sunsets are forecast based on their preferences. These notifications will allow subscribers to stay informed and capture these memorable moments wherever they are.
 
-**Disclaimer on Forecast Accuracy** While SunriseForecast.com aims to provide the most accurate beauty forecasts possible, the natural variability and complexity of weather and atmospheric conditions mean that these predictions are not guaranteed. We use various environmental factors and models to estimate the beauty of sunrises and sunsets, but we cannot account for every change in weather patterns or local conditions. As a result, users should view these forecasts as guidance rather than guaranteed outcomes.
+**Disclaimer on Forecast Accuracy** While Sunset Score aims to provide the most accurate beauty forecasts possible, the natural variability and complexity of weather and atmospheric conditions mean that these predictions are not guaranteed. We use various environmental factors and models to estimate the beauty of sunrises and sunsets, but we cannot account for every change in weather patterns or local conditions. As a result, users should view these forecasts as guidance rather than guaranteed outcomes.
 
 You can contact us by email at [info@sunset-score.com](mailto:info@sunset-score.com)
 
@@ -432,7 +432,7 @@ We reserve the right, but not the obligation, to: (1) monitor the Services for v
 
 ## 13. PRIVACY POLICY
 
-We care about data privacy and security. Please review our Privacy Policy: [www.sunriseforecast.com/terms](www.sunriseforecast.com/terms). By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. Please be advised the Services are hosted in Germany. If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in Germany, then through your continued use of the Services, you are transferring your data to Germany, and you expressly consent to have your data transferred to and processed in Germany.
+We care about data privacy and security. Please review our Privacy Policy: [www.sunset-score.com/terms](www.sunset-score.com/terms). By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. Please be advised the Services are hosted in Germany. If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in Germany, then through your continued use of the Services, you are transferring your data to Germany, and you expressly consent to have your data transferred to and processed in Germany.
 
 ## 14. TERM AND TERMINATION
 
