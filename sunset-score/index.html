@@ -5,228 +5,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy — Sunset Score</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600&display=swap");
 
       :root {
-        color-scheme: light;
-        --coral: #d37750;
-        --golden: #f0a54b;
-        --navy: #2d495b;
-        --sage: #abbebc;
-        --mauve: #cab3b4;
-        --offwhite: #dde1dc;
-        --warm-red: #b25b5a;
-        --ink: #2d495b;
-        --muted: #5e7a82;
-        --card: #ffffffee;
-        --border: rgba(45, 73, 91, 0.1);
-        --shadow: 0 24px 60px rgba(45, 73, 91, 0.1);
+        --absent: #2d495b;
+        --bleak: #abbebc;
+        --poor: #dde1dc;
+        --okay: #cab3b4;
+        --good: #b25b5a;
+        --great: #d37750;
+        --incredible: #f0a54b;
+        --neutral: #c8c8c8;
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      html { scroll-behavior: smooth; }
 
       body {
-        margin: 0;
         min-height: 100vh;
-        font-family: "Space Grotesk", "Segoe UI", sans-serif;
-        background: linear-gradient(135deg, var(--offwhite) 0%, #f2eded 30%, var(--mauve) 55%, var(--sage) 100%);
-        color: var(--ink);
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        color: var(--absent);
+        background: var(--absent);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ── top strip: sunset bands ── */
+      .bands {
         position: relative;
-        overflow-x: hidden;
-      }
-
-      body::before,
-      body::after {
-        content: "";
-        position: fixed;
-        width: 55vw;
-        height: 55vw;
-        border-radius: 999px;
-        filter: blur(20px);
-        opacity: 0.35;
-        z-index: 0;
-        pointer-events: none;
-      }
-
-      body::before {
-        top: -20vw;
-        right: -10vw;
-        background: radial-gradient(circle, rgba(211, 119, 80, 0.45), rgba(240, 165, 75, 0));
-        animation: floatOne 18s ease-in-out infinite;
-      }
-
-      body::after {
-        bottom: -30vw;
-        left: -15vw;
-        background: radial-gradient(circle, rgba(45, 73, 91, 0.4), rgba(171, 190, 188, 0));
-        animation: floatTwo 20s ease-in-out infinite;
-      }
-
-      .page {
-        position: relative;
-        z-index: 1;
-      }
-
-      header {
-        padding: 56px 20px 32px;
-      }
-
-      .hero {
-        max-width: 960px;
-        margin: 0 auto;
-        display: grid;
-        gap: 16px;
+        overflow: hidden;
+        padding: 80px 24px 64px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-items: center;
         text-align: center;
       }
 
-      .hero__badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 20px;
+      .bands::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            180deg,
+            var(--incredible) 0%,
+            var(--great) 22%,
+            var(--good) 40%,
+            var(--okay) 58%,
+            var(--bleak) 78%,
+            var(--poor) 100%
+          );
+        z-index: 0;
+      }
+
+      /* soft radial glow behind title */
+      .bands::after {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: radial-gradient(ellipse, rgba(240,165,75,0.35) 0%, transparent 70%);
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .bands > * { position: relative; z-index: 2; }
+
+      .pill {
+        display: inline-block;
+        padding: 8px 18px;
         border-radius: 999px;
-        background: var(--navy);
-        color: var(--offwhite);
-        border: 1px solid var(--border);
-        box-shadow: 0 10px 25px rgba(45, 73, 91, 0.15);
+        font-size: 13px;
         font-weight: 600;
-        letter-spacing: 0.2px;
-        width: fit-content;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        background: rgba(45, 73, 91, 0.25);
+        color: #fff;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 20px;
       }
 
-      .hero__title {
-        font-family: "Fraunces", "Times New Roman", serif;
-        font-size: clamp(32px, 4.6vw, 54px);
+      .bands h1 {
+        font-family: "Fraunces", serif;
+        font-size: clamp(36px, 6vw, 64px);
+        font-weight: 700;
         line-height: 1.05;
-        margin: 8px 0 8px;
+        color: #fff;
+        text-shadow: 0 2px 20px rgba(45, 73, 91, 0.3);
+        margin-bottom: 12px;
       }
 
-      .hero__title span {
-        color: var(--coral);
+      .bands p {
+        color: rgba(255,255,255,0.85);
+        font-size: 16px;
+        max-width: 460px;
+        line-height: 1.5;
       }
 
-      .hero__subtitle {
-        margin: 0;
-        color: var(--muted);
-        font-size: 17px;
-        max-width: 560px;
+      /* ── curved transition ── */
+      .curve {
+        display: block;
+        margin-top: -1px;
+        background: var(--poor);
+      }
+      .curve svg {
+        display: block;
+        width: 100%;
+        height: auto;
       }
 
-      main {
-        max-width: 920px;
-        margin: 0 auto 72px;
-        padding: 0 20px;
+      /* ── content area ── */
+      .content-area {
+        background: var(--poor);
+        padding: 0 24px 80px;
       }
 
       .card {
-        background: var(--card);
-        border-radius: 22px;
-        padding: 32px;
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-        backdrop-filter: blur(12px);
-        animation: rise 0.8s ease-out both;
+        max-width: 780px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 16px;
+        padding: 40px 36px;
+        box-shadow:
+          0 1px 3px rgba(45,73,91,0.06),
+          0 12px 40px rgba(45,73,91,0.08);
       }
 
-      #content h1,
+      /* ── markdown content styles ── */
+      #content h1 {
+        font-family: "Fraunces", serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--absent);
+        margin: 40px 0 16px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--okay);
+      }
+
       #content h2 {
-        margin-top: 36px;
-        font-size: 24px;
-        color: var(--navy);
-        font-family: "Fraunces", "Times New Roman", serif;
+        font-family: "Fraunces", serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--great);
+        margin: 36px 0 12px;
       }
 
       #content h3 {
-        margin-top: 28px;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--absent);
+        margin: 28px 0 8px;
       }
 
       #content h4 {
-        margin-top: 20px;
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--good);
+        margin: 20px 0 6px;
       }
 
-      p,
-      li {
-        line-height: 1.6;
+      #content p,
+      #content li {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #3d5a68;
       }
 
-      ul,
-      ol {
-        padding-left: 22px;
+      #content ul,
+      #content ol {
+        padding-left: 20px;
       }
 
-      .meta {
-        font-weight: bold;
+      #content li {
+        margin-bottom: 4px;
       }
 
-      a {
-        color: var(--coral);
+      #content li::marker {
+        color: var(--okay);
+      }
+
+      #content a {
+        color: var(--great);
+        text-decoration-color: rgba(211,119,80,0.3);
+        text-underline-offset: 2px;
+        transition: text-decoration-color 0.2s;
+      }
+      #content a:hover {
+        text-decoration-color: var(--great);
+      }
+
+      #content strong {
+        color: var(--absent);
+        font-weight: 600;
+      }
+
+      #content hr {
+        border: none;
+        height: 1px;
+        background: var(--poor);
+        margin: 32px 0;
+      }
+
+      #content > *:first-child {
+        margin-top: 0;
       }
 
       .loading {
-        color: var(--muted);
-        letter-spacing: 0.2px;
+        color: var(--okay);
+        font-style: italic;
+        padding: 20px 0;
       }
 
-      @keyframes rise {
-        from {
-          opacity: 0;
-          transform: translateY(18px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      /* ── footer ── */
+      .foot {
+        background: var(--absent);
+        padding: 28px 24px;
+        text-align: center;
+        font-size: 13px;
+        color: rgba(171,190,188,0.6);
+        letter-spacing: 0.3px;
       }
 
-      @keyframes floatOne {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(-20px, 15px, 0);
-        }
-      }
-
-      @keyframes floatTwo {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(20px, -10px, 0);
-        }
-      }
-
-      @media (min-width: 900px) {
-        .hero {
-          gap: 18px;
-        }
+      @media (max-width: 600px) {
+        .bands { padding: 56px 20px 48px; }
+        .card { padding: 28px 20px; border-radius: 12px; }
       }
     </style>
   </head>
   <body>
-    <div class="page">
-      <header>
-        <div class="hero">
-          <div class="hero__badge">Sunset Score</div>
-          <h1 class="hero__title"><span>Privacy</span> Policy</h1>
-          <p class="hero__subtitle">How the Sunset Score app handles your data and protects your privacy.</p>
-        </div>
-      </header>
 
-      <main>
-        <section class="card">
-          <div id="content" class="loading">Loading policy content...</div>
-        </section>
-      </main>
+    <section class="bands">
+      <span class="pill">Sunset Score</span>
+      <h1>Privacy &amp; Terms</h1>
+      <p>How the app handles your data, what we collect (almost nothing), and the rules of the road.</p>
+    </section>
+
+    <div class="curve">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 C480,80 960,80 1440,0 L1440,80 L0,80 Z" fill="#dde1dc"/>
+        <path d="M0,0 C480,80 960,80 1440,0 L1440,80 L0,80 Z" fill="none" stroke="none"/>
+      </svg>
     </div>
+
+    <div class="content-area">
+      <div class="card">
+        <div id="content" class="loading">Loading policy&hellip;</div>
+      </div>
+    </div>
+
+    <footer class="foot">Sunset Score &middot; Christmas Services SRL</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
@@ -238,18 +270,16 @@
       };
 
       fetch('privacy-policy.md', { cache: 'no-store' })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Failed to load policy markdown.');
-          }
-          return response.text();
+        .then((r) => {
+          if (!r.ok) throw new Error('fetch failed');
+          return r.text();
         })
-        .then((markdown) => {
+        .then((md) => {
           content.classList.remove('loading');
-          content.innerHTML = marked.parse(markdown);
+          content.innerHTML = marked.parse(md);
         })
-        .catch((error) => {
-          console.error(error);
+        .catch((e) => {
+          console.error(e);
           renderError();
         });
     </script>
