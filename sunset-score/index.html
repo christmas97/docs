@@ -42,28 +42,19 @@
         background-color: var(--absent-bg);
         background-image:
           linear-gradient(
-            185deg,
+            180deg,
             var(--poor-bg) 0%,
-            var(--okay-bg) 16%,
-            var(--good-bg) 34%,
-            var(--great-bg) 50%,
-            var(--incredible-bg) 64%,
-            #8c1a2a 76%,
+            var(--poor-bg) 18%,
+            var(--okay-bg) 18%,
+            var(--okay-bg) 36%,
+            var(--good-bg) 36%,
+            var(--good-bg) 52%,
+            var(--great-bg) 52%,
+            var(--great-bg) 68%,
+            var(--incredible-bg) 68%,
+            var(--incredible-bg) 82%,
+            var(--absent-bg) 82%,
             var(--absent-bg) 100%
-          ),
-          linear-gradient(
-            95deg,
-            rgba(241, 189, 69, 0.24) 0%,
-            rgba(207, 87, 53, 0.22) 32%,
-            rgba(207, 56, 51, 0.2) 52%,
-            rgba(40, 66, 125, 0.35) 100%
-          ),
-          repeating-linear-gradient(
-            165deg,
-            rgba(255, 255, 255, 0.07) 0px,
-            rgba(255, 255, 255, 0.07) 1px,
-            rgba(255, 255, 255, 0) 10px,
-            rgba(255, 255, 255, 0) 22px
           );
         color: var(--ink);
         position: relative;
@@ -72,59 +63,26 @@
 
       body::before,
       body::after {
-        content: "";
-        position: fixed;
-        width: 60vw;
-        height: 60vw;
-        border-radius: 999px;
-        filter: blur(30px);
-        opacity: 0.4;
-        z-index: 0;
-        pointer-events: none;
+        content: none;
       }
 
       body::before {
-        top: -16vw;
-        right: -10vw;
-        background: radial-gradient(
-          circle,
-          rgba(241, 189, 69, 0.6),
-          rgba(207, 87, 53, 0.35),
-          transparent 70%
-        );
-        animation: floatOne 18s ease-in-out infinite;
+        animation: none;
       }
 
       body::after {
-        bottom: -26vw;
-        left: -18vw;
-        background: radial-gradient(
-          circle,
-          rgba(40, 66, 125, 0.7),
-          rgba(165, 203, 207, 0.25),
-          transparent 65%
-        );
-        animation: floatTwo 20s ease-in-out infinite;
+        animation: none;
       }
 
       .page::before {
         content: "";
         position: fixed;
-        left: 50%;
-        bottom: 22vh;
-        width: 48vw;
-        height: 48vw;
-        transform: translateX(-50%);
-        border-radius: 999px;
-        background: radial-gradient(
-          circle,
-          rgba(241, 189, 69, 0.85) 0%,
-          rgba(207, 87, 53, 0.55) 35%,
-          rgba(207, 56, 51, 0.3) 55%,
-          transparent 72%
-        );
-        filter: blur(2px);
-        opacity: 0.9;
+        left: 0;
+        right: 0;
+        top: 68%;
+        height: 3px;
+        background: var(--good-bg);
+        box-shadow: 0 0 0 2px var(--incredible-bg);
         z-index: 0;
         pointer-events: none;
       }
