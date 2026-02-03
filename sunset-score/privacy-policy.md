@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-Last updated November 11, 2024
+Last updated February 3, 2026
 
 This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
