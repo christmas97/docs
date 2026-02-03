@@ -199,7 +199,7 @@ We do not collect or store personal information on our servers. If you have ques
 
 # TERMS AND CONDITIONS
 
-Last updated November 11, 2024
+Last updated February 3, 2026
 
 ## AGREEMENT TO OUR LEGAL TERMS
 
