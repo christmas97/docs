@@ -13,19 +13,19 @@ This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), descr
 
 * This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. *
 
-**What personal information do we process?** When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.
+**What personal information do we process?** We do not collect or store personal information on our servers. The app runs on your device. Limited data may be processed by third parties we use (weather APIs and Sentry) as described below.
 
 **Do we process any sensitive personal information?** Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
 
-**Do we collect any information from third parties?** We do not collect any information from third parties.
+**Do we collect any information from third parties?** We do not collect information from third parties beyond the external APIs we call to provide the service and our crash reporting provider.
 
 **Do we use cookies, ads, or Google Analytics?** No. We do not use cookies or third-party advertising, and we do not use Google Analytics.
 
-**Do we use crash reporting?** Yes. We use Sentry for crash reporting and diagnostics with IP addresses anonymized and a 30-day retention period.
+**Do we use crash reporting?** Yes. We use Sentry for crash reporting and diagnostics (see details below).
 
-**How do we process your information?** We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so.
+**How do we process your information?** We do not process or store personal information on our servers. Any processing happens on your device, or by third-party providers (weather APIs and Sentry) that help the app function and improve stability.
 
-**In what situations and with which types of parties do we share personal information?** We may share information in specific situations and with specific categories of third parties.
+**In what situations and with which types of parties do we share personal information?** We only share data with third-party providers that power app functionality and diagnostics (weather APIs, Sentry, and app store payment processors).
 
 **How do we keep your information safe?** We have adequate organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.
 
@@ -41,7 +41,7 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 
 - [1. WHAT INFORMATION DO WE COLLECT?](#infoCollect)
 - [2. HOW DO WE PROCESS YOUR INFORMATION?](#processInfo)
-- [3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?](#legalBases)
+- [3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?](#legalBases)
 - [4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#shareInfo)
 - [6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?](#transferInfo)
 - [7. HOW LONG DO WE KEEP YOUR INFORMATION?](#infoRetention)
@@ -59,143 +59,69 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 
 ### Personal information you disclose to us
 
-*In Short:* We collect personal information that you provide to us.
+*In Short:* We do not collect personal information through the app.
 
-We collect personal information that you voluntarily provide to us when you contact us, request information about our Services, or make purchases through the app stores.
-
-**Personal Information Provided by You.** The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
-
-- email addresses
-- names
-- phone numbers (if you choose to provide them)
+We do not operate a server that receives or stores user data. The app runs on your device. If you contact us directly by email, we will receive the information you choose to include in that email and use it only to respond.
 
 **Sensitive Information.** We do not process sensitive information.
 
-**Payment Data.** Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store). We do not receive your full payment instrument details. Any payment data you provide is handled by Apple or Google in accordance with their privacy policies.
-
-All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
+**Payment Data.** Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store). We do not receive your payment details. Any payment data you provide is handled by Apple or Google in accordance with their privacy policies.
 
 ### Information automatically collected
 
-*In Short:* Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.
+*In Short:* We do not collect automatic usage or device data on our servers.
 
-We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services.
+The app does not send usage, device, or location data to our servers because we do not operate servers for the app. We do not use cookies or similar tracking technologies, and we do not serve ads.
 
-We do not use cookies or similar tracking technologies, and we do not serve ads.
+The only automated data flows are:
 
-The information we collect includes:
-
-- **Log and Usage Data.** Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called "crash dumps"), and hardware settings). IP addresses are anonymized in our crash reports.
-- **Device Data.** We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.
-- **Location Data.** We collect location data such as information about your device's location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.
-- **Crash and Diagnostics Data (Sentry).** We use Sentry to collect anonymous crash reports and diagnostic data to improve app stability. IP addresses are anonymized. Crash reports are retained for up to 30 days.
-
-Google API: Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes).
-
-Postmark: Our use of information received from Postmark will adhere to [Postmark's Terms of Service](https://postmarkapp.com/terms-of-service), [Privacy Policy](https://postmarkapp.com/privacy-policy), and [EU Privacy Policy](https://postmarkapp.com/eu-privacy).
+- **Crash and Diagnostics Data (Sentry).** We use Sentry to collect crash reports and diagnostic data to improve app stability. This data is processed by Sentry under their privacy policy.
+- **Weather API Requests.** If you enable location on your device, the app uses that location locally to make weather API requests. We do not receive, read, or store your location.
 
 Apple/Google: Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store) under their respective terms and privacy policies.
 
 ## 2. HOW DO WE PROCESS YOUR INFORMATION?
 
-*In Short:* We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
+*In Short:* We do not process or store personal information on our servers. Any processing happens on your device, or by third-party providers that help the app function and improve stability.
 
-We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
+We process information only in these limited ways:
 
-- **To deliver and facilitate delivery of services to the user.** We may process your information to provide you with the requested service.
-- **To respond to user inquiries/offer support to users.** We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
-- **To send administrative information to you.** We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
-- **To fulfill and manage your orders.** We may process your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.
-- **To request feedback.** We may process your information when necessary to request feedback and to contact you about your use of our Services.
-- **To send you marketing and promotional communications.** We may process the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. You can opt out of our marketing emails at any time. For more information, see ["WHAT ARE YOUR PRIVACY RIGHTS?"](#privacyRights) below.
-- **To protect our Services.** We may process your information as part of our efforts to keep our Services safe and secure, including fraud monitoring and prevention.
-- **To identify usage trends.** We may process information about how you use our Services to better understand how they are being used so we can improve them.
-- **To save or protect an individual's vital interest.** We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.
-- **Personalization of Forecasts or Alerts.** As we expand our service, we may use location and user preferences to personalize forecast alerts, allowing users to be notified of particularly beautiful sunrises or sunsets based on their chosen cities.
-- **For Marketing or Service Improvement.** Occasionally, we may use information on how users interact with our platform to identify popular features and improve our services. We may also use email to notify users about new features or updates if they have opted in to receive such communications.
+- **To deliver the app’s functionality.** Weather data is fetched from third-party APIs directly from your device.
+- **To improve stability.** Sentry processes crash and diagnostics data.
+- **To respond to you.** If you contact us by email, we use your message to reply.
 
 ## 3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
 
-*In Short:* We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests.
+*In Short:* We do not process or store personal information on our servers. If you contact us by email, we rely on our legitimate interests to respond. If applicable law requires consent for any processing, we will obtain it.
 
-*If you are located in the EU or UK, this section applies to you.*
+If you are located in the EU or UK, this means we rely on:
 
-The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:
-
-- **Consent.** We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time.
-- **Performance of a Contract.** We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you, including providing our Services or at your request prior to entering into a contract with you.
-**Legitimate Interests.** We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests and those interests do not outweigh your interests and fundamental rights and freedoms. For example, we may process your personal information for some of the purposes described in order to:
-
-- Send users information about special offers and discounts on our products and services
-- Analyze how our Services are used so we can improve them to engage and retain users
-- Support our marketing activities
-- Diagnose problems and/or prevent fraudulent activities
-- Understand how our users use our products and services so we can improve user experience
-
-- **Legal Obligations.** We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.
-- **Vital Interests.** We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.
-
-In legal terms, we are generally the "data controller" under European data protection laws of the personal information described in this Privacy Notice, since we determine the means and/or purposes of the data processing we perform. This Privacy Notice does not apply to the personal information we process as a "data processor" on behalf of our customers. In those situations, the customer that we provide services to and with whom we have entered into a data processing agreement is the "data controller" responsible for your personal information, and we merely process your information on their behalf in accordance with your instructions. If you want to know more about our customers' privacy practices, you should read their privacy policies and direct any questions you have to them.
-
-*If you are located in Canada, this section applies to you.*
-
-We may process your information if you have given us specific permission (i.e., express consent) to use your personal information for a specific purpose, or in situations where your permission can be inferred (i.e., implied consent). You can withdraw your consent at any time.
-
-In some exceptional cases, we may be legally permitted under applicable law to process your information without your consent, including, for example:
-
-- If collection is clearly in the interests of an individual and consent cannot be obtained in a timely way
-- For investigations and fraud detection and prevention
-- For business transactions provided certain conditions are met
-- If it is contained in a witness statement and the collection is necessary to assess, process, or settle an insurance claim
-- For identifying injured, ill, or deceased persons and communicating with next of kin
-- If we have reasonable grounds to believe an individual has been, is, or may be victim of financial abuse
-- If it is reasonable to expect collection and use with consent would compromise the availability or the accuracy of the information and the collection is reasonable for purposes related to investigating a breach of an agreement or a contravention of the laws of Canada or a province
-- If disclosure is required to comply with a subpoena, warrant, court order, or rules of the court relating to the production of records
-- If it was produced by an individual in the course of their employment, business, or profession and the collection is consistent with the purposes for which the information was produced
-- If the collection is solely for journalistic, artistic, or literary purposes
-- If the information is publicly available and is specified by the regulations
+- **Legitimate Interests.** To respond to inquiries you send us directly (for example, by email).
+- **Consent (when required).** If we need to process information for any other purpose that requires consent under applicable law.
 
 ## 4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 
-*In Short:* We may share information in specific situations described in this section and/or with the following categories of third parties.
+*In Short:* We only share data with providers that power app functionality and diagnostics.
 
-**Vendors, Consultants, and Other Third-Party Service Providers.** We may share your data with third-party vendors, service providers, contractors, or agents (*"third parties"*) who perform services for us or on our behalf and require access to such information to do that work. We have contracts in place with our third parties, which are designed to help safeguard your personal information. This means that they cannot do anything with your personal information unless we have instructed them to do it. They will also not share your personal information with any organization apart from us. They also commit to protect the data they hold on our behalf and to retain it for the period we instruct.
+The app uses the following third-party services:
 
-The categories of third parties we may share personal information with are as follows:
+- **Weather API providers.** Requests are made from your device to fetch weather data.
+- **Sentry.** Used for crash reporting and diagnostics.
+- **Apple App Store / Google Play.** If you purchase a subscription, payment processing is handled by Apple or Google.
 
-- Cloud Computing Services
-- Payment and Subscription Platforms (Apple, Google)
-- Data Storage Service Providers
-- Website Hosting Service Providers
-- Performance Monitoring Tools
-- Error Monitoring Tools (Sentry)
-
-We also may need to share your personal information in the following situations:
-
-- **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
-- **When we use Google Maps Platform APIs.** We may share your information with certain Google Maps Platform APIs (e.g., Google Maps API, Places API). Google Maps uses GPS, Wi-Fi, and cell towers to estimate your location. GPS is accurate to about 20 meters, while Wi-Fi and cell towers help improve accuracy when GPS signals are weak, like indoors. This data helps Google Maps provide directions, but it is not always perfectly precise. We obtain and store on your device ("cache") your location for six (6) months. You may revoke your consent anytime by contacting us at the contact details provided at the end of this document.
-- **Affiliates.** We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Notice. Affiliates include our parent company and any subsidiaries, joint venture partners, or other companies that we control or that are under common control with us.
-- **Business Partners.** We may share your information with our business partners to offer you certain products, services, or promotions.
+We do not share personal information with advertisers, data brokers, or analytics platforms.
 
 ## 6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?
 
-*In Short:* We may transfer, store, and process your information in countries other than your own.
+*In Short:* We do not operate servers that store personal information. Third-party providers we use may process data in other countries.
 
-Our servers are located in Germany. If you are accessing our Services from outside Germany, please be aware that your information may be transferred to, stored by, and processed by us in our facilities and in the facilities of the third parties with whom we may share your personal information (see [WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#shareInfo) above), in the United States, and other countries.
-
-If you are a resident in the European Economic Area (EEA), United Kingdom (UK), or Switzerland, then these countries may not necessarily have data protection laws or other similar laws as comprehensive as those in your country. However, we will take all necessary measures to protect your personal information in accordance with this Privacy Notice and applicable law.
-
-**European Commission's Standard Contractual Clauses:**
-
-We have implemented measures to protect your personal information, including by using the European Commission's Standard Contractual Clauses for transfers of personal information between our group companies and between us and our third-party providers. These clauses require all recipients to protect all personal information that they process originating from the EEA or UK in accordance with European data protection laws and regulations. We have implemented similar appropriate safeguards with our third-party service providers and partners and further details can be provided upon request.
+The app communicates directly with third-party services (such as weather API providers and Sentry). Those providers may process data in countries outside your own, under their respective privacy policies and safeguards.
 
 ## 7. HOW LONG DO WE KEEP YOUR INFORMATION?
 
-*In Short:* We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.
+*In Short:* We do not store your personal information on our servers.
 
-We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than twelve (12) months after your last interaction with the Services. Crash reports are retained for up to 30 days.
-
-When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+The app runs on your device and does not send personal information to our servers. Any retention is governed by the third-party services you use through the app, such as Sentry for crash reports and the weather API providers.
 
 ## 8. HOW DO WE KEEP YOUR INFORMATION SAFE?
 
@@ -215,7 +141,7 @@ We do not knowingly collect, solicit data from, or market to children under 18 y
 
 In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact) below.
 
-We will consider and act upon any request in accordance with applicable data protection laws.
+Because we do not collect or store personal information on our servers, we may have no data to provide, correct, or delete. We will consider and act upon any request in accordance with applicable data protection laws.
 
 If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your [Member State data protection authority](https://edpb.europa.eu/about-edpb/board/members_en) or [UK data protection authority](https://ico.org.uk/global/contact-us/).
 
@@ -237,130 +163,15 @@ California law requires us to let you know how we respond to web browser DNT sig
 
 ## 12. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
 
-*In Short:* If you are a resident of California, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.
+*In Short:* Depending on your state, you may have privacy rights. Because we do not collect or store personal information on our servers, there may be no data for us to provide or delete.
 
-### Categories of Personal Information We Collect
-
-We have collected the following categories of personal information in the past twelve (12) months:
-
-| Category | Examples | Collected |
-| --- | --- | --- |
-| A. Identifiers | Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, and email address | YES |
-| B. Personal information as defined in the California Customer Records statute | Name, contact information, education, employment, employment history, and financial information | YES |
-| C. Protected classification characteristics under state or federal law | Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data | NO |
-| D. Commercial information | Transaction information, purchase history, financial details, and payment information | YES |
-| E. Biometric information | Fingerprints and voiceprints | NO |
-| F. Internet or other similar network activity | Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements | YES |
-| G. Geolocation data | Device location | YES |
-| H. Audio, electronic, sensory, or similar information | Images and audio, video or call recordings created in connection with our business activities | NO |
-| I. Professional or employment-related information | Business contact details in order to provide you our Services at a business level or job title, work history, and professional qualifications if you apply for a job with us | NO |
-| J. Education Information | Student records and directory information | NO |
-| K. Inferences drawn from collected personal information | Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual’s preferences and characteristics | NO |
-| L. Sensitive personal information |  | NO |
-
-We may also collect other personal information outside of these categories through instances where you interact with us in person, online, or by phone or mail in the context of:
-
-- Receiving help through our customer support channels;
-- Participation in customer surveys or contests;
-- Facilitation in the delivery of our Services and to respond to your inquiries.
-
-We will use and retain the collected personal information as needed to provide the Services or for:
-
-- Category A - As long as necessary to provide the Services and comply with legal obligations
-- Category B - As long as necessary to provide the Services and comply with legal obligations
-- Category D - As long as necessary to provide the Services and comply with legal obligations
-- Category F - As long as necessary to provide the Services and comply with legal obligations
-- Category G - As long as necessary to provide the Services and comply with legal obligations
-
-### Sources of Personal Information
-
-Learn more about the sources of personal information we collect in [WHAT INFORMATION DO WE COLLECT?](#infoCollect)
-
-### How We Use and Share Personal Information
-
-Learn more about how we use your personal information in the section, [HOW DO WE PROCESS YOUR INFORMATION?](#processInfo)
-
-Will your information be shared with anyone else?
-
-We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more about how we disclose personal information in the section, [WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#shareInfo)
-
-We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
-
-We have disclosed the following categories of personal information to third parties for a business or commercial purpose in the preceding twelve (12) months:
-
-- Category A. Identifiers
-- Category B. Personal information as defined in the California Customer Records law
-- Category F. Internet or other electronic network activity information
-- Category G. Geolocation data
-
-The categories of third parties to whom we disclosed personal information for a business or commercial purpose can be found under [WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#shareInfo)
-
-We have sold or shared the following categories of personal information to third parties in the preceding twelve (12) months:
-
-We do not sell or share personal information.
-
-### Your Rights
-
-You have rights under certain US state data protection laws. However, these rights are not absolute, and in certain cases, we may decline your request as permitted by law. These rights include:
-
-- **Right to know** whether or not we are processing your personal data
-- **Right to access** your personal data
-- **Right to correct** inaccuracies in your personal data
-- **Right to request** the deletion of your personal data
-- **Right to obtain a copy** of the personal data you previously shared with us
-- **Right to non-discrimination** for exercising your rights
-- **Right to opt out** of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California’s privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ("profiling")
-
-Depending upon the state where you live, you may also have the following rights:
-
-- Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including California’s privacy law)
-- Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including California’s privacy law)
-
-### How to Exercise Your Rights
-
-To exercise these rights, you can contact us by visiting email at [info@sunset-score.com](mailto:info@sunset-score.com), by emailing us at info@sunset-score.com, or by referring to the contact details at the bottom of this document.
-
-We will honor your opt-out preferences if you enact the [Global Privacy Control (GPC)](https://globalprivacycontrol.org) opt-out signal on your browser.
-
-Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.
-
-### Request Verification
-
-Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.
-
-If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.
-
-### California "Shine The Light" Law
-
-California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)
+If you want to make a request, you can contact us at [info@sunset-score.com](mailto:info@sunset-score.com). We do not sell or share personal information, and we do not use personal information for targeted advertising.
 
 ## 13. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?
 
-*In Short:* You may have additional rights based on the country you reside in.
+*In Short:* If you are in the EEA, UK, Switzerland, Canada, Australia, New Zealand, South Africa, or other regions, you may have privacy rights under local law. Because we do not collect or store personal information on our servers, there may be no data for us to provide, correct, or delete.
 
-### Australia and New Zealand
-
-We collect and process your personal information under the obligations and conditions set by Australia’s Privacy Act 1988 and New Zealand’s Privacy Act 2020 (Privacy Act).
-
-This Privacy Notice satisfies the notice requirements defined in both Privacy Acts, in particular: what personal information we collect from you, from which sources, for which purposes, and other recipients of your personal information.
-
-If you do not wish to provide the personal information necessary to fulfill their applicable purpose, it may affect our ability to provide our services, in particular:
-
-- offer you the products or services that you want
-- respond to or help with your requests
-- confirm your identity and protect your information
-
-At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section [HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#reviewUpdateDelete)
-
-If you believe we are unlawfully processing your personal information, you have the right to submit a complaint about a breach of the Australian Privacy Principles to the [Office of the Australian Information Commissioner](https://www.oaic.gov.au/privacy/australian-privacy-principles) and a breach of New Zealand’s Privacy Principles to the [Office of New Zealand Privacy Commissioner](https://www.privacy.org.nz).
-
-### Republic of South Africa
-
-At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section [HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#reviewUpdateDelete)
-
-If you are unsatisfied with the manner in which we address any complaint with regard to our processing of personal information, you can contact the office of the regulator, the details of which are:
-
-**The Information Regulator (South Africa)** General enquiries: [enquiries@inforegulator.org.za](mailto:enquiries@inforegulator.org.za) Complaints (complete POPIA/PAIA form 5): [PAIAComplaints@inforegulator.org.za](mailto:PAIAComplaints@inforegulator.org.za) & [POPIAComplaints@inforegulator.org.za](mailto:POPIAComplaints@inforegulator.org.za)
+You can contact us at [info@sunset-score.com](mailto:info@sunset-score.com) with any privacy questions or requests.
 
 ## 14. DO WE MAKE UPDATES TO THIS NOTICE?
 
@@ -382,7 +193,7 @@ If you are a resident in the United Kingdom, we are the "data controller" of you
 
 ## 16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
-Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: email at [info@sunset-score.com](mailto:info@sunset-score.com).
+We do not collect or store personal information on our servers. If you have questions or requests, contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ---
 
@@ -607,14 +418,13 @@ We may accept, reject, or remove reviews in our sole discretion. We have absolut
 
 ## 11. THIRD-PARTY WEBSITES AND CONTENT
 
-The Services may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API, Postmark, and Apple/Google app store services, to provide location-based features, email delivery, and subscription/payment processing, respectively. By using these features, you agree to be bound by the respective third-party's Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:
+The Services may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API and Apple/Google app store services, to provide location-based features and subscription/payment processing, respectively. By using these features, you agree to be bound by the respective third-party's Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:
 
 - **Google Maps:** [Google’s Terms of Service](https://maps.google.com/help/terms_maps/) and [Google’s Privacy Policy](https://policies.google.com/privacy).
-- **Postmark:** [Postmark's Terms of Service](https://postmarkapp.com/terms-of-service), [Privacy Policy](https://postmarkapp.com/privacy-policy), and [EU Privacy Policy](https://postmarkapp.com/eu-privacy).
 - **Apple:** [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
 - **Google:** [Google Privacy Policy](https://policies.google.com/privacy)
 
-By accessing third-party services integrated within our platform, such as the Google Maps API, Postmark, and Apple/Google app store services, you acknowledge and agree to be bound by the respective third-party's terms and policies, even while using our Services. All Third-Party Content is provided on an "as-is" basis, and we make no warranties or representations of any kind regarding its accuracy, reliability, or completeness. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases, which are exclusively between you and the applicable third party. We expressly disclaim all liability for any harm, damages, or losses that may arise from your use of, reliance on, or interaction with any Third-Party Websites or Third-Party Content. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites. We recommend that you review the privacy policies and terms of service for any Third-Party Websites or Third-Party Content before engaging with them, as their data practices may differ from ours. Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes).
+By accessing third-party services integrated within our platform, such as the Google Maps API and Apple/Google app store services, you acknowledge and agree to be bound by the respective third-party's terms and policies, even while using our Services. All Third-Party Content is provided on an "as-is" basis, and we make no warranties or representations of any kind regarding its accuracy, reliability, or completeness. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases, which are exclusively between you and the applicable third party. We expressly disclaim all liability for any harm, damages, or losses that may arise from your use of, reliance on, or interaction with any Third-Party Websites or Third-Party Content. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites. We recommend that you review the privacy policies and terms of service for any Third-Party Websites or Third-Party Content before engaging with them, as their data practices may differ from ours. Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes).
 
 ## 12. SERVICES MANAGEMENT
 
