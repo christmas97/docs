@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy — Sunset Score</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-3-512.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
 
@@ -101,7 +105,7 @@
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        padding: 12px 20px;
+        padding: 12px 20px 12px 14px;
         border-radius: 999px;
         background: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(12px);
@@ -112,6 +116,14 @@
         letter-spacing: 0.2px;
         color: var(--absent-bg);
         width: fit-content;
+      }
+
+      .hero__badge img {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        border: 2px solid var(--incredible-bg);
+        background: rgba(255, 255, 255, 0.9);
       }
 
       .hero__title {
@@ -235,7 +247,14 @@
     <div class="page">
       <header>
         <div class="hero">
-          <div class="hero__badge">Sunset Score</div>
+          <div class="hero__badge">
+            <img
+              src="icon-3-512.png"
+              srcset="icon-3-512.png 1x, icon-3-1024.png 2x"
+              alt="Sunset Score app icon"
+            />
+            Sunset Score
+          </div>
           <h1 class="hero__title"><span>Privacy Policy</span> &amp; Terms and Conditions</h1>
           <p class="hero__subtitle">How the Sunset Score app handles your data and protects your privacy.</p>
         </div>
