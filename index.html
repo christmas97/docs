@@ -75,8 +75,7 @@
 
       .hero,
       .card,
-      .apps,
-      .footer-links {
+      .apps {
         background: var(--card);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -88,17 +87,6 @@
       .hero {
         padding: 30px;
         animation: rise 0.6s ease-out both;
-      }
-
-      .verified {
-        display: inline-block;
-        padding: 8px 14px;
-        border-radius: 999px;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.3px;
-        background: rgba(23, 34, 54, 0.08);
-        color: var(--absent-bg);
       }
 
       h1,
@@ -210,28 +198,6 @@
         text-underline-offset: 2px;
       }
 
-      .footer-links {
-        margin-top: 18px;
-        padding: 16px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        align-items: center;
-        justify-content: space-between;
-        animation: rise 1s ease-out both;
-      }
-
-      .footer-links p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .legal-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-      }
-
       @keyframes rise {
         from {
           opacity: 0;
@@ -247,7 +213,6 @@
   <body>
     <main class="page">
       <section class="hero">
-        <div class="verified">Official Company Website</div>
         <h1>CHRISTMAS SERVICES S.R.L.</h1>
         <p>
           Mobile app developer and publisher. This page identifies the legal entity that owns and operates
@@ -311,14 +276,6 @@
           </div>
         </section>
       </div>
-
-      <section class="footer-links">
-        <p>Legal pages:</p>
-        <div class="legal-links">
-          <a href="/sunset-score/">Sunset Score Policy</a>
-          <a href="/double-you/">Double You Policy</a>
-        </div>
-      </section>
     </main>
   </body>
 </html>
