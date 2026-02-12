@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Terms of Use and Privacy Policy</title>
+    <title>CHRISTMAS SERVICES S.R.L.</title>
+    <meta
+      name="description"
+      content="Official company page for CHRISTMAS SERVICES S.R.L., developer and publisher of mobile applications."
+    />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -12,14 +16,27 @@
 
       :root {
         color-scheme: light;
-        --orange: #fc4b15;
-        --blue: #b7d9ff;
-        --cream: #f7ede4;
-        --ink: #141312;
-        --muted: #4f4a46;
-        --card: #ffffff;
-        --border: rgba(20, 19, 18, 0.1);
-        --shadow: 0 24px 60px rgba(20, 19, 18, 0.12);
+        --incredible-bg: #cf3833;
+        --incredible-tx: #a6cace;
+        --great-bg: #cf5735;
+        --great-tx: #b9d7bb;
+        --good-bg: #f1bd45;
+        --good-tx: #1d452c;
+        --okay-bg: #dbb4b6;
+        --okay-tx: #28427d;
+        --poor-bg: #a5cbcf;
+        --poor-tx: #cf3833;
+        --bleak-bg: #b9d7bb;
+        --bleak-tx: #cf5735;
+        --absent-bg: #28427d;
+        --absent-tx: #dbb4b6;
+
+        --ink: #172236;
+        --muted: #42546f;
+        --card: rgba(255, 255, 255, 0.9);
+        --border: rgba(23, 34, 54, 0.12);
+        --shadow: 0 22px 60px rgba(40, 66, 125, 0.18);
+        --radius: 22px;
       }
 
       * {
@@ -30,294 +47,278 @@
         margin: 0;
         min-height: 100vh;
         font-family: "Space Grotesk", "Segoe UI", sans-serif;
-        background: linear-gradient(130deg, #fffdf9 0%, var(--cream) 35%, #ffffff 55%, var(--blue) 100%);
         color: var(--ink);
-        position: relative;
-        overflow-x: hidden;
-      }
-
-      body::before,
-      body::after {
-        content: "";
-        position: fixed;
-        width: 55vw;
-        height: 55vw;
-        border-radius: 999px;
-        filter: blur(20px);
-        opacity: 0.35;
-        z-index: 0;
-        pointer-events: none;
-      }
-
-      body::before {
-        top: -20vw;
-        right: -10vw;
-        background: radial-gradient(circle, rgba(252, 75, 21, 0.55), rgba(252, 75, 21, 0));
-        animation: floatOne 18s ease-in-out infinite;
-      }
-
-      body::after {
-        bottom: -30vw;
-        left: -15vw;
-        background: radial-gradient(circle, rgba(183, 217, 255, 0.85), rgba(183, 217, 255, 0));
-        animation: floatTwo 20s ease-in-out infinite;
+        background-color: var(--absent-bg);
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--poor-bg) 0%,
+            var(--poor-bg) 18%,
+            var(--okay-bg) 18%,
+            var(--okay-bg) 36%,
+            var(--good-bg) 36%,
+            var(--good-bg) 52%,
+            var(--great-bg) 52%,
+            var(--great-bg) 68%,
+            var(--incredible-bg) 68%,
+            var(--incredible-bg) 82%,
+            var(--absent-bg) 82%,
+            var(--absent-bg) 100%
+          );
       }
 
       .page {
-        position: relative;
-        z-index: 1;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 36px 20px 44px;
       }
 
-      header {
-        padding: 56px 20px 32px;
+      .hero,
+      .card,
+      .apps,
+      .footer-links {
+        background: var(--card);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
       }
 
       .hero {
-        max-width: 960px;
-        margin: 0 auto;
-        display: grid;
-        gap: 16px;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
+        padding: 30px;
+        animation: rise 0.6s ease-out both;
       }
 
-      .hero__badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 20px 12px 14px;
+      .verified {
+        display: inline-block;
+        padding: 8px 14px;
         border-radius: 999px;
-        background: #ffffff;
-        border: 1px solid var(--border);
-        box-shadow: 0 10px 25px rgba(20, 19, 18, 0.1);
+        font-size: 13px;
         font-weight: 600;
-        letter-spacing: 0.2px;
-        width: fit-content;
+        letter-spacing: 0.3px;
+        background: rgba(23, 34, 54, 0.08);
+        color: var(--absent-bg);
       }
 
-      .hero__badge img {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-        border: 2px solid var(--orange);
-        background: var(--cream);
-      }
-
-      .hero__title {
+      h1,
+      h2 {
         font-family: "Fraunces", "Times New Roman", serif;
-        font-size: clamp(32px, 4.6vw, 54px);
-        line-height: 1.05;
-        margin: 8px 0 8px;
-      }
-
-      .hero__title span {
-        color: var(--orange);
-      }
-
-      .hero__subtitle {
         margin: 0;
+      }
+
+      h1 {
+        margin-top: 14px;
+        font-size: clamp(30px, 5.3vw, 50px);
+        line-height: 1.05;
+      }
+
+      .hero p {
+        margin: 14px 0 0;
+        max-width: 760px;
         color: var(--muted);
         font-size: 17px;
-        max-width: 560px;
       }
 
-
-      main {
-        max-width: 920px;
-        margin: 0 auto 72px;
-        padding: 0 20px;
+      .stack {
+        display: grid;
+        gap: 18px;
+        margin-top: 18px;
       }
 
       .card {
-        background: var(--card);
-        border-radius: 22px;
-        padding: 32px;
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-        animation: rise 0.8s ease-out both;
-      }
-
-      .app-info {
-        margin-top: 28px;
-      }
-
-      .app-info h2,
-      .app-info h3 {
-        margin-top: 28px;
-        color: var(--orange);
-        font-family: "Fraunces", "Times New Roman", serif;
-      }
-
-      .app-info h2 {
-        font-size: 24px;
-      }
-
-      .app-info h3 {
-        font-size: 20px;
-      }
-
-      .app-info .tagline {
-        font-weight: 600;
-      }
-
-      #content h1,
-      #content h2 {
-        margin-top: 36px;
-        font-size: 24px;
-        color: var(--orange);
-        font-family: "Fraunces", "Times New Roman", serif;
-      }
-
-      #content h3 {
-        margin-top: 28px;
-        font-size: 20px;
-      }
-
-      #content h4 {
-        margin-top: 20px;
-        font-size: 18px;
-      }
-
-      p,
-      li {
-        line-height: 1.6;
-      }
-
-      ul,
-      ol {
-        padding-left: 22px;
+        padding: 24px;
+        animation: rise 0.75s ease-out both;
       }
 
       .meta {
-        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+
+      .meta li {
+        display: grid;
+        gap: 4px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(23, 34, 54, 0.08);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .meta strong {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--absent-bg);
+      }
+
+      .meta span {
+        font-size: 17px;
+      }
+
+      .apps {
+        padding: 24px;
+        animation: rise 0.9s ease-out both;
+      }
+
+      .apps h2 {
+        font-size: 30px;
+      }
+
+      .app-grid {
+        margin-top: 16px;
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .app-card {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid rgba(23, 34, 54, 0.1);
+        padding: 16px;
+        display: grid;
+        gap: 10px;
+        align-content: start;
+      }
+
+      .app-card img {
+        width: 74px;
+        height: 74px;
+        border-radius: 18px;
+        border: 2px solid rgba(23, 34, 54, 0.12);
+      }
+
+      .app-card h3 {
+        margin: 0;
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 24px;
+      }
+
+      .app-card p {
+        margin: 0;
+        color: var(--muted);
       }
 
       a {
-        color: var(--orange);
+        color: var(--incredible-bg);
+        font-weight: 600;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
       }
 
-      .loading {
+      .footer-links {
+        margin-top: 18px;
+        padding: 16px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        align-items: center;
+        justify-content: space-between;
+        animation: rise 1s ease-out both;
+      }
+
+      .footer-links p {
+        margin: 0;
         color: var(--muted);
-        letter-spacing: 0.2px;
+      }
+
+      .legal-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
       }
 
       @keyframes rise {
         from {
           opacity: 0;
-          transform: translateY(18px);
+          transform: translateY(16px);
         }
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
-
-      @keyframes floatOne {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(-20px, 15px, 0);
-        }
-      }
-
-      @keyframes floatTwo {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(20px, -10px, 0);
-        }
-      }
-
-      @media (min-width: 900px) {
-        .hero {
-          gap: 18px;
-        }
-      }
     </style>
   </head>
   <body>
-    <div class="page">
-      <header>
-        <div class="hero">
-          <div class="hero__badge">
-            <img src="icon-9-1024.png" alt="Double You app icon" />
-            Double You
-          </div>
-          <h1 class="hero__title">Terms of Use <span>&amp;</span> Privacy Policy</h1>
-          <p class="hero__subtitle">Everything you need to know about how the Double You mobile app handles your data and protects your trust.</p>
-        </div>
-      </header>
+    <main class="page">
+      <section class="hero">
+        <div class="verified">Official Company Website</div>
+        <h1>CHRISTMAS SERVICES S.R.L.</h1>
+        <p>
+          Mobile app developer and publisher. This page identifies the legal entity that owns and operates
+          the applications listed below.
+        </p>
+      </section>
 
-      <main>
+      <div class="stack">
         <section class="card">
-          <div id="content" class="loading">Loading policy content...</div>
-        </section>
-        <section class="card app-info">
-          <h2>Double You: Clone Videos in Minutes</h2>
-          <p class="tagline">Record twice, paint to reveal, export your double.</p>
-          <p>Double You lets you create the classic clone effect so you appear alongside yourself in a single video. No AI, no gimmicks, just a focused tool that does one thing very well.</p>
-
-          <h3>How it works</h3>
-          <ol>
-            <li>Place your phone on a tripod or stable surface.</li>
-            <li>Record your first take.</li>
-            <li>Record your second take (do not move the phone).</li>
-            <li>Paint on screen to reveal where each version of you appears.</li>
-            <li>Export and share.</li>
-          </ol>
-
-          <h3>Why Double You</h3>
-          <ul>
-            <li>No account required.</li>
-            <li>No AI: fast, private, works offline.</li>
-            <li>No watermarks.</li>
-            <li>Smooth, professional-looking results.</li>
-            <li>Paint-to-reveal masking for precise control.</li>
-            <li>Export directly to your gallery.</li>
+          <ul class="meta">
+            <li>
+              <strong>Legal Entity Name</strong>
+              <span>CHRISTMAS SERVICES S.R.L.</span>
+            </li>
+            <li>
+              <strong>D-U-N-S Number</strong>
+              <span>567435874</span>
+            </li>
+            <li>
+              <strong>Company Registration Number</strong>
+              <span>J35/3000/07.08.2023</span>
+            </li>
+            <li>
+              <strong>Fiscal ID</strong>
+              <span>48597451</span>
+            </li>
+            <li>
+              <strong>Administrator and Owner</strong>
+              <span>Catalin Craciun</span>
+            </li>
+            <li>
+              <strong>Registered Address</strong>
+              <span>Romania, Timisoara, St. Bucegi nr. 2, ap. 4</span>
+            </li>
+            <li>
+              <strong>Business Activity</strong>
+              <span>Development and publishing of mobile applications</span>
+            </li>
+            <li>
+              <strong>Contact Email</strong>
+              <span><a href="mailto:info@sunset-score.com">info@sunset-score.com</a></span>
+            </li>
           </ul>
-
-          <h3>Great for</h3>
-          <ul>
-            <li>Social media content and short-form video (TikTok, Reels, Shorts).</li>
-            <li>Creative storytelling, skits, and magic tricks.</li>
-            <li>Fun moments with friends and family.</li>
-            <li>Pro-looking effects without complex software.</li>
-          </ul>
-
-          <p>One phone. Two takes. Infinite possibilities. Download Double You and start cloning.</p>
         </section>
-      </main>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      const content = document.getElementById('content');
+        <section class="apps">
+          <h2>Mobile Applications</h2>
+          <div class="app-grid">
+            <article class="app-card">
+              <img src="sunset-score/icon-3-512.png" alt="Sunset Score icon" />
+              <h3>Sunset Score</h3>
+              <p>Sunset forecasting and scoring app.</p>
+              <a href="/sunset-score/">Privacy Policy and Terms</a>
+            </article>
+            <article class="app-card">
+              <img src="icon-9-1024.png" alt="Double You icon" />
+              <h3>Double You</h3>
+              <p>Video clone creation app.</p>
+              <a href="/double-you/">Privacy Policy and Terms</a>
+            </article>
+          </div>
+        </section>
+      </div>
 
-      const renderError = () => {
-        content.classList.remove('loading');
-        content.innerHTML = '<p>Unable to load the policy right now. Please try again later.</p>';
-      };
-
-      fetch('terms-and-privacy.md', { cache: 'no-store' })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Failed to load policy markdown.');
-          }
-          return response.text();
-        })
-        .then((markdown) => {
-          content.classList.remove('loading');
-          content.innerHTML = marked.parse(markdown);
-        })
-        .catch((error) => {
-          console.error(error);
-          renderError();
-        });
-    </script>
+      <section class="footer-links">
+        <p>Legal pages:</p>
+        <div class="legal-links">
+          <a href="/sunset-score/">Sunset Score Policy</a>
+          <a href="/double-you/">Double You Policy</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
