@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support - Double You</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+      :root {
+        color-scheme: light;
+        --orange: #fc4b15;
+        --blue: #b7d9ff;
+        --cream: #f7ede4;
+        --ink: #141312;
+        --muted: #4f4a46;
+        --card: #ffffff;
+        --border: rgba(20, 19, 18, 0.1);
+        --shadow: 0 24px 60px rgba(20, 19, 18, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        background: linear-gradient(130deg, #fffdf9 0%, var(--cream) 35%, #ffffff 55%, var(--blue) 100%);
+        color: var(--ink);
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        width: 55vw;
+        height: 55vw;
+        border-radius: 999px;
+        filter: blur(20px);
+        opacity: 0.35;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      body::before {
+        top: -20vw;
+        right: -10vw;
+        background: radial-gradient(circle, rgba(252, 75, 21, 0.55), rgba(252, 75, 21, 0));
+        animation: floatOne 18s ease-in-out infinite;
+      }
+
+      body::after {
+        bottom: -30vw;
+        left: -15vw;
+        background: radial-gradient(circle, rgba(183, 217, 255, 0.85), rgba(183, 217, 255, 0));
+        animation: floatTwo 20s ease-in-out infinite;
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        padding: 56px 20px 32px;
+      }
+
+      .hero {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 16px;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .hero__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px 12px 14px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 25px rgba(20, 19, 18, 0.1);
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        width: fit-content;
+      }
+
+      .hero__badge img {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        border: 2px solid var(--orange);
+        background: var(--cream);
+      }
+
+      .hero__title {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(32px, 4.6vw, 54px);
+        line-height: 1.05;
+        margin: 8px 0 8px;
+      }
+
+      .hero__title span {
+        color: var(--orange);
+      }
+
+      .hero__subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        max-width: 560px;
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto 72px;
+        padding: 0 20px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 22px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        animation: rise 0.8s ease-out both;
+      }
+
+      .card:nth-child(2) { animation-delay: 0.1s; }
+      .card:nth-child(3) { animation-delay: 0.2s; }
+
+      .contact-card {
+        text-align: center;
+      }
+
+      .contact-card h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 24px;
+        color: var(--orange);
+        margin: 0 0 8px;
+      }
+
+      .contact-card p {
+        color: var(--muted);
+        margin: 0 0 20px;
+        line-height: 1.6;
+      }
+
+      .contact-card a.email-link {
+        display: inline-block;
+        padding: 14px 32px;
+        background: var(--orange);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 0.2px;
+        transition: opacity 0.2s;
+      }
+
+      .contact-card a.email-link:hover {
+        opacity: 0.85;
+      }
+
+      .faq h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 24px;
+        color: var(--orange);
+        margin: 0 0 24px;
+      }
+
+      details {
+        border-bottom: 1px solid var(--border);
+      }
+
+      details:last-of-type {
+        border-bottom: none;
+      }
+
+      summary {
+        padding: 16px 0;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+
+      summary::-webkit-details-marker { display: none; }
+
+      summary::after {
+        content: "+";
+        font-size: 22px;
+        color: var(--orange);
+        flex-shrink: 0;
+        transition: transform 0.2s;
+      }
+
+      details[open] summary::after {
+        transform: rotate(45deg);
+      }
+
+      details .answer {
+        padding: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      details .answer ol {
+        padding-left: 22px;
+      }
+
+      a {
+        color: var(--orange);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 24px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .back-link:hover {
+        color: var(--orange);
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatOne {
+        0%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(-20px, 15px, 0); }
+      }
+
+      @keyframes floatTwo {
+        0%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(20px, -10px, 0); }
+      }
+
+      @media (min-width: 900px) {
+        .hero { gap: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="hero">
+          <div class="hero__badge">
+            <img src="../../icon-9-1024.png" alt="Double You app icon" />
+            Double You
+          </div>
+          <h1 class="hero__title"><span>Support</span></h1>
+          <p class="hero__subtitle">Need help creating clone videos? Check the FAQ below or get in touch.</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="card contact-card">
+          <h2>Contact Us</h2>
+          <p>Can't find your answer below? Send us an email and we'll get back to you.</p>
+          <a class="email-link" href="mailto:info@sunset-score.com">info@sunset-score.com</a>
+        </section>
+
+        <section class="card faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <details>
+            <summary>How do I create a clone video?</summary>
+            <div class="answer">
+              <ol>
+                <li>Place your phone on a tripod or stable surface.</li>
+                <li>Record your first take (stand on one side of the frame).</li>
+                <li>Record your second take (move to a different spot, don't move the phone).</li>
+                <li>Paint on screen to reveal where your clone from Take 2 appears.</li>
+                <li>Export and save to your camera roll.</li>
+              </ol>
+              <p>Because the camera stays still, the two recordings blend seamlessly. You control exactly what shows from each take by painting a mask with your finger.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Why do I need a tripod or stable surface?</summary>
+            <div class="answer">
+              <p>The clone effect works by layering two recordings on top of each other. If the camera moves between takes, the backgrounds won't line up and the illusion breaks. Any stable surface works: a shelf, a stack of books, or leaning your phone against something sturdy.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Can my two clones touch or overlap?</summary>
+            <div class="answer">
+              <p>No. The mask is a painted boundary that reveals one take over the other. If the two versions of you occupy the same spot, there's no way to draw a clean mask through the overlap. Keep clear space between your two positions for the best results.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>What does the dotted circle brush do?</summary>
+            <div class="answer">
+              <p>The dotted circle brush paints at very low opacity, letting you gradually fade the transition between your two takes. Use it along the seam between clones to soften hard edges, blend shadows, or smooth anywhere the cut looks unnatural. Build up the effect with multiple strokes.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>My export looks slightly different from the preview</summary>
+            <div class="answer">
+              <p>The preview uses a lower-resolution mask for smooth real-time painting. The export renders the mask at full video resolution, so fine details may look slightly sharper. The overall result should closely match what you see in the editor.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Can I undo my painting?</summary>
+            <div class="answer">
+              <p>Yes. Tap the undo button to remove your last brush stroke. You can also switch to the eraser to remove parts of the mask manually.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Where are my exported videos saved?</summary>
+            <div class="answer">
+              <p>Exported videos are saved directly to your phone's photo library (Camera Roll on iOS, Gallery on Android). You can find them in your Photos app right after exporting.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How long can my videos be?</summary>
+            <div class="answer">
+              <p>You can record takes from 1 second up to 60 seconds. Tap the duration setting before recording to choose from preset lengths (3, 5, 10, 15, 30, or 60 seconds), and you can stop recording early at any time.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Does the app work offline?</summary>
+            <div class="answer">
+              <p>Yes. Double You processes everything on your device. No internet connection is needed to record, edit, or export your videos.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Does the app use AI or upload my videos?</summary>
+            <div class="answer">
+              <p>No. Double You does not use AI and does not upload your videos anywhere. All processing happens locally on your phone. Your videos never leave your device unless you choose to share them yourself.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Why does the app need camera, microphone, and photo permissions?</summary>
+            <div class="answer">
+              <p><strong>Camera</strong> is needed to record your video takes. <strong>Microphone</strong> captures audio during recording. <strong>Photo library</strong> access lets the app save your finished clone video to your camera roll. The app only uses these permissions for their stated purpose.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>The app crashed or something went wrong</summary>
+            <div class="answer">
+              <p>Try closing and reopening the app. If the issue keeps happening, email us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a> with a description of what you were doing when it happened and what device you're using. If you opted into crash reporting, we may already have the details.</p>
+            </div>
+          </details>
+        </section>
+
+        <div style="text-align: center;">
+          <a class="back-link" href="../">&larr; Terms of Use &amp; Privacy Policy</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
