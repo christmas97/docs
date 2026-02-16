@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-Last updated February 3, 2026
+Last updated February 16, 2026
 
 This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
@@ -75,7 +75,25 @@ The app does not send usage, device, or location data to our servers because we 
 
 The only automated data flows are:
 
-- **Crash and Diagnostics Data (Sentry).** We use Sentry to collect crash reports and diagnostic data to improve app stability. This data is processed by Sentry under their privacy policy.
+- **Crash and Diagnostics Data (Sentry).** To improve app stability and fix bugs, we use **Sentry**, a third-party error monitoring service, to collect anonymous crash reports and diagnostic data when the App encounters an error.
+
+**What Sentry collects:**
+
+- Device type and model (e.g., "iPhone 14 Pro", "Samsung Galaxy S23")
+- Operating system and version (e.g., "iOS 17.2", "Android 14")
+- App version
+- Crash logs, stack traces, and error messages
+- General device state at time of crash (memory usage, battery state)
+- Anonymous session identifiers (non-personally-identifiable)
+
+**What Sentry does NOT collect:**
+
+- Your IP address (we have configured Sentry to scrub/block IP addresses)
+- Your name, email, or any personal identifiers
+- Your location (GPS or otherwise)
+- Any content you create or view within the App
+
+**Legal basis for processing (GDPR):** Legitimate interest in maintaining and improving app stability.
 - **Weather API Requests.** If you enable location on your device, the app uses that location locally to make weather API requests. We do not receive, read, or store your location.
 
 Apple/Google: Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store) under their respective terms and privacy policies.
@@ -106,7 +124,11 @@ If you are located in the EU or UK, this means we rely on:
 The app uses the following third-party services:
 
 - **Weather API providers.** Requests are made from your device to fetch weather data.
-- **Sentry.** Used for crash reporting and diagnostics.
+- **Sentry (Error Monitoring).** We use Sentry to collect crash reports and diagnostic data. Sentry is a reputable third-party service with strong privacy practices.
+  - **Provider:** Functional Software, Inc. (Sentry)
+  - **Privacy Policy:** [https://sentry.io/privacy/](https://sentry.io/privacy/)
+  - **Data Processing Agreement:** We have a data processing agreement with Sentry that complies with GDPR requirements
+  - **IP Address Handling:** We have configured Sentry to NOT collect or store user IP addresses
 - **Apple App Store / Google Play.** If you purchase a subscription, payment processing is handled by Apple or Google.
 
 We do not share personal information with advertisers, data brokers, or analytics platforms.
@@ -115,13 +137,13 @@ We do not share personal information with advertisers, data brokers, or analytic
 
 *In Short:* We do not operate servers that store personal information. Third-party providers we use may process data in other countries.
 
-The app communicates directly with third-party services (such as weather API providers and Sentry). Those providers may process data in countries outside your own, under their respective privacy policies and safeguards.
+Our company is based in Romania (EU). Crash report data collected via Sentry is processed and stored in the **European Union (EU)**. We have configured Sentry to scrub/block IP addresses and we do not intentionally send personal data or content to Sentry. The app also communicates directly with weather API providers, which may process data in countries outside your own, under their respective privacy policies and safeguards. Apple and Google may process payment-related data under their own privacy policies.
 
 ## 7. HOW LONG DO WE KEEP YOUR INFORMATION?
 
 *In Short:* We do not store your personal information on our servers.
 
-The app runs on your device and does not send personal information to our servers. Any retention is governed by the third-party services you use through the app, such as Sentry for crash reports and the weather API providers.
+The app runs on your device and does not send personal information to our servers. Crash reports and diagnostic data sent to Sentry are retained for up to **30 days**, after which they are deleted or anonymized by Sentry. Any other retention is governed by the third-party services you use through the app, such as the weather API providers.
 
 ## 8. HOW DO WE KEEP YOUR INFORMATION SAFE?
 
@@ -199,7 +221,7 @@ We do not collect or store personal information on our servers. If you have ques
 
 # TERMS AND CONDITIONS
 
-Last updated February 3, 2026
+Last updated February 16, 2026
 
 ## AGREEMENT TO OUR LEGAL TERMS
 
@@ -418,9 +440,10 @@ We may accept, reject, or remove reviews in our sole discretion. We have absolut
 
 ## 11. THIRD-PARTY WEBSITES AND CONTENT
 
-The Services may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API and Apple/Google app store services, to provide location-based features and subscription/payment processing, respectively. By using these features, you agree to be bound by the respective third-party's Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:
+The Services may contain (or you may be sent via the Site) links to other websites ("Third-Party Websites") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties ("Third-Party Content"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API, Sentry (for crash reporting and diagnostics), and Apple/Google app store services, to provide location-based features, improve app stability, and handle subscription/payment processing, respectively. By using these features, you agree to be bound by the respective third-party's Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:
 
-- **Google Maps:** [Google’s Terms of Service](https://maps.google.com/help/terms_maps/) and [Google’s Privacy Policy](https://policies.google.com/privacy).
+- **Google Maps:** [Google's Terms of Service](https://maps.google.com/help/terms_maps/) and [Google's Privacy Policy](https://policies.google.com/privacy).
+- **Sentry:** [Sentry Privacy Policy](https://sentry.io/privacy/)
 - **Apple:** [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
 - **Google:** [Google Privacy Policy](https://policies.google.com/privacy)
 
