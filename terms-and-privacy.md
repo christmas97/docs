@@ -1,4 +1,4 @@
-Last updated: January 29, 2026
+Last updated: February 17, 2026
 
 ## Terms of Use
 
@@ -72,7 +72,11 @@ You agree NOT to use the App to:
 
 **Refunds:** Refund requests are handled by Apple or Google according to their policies. We do not directly process payments or refunds.
 
+**Service Availability and Discontinuation:** We may suspend, withdraw, or discontinue the App (in whole or in part) at any time, for any reason, and without prior notice.
+
 **No In-App Purchases:** After purchasing the App, all features are available without additional payment. There are no subscriptions, in-app purchases, or advertisements.
+
+**No Obligation for Prorated Refunds or Continued Access:** If the App is suspended, removed, or discontinued before the end of any paid period, we are not obligated to provide prorated refunds, credits, or continued access for the remainder of that period, except where required by applicable law or by Apple/Google policies.
 
 ### 6. Disclaimer of Warranties
 
@@ -135,9 +139,11 @@ OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP.
 
 ### 11. Termination
 
- We may terminate or suspend your access to the App immediately, without prior notice, for any reason, including if you breach these Terms. 
+ We may terminate or suspend your access to the App, or terminate or discontinue the App itself, immediately and without prior notice, for any reason, including if you breach these Terms. 
 
  Upon termination, your license to use the App will immediately cease. All provisions of these Terms that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability. 
+
+ Except as required by applicable law, termination, suspension, or discontinuation does not create any obligation for us to provide a refund, credit, or continued access for any unused paid period. 
 
 ### 12. Severability
 

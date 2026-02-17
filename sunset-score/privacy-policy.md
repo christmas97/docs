@@ -1,6 +1,6 @@
 # PRIVACY POLICY
 
-Last updated February 16, 2026
+Last updated February 17, 2026
 
 This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
@@ -221,7 +221,7 @@ We do not collect or store personal information on our servers. If you have ques
 
 # TERMS AND CONDITIONS
 
-Last updated February 16, 2026
+Last updated February 17, 2026
 
 ## AGREEMENT TO OUR LEGAL TERMS
 
@@ -363,6 +363,10 @@ You can cancel your subscription at any time in your Apple App Store or Google P
 
 Please note that for non-EU residents, all purchases are final and non-refundable, except as required by applicable laws in your jurisdiction.
 
+**Service Discontinuation During a Paid Term:** We may suspend, remove, or discontinue the Services (in whole or in part) at any time, for any reason, and without prior notice, including during an active subscription period.
+
+**No Prorated Refunds or Continued Access After Discontinuation:** If access ends before the end of your current billing period, we are not obligated to provide prorated refunds, credits, or continued access through the remainder of that period, except where required by applicable law or by Apple/Google policies.
+
 ### Fee Changes
 
 We may, from time to time, make changes to the subscription fee and will communicate any price changes to you in accordance with applicable law.
@@ -467,7 +471,7 @@ If we terminate or suspend your access for any reason, we reserve the right to t
 
 We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.
 
-We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith.
+We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith. Except where required by applicable law, suspension or discontinuance of the Services does not create any obligation for us to provide prorated refunds, credits, or continued access through the end of any paid subscription term.
 
 ## 16. GOVERNING LAW
 
