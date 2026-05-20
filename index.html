@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile Applications</title>
+    <meta
+      name="description"
+      content="Mobile applications, privacy policies, terms, and support links."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+      :root {
+        color-scheme: light;
+        --incredible-bg: #cf3833;
+        --incredible-tx: #a6cace;
+        --great-bg: #cf5735;
+        --great-tx: #b9d7bb;
+        --good-bg: #f1bd45;
+        --good-tx: #1d452c;
+        --okay-bg: #dbb4b6;
+        --okay-tx: #28427d;
+        --poor-bg: #a5cbcf;
+        --poor-tx: #cf3833;
+        --bleak-bg: #b9d7bb;
+        --bleak-tx: #cf5735;
+        --absent-bg: #28427d;
+        --absent-tx: #dbb4b6;
+
+        --ink: #172236;
+        --muted: #42546f;
+        --card: rgba(255, 255, 255, 0.9);
+        --border: rgba(23, 34, 54, 0.12);
+        --shadow: 0 22px 60px rgba(40, 66, 125, 0.18);
+        --radius: 22px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background-color: var(--absent-bg);
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--poor-bg) 0%,
+            var(--poor-bg) 18%,
+            var(--okay-bg) 18%,
+            var(--okay-bg) 36%,
+            var(--good-bg) 36%,
+            var(--good-bg) 52%,
+            var(--great-bg) 52%,
+            var(--great-bg) 68%,
+            var(--incredible-bg) 68%,
+            var(--incredible-bg) 82%,
+            var(--absent-bg) 82%,
+            var(--absent-bg) 100%
+          );
+      }
+
+      .page {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 36px 20px 44px;
+      }
+
+      .apps {
+        background: var(--card);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+      }
+
+      h1,
+      h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(30px, 5.3vw, 50px);
+        line-height: 1.05;
+      }
+
+      .stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .apps {
+        padding: 24px;
+        animation: rise 0.6s ease-out both;
+      }
+
+      .app-grid {
+        margin-top: 16px;
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .app-card {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid rgba(23, 34, 54, 0.1);
+        padding: 16px;
+        display: grid;
+        gap: 10px;
+        align-content: start;
+      }
+
+      .app-card img {
+        width: 74px;
+        height: 74px;
+        border-radius: 18px;
+        border: 2px solid rgba(23, 34, 54, 0.12);
+      }
+
+      .app-card h3 {
+        margin: 0;
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 24px;
+      }
+
+      .app-card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--incredible-bg);
+        font-weight: 600;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+      }
+
+      footer {
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 15px;
+        text-align: center;
+      }
+
+      footer a {
+        color: #fff;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="stack">
+        <section class="apps">
+          <h1>Mobile Applications</h1>
+          <div class="app-grid">
+            <article class="app-card">
+              <img src="sunset-score/icon-3-512.png" alt="Sunset Score icon" />
+              <h3>Sunset Score</h3>
+              <p>Don't miss the next incredible sunset in your area!</p>
+              <a href="/sunset-score/">Privacy Policy and Terms</a>
+              <a href="/sunset-score/support/">Support &amp; FAQ</a>
+            </article>
+            <article class="app-card">
+              <img src="icon-9-1024.png" alt="Double You icon" />
+              <h3>Double You</h3>
+              <p>Clone yourself in a video.</p>
+              <a href="/double-you/">Privacy Policy and Terms</a>
+              <a href="/double-you/support/">Support &amp; FAQ</a>
+            </article>
+          </div>
+        </section>
+      </div>
+      <footer>
+        Contact: <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>
+      </footer>
+    </main>
+  </body>
+</html>

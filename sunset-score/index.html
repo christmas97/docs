@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Sunset Score</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-3-512.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+      :root {
+        color-scheme: light;
+        --incredible-bg: #cf3833;
+        --incredible-tx: #a6cace;
+        --great-bg: #cf5735;
+        --great-tx: #b9d7bb;
+        --good-bg: #f1bd45;
+        --good-tx: #1d452c;
+        --okay-bg: #dbb4b6;
+        --okay-tx: #28427d;
+        --poor-bg: #a5cbcf;
+        --poor-tx: #cf3833;
+        --bleak-bg: #b9d7bb;
+        --bleak-tx: #cf5735;
+        --absent-bg: #28427d;
+        --absent-tx: #dbb4b6;
+
+        --ink: #1e2a3a;
+        --muted: #4a6272;
+        --card: #ffffff;
+        --border: rgba(40, 66, 125, 0.08);
+        --shadow: 0 24px 60px rgba(40, 66, 125, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        background-color: var(--absent-bg);
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--poor-bg) 0%,
+            var(--poor-bg) 18%,
+            var(--okay-bg) 18%,
+            var(--okay-bg) 36%,
+            var(--good-bg) 36%,
+            var(--good-bg) 52%,
+            var(--great-bg) 52%,
+            var(--great-bg) 68%,
+            var(--incredible-bg) 68%,
+            var(--incredible-bg) 82%,
+            var(--absent-bg) 82%,
+            var(--absent-bg) 100%
+          );
+        color: var(--ink);
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: none;
+      }
+
+      body::before {
+        animation: none;
+      }
+
+      body::after {
+        animation: none;
+      }
+
+      .page::before {
+        content: none;
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        padding: 56px 20px 32px;
+      }
+
+      .hero {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 16px;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .hero__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px 12px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(40, 66, 125, 0.12);
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        color: var(--absent-bg);
+        width: fit-content;
+      }
+
+      .hero__badge img {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        border: 2px solid var(--incredible-bg);
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .hero__title {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(32px, 4.6vw, 54px);
+        line-height: 1.05;
+        margin: 8px 0 8px;
+        color: #fff;
+        text-shadow: 0 2px 16px rgba(40, 66, 125, 0.25);
+      }
+
+      .hero__title span {
+        color: var(--incredible-bg);
+      }
+
+      .hero__subtitle {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 17px;
+        max-width: 560px;
+        text-shadow: 0 1px 6px rgba(40, 66, 125, 0.15);
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto 72px;
+        padding: 0 20px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 22px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        animation: rise 0.8s ease-out both;
+      }
+
+      #content h1,
+      #content h2 {
+        margin-top: 36px;
+        font-size: 24px;
+        color: var(--incredible-bg);
+        font-family: "Fraunces", "Times New Roman", serif;
+      }
+
+      #content h3 {
+        margin-top: 28px;
+        font-size: 20px;
+        color: var(--absent-bg);
+      }
+
+      #content h4 {
+        margin-top: 20px;
+        font-size: 18px;
+        color: var(--incredible-bg);
+      }
+
+      p,
+      li {
+        line-height: 1.6;
+      }
+
+      ul,
+      ol {
+        padding-left: 22px;
+      }
+
+      .meta {
+        font-weight: bold;
+      }
+
+      a {
+        color: var(--incredible-bg);
+      }
+
+      .loading {
+        color: var(--muted);
+        letter-spacing: 0.2px;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatOne {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          transform: translate3d(-20px, 15px, 0);
+        }
+      }
+
+      @keyframes floatTwo {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          transform: translate3d(20px, -10px, 0);
+        }
+      }
+
+      @media (min-width: 900px) {
+        .hero {
+          gap: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="hero">
+          <div class="hero__badge">
+            <img
+              src="icon-3-512.png"
+              srcset="icon-3-512.png 1x, icon-3-1024.png 2x"
+              alt="Sunset Score app icon"
+            />
+            Sunset Score
+          </div>
+          <h1 class="hero__title"><span>Privacy Policy</span> &amp; Terms and Conditions</h1>
+          <p class="hero__subtitle">How the Sunset Score app handles your data and protects your privacy.</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="card">
+          <div id="content" class="loading">Loading policy content...</div>
+        </section>
+        <div style="text-align: center; margin-top: 24px;">
+          <a href="support/" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 15px;">Support &amp; FAQ &rarr;</a>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const content = document.getElementById('content');
+
+      const renderError = () => {
+        content.classList.remove('loading');
+        content.innerHTML = '<p>Unable to load the policy right now. Please try again later.</p>';
+      };
+
+      fetch('privacy-policy.md', { cache: 'no-store' })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Failed to load policy markdown.');
+          }
+          return response.text();
+        })
+        .then((markdown) => {
+          content.classList.remove('loading');
+          content.innerHTML = marked.parse(markdown);
+        })
+        .catch((error) => {
+          console.error(error);
+          renderError();
+        });
+    </script>
+  </body>
+</html>

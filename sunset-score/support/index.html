@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support - Sunset Score</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+      :root {
+        color-scheme: light;
+        --incredible-bg: #cf3833;
+        --incredible-tx: #a6cace;
+        --great-bg: #cf5735;
+        --great-tx: #b9d7bb;
+        --good-bg: #f1bd45;
+        --good-tx: #1d452c;
+        --okay-bg: #dbb4b6;
+        --okay-tx: #28427d;
+        --poor-bg: #a5cbcf;
+        --poor-tx: #cf3833;
+        --bleak-bg: #b9d7bb;
+        --bleak-tx: #cf5735;
+        --absent-bg: #28427d;
+        --absent-tx: #dbb4b6;
+
+        --ink: #1e2a3a;
+        --muted: #4a6272;
+        --card: #ffffff;
+        --border: rgba(40, 66, 125, 0.08);
+        --shadow: 0 24px 60px rgba(40, 66, 125, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        background-color: var(--absent-bg);
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--poor-bg) 0%,
+            var(--poor-bg) 18%,
+            var(--okay-bg) 18%,
+            var(--okay-bg) 36%,
+            var(--good-bg) 36%,
+            var(--good-bg) 52%,
+            var(--great-bg) 52%,
+            var(--great-bg) 68%,
+            var(--incredible-bg) 68%,
+            var(--incredible-bg) 82%,
+            var(--absent-bg) 82%,
+            var(--absent-bg) 100%
+          );
+        color: var(--ink);
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: none;
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        padding: 56px 20px 32px;
+      }
+
+      .hero {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 16px;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .hero__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px 12px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 25px rgba(40, 66, 125, 0.12);
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        color: var(--absent-bg);
+        width: fit-content;
+      }
+
+      .hero__badge img {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        border: 2px solid var(--incredible-bg);
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .hero__title {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(32px, 4.6vw, 54px);
+        line-height: 1.05;
+        margin: 8px 0 8px;
+        color: #fff;
+        text-shadow: 0 2px 16px rgba(40, 66, 125, 0.25);
+      }
+
+      .hero__title span {
+        color: var(--incredible-bg);
+      }
+
+      .hero__subtitle {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 17px;
+        max-width: 560px;
+        text-shadow: 0 1px 6px rgba(40, 66, 125, 0.15);
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto 72px;
+        padding: 0 20px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 22px;
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        animation: rise 0.8s ease-out both;
+      }
+
+      .card:nth-child(2) { animation-delay: 0.1s; }
+      .card:nth-child(3) { animation-delay: 0.2s; }
+
+      .contact-card {
+        text-align: center;
+      }
+
+      .contact-card h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 24px;
+        color: var(--incredible-bg);
+        margin: 0 0 8px;
+      }
+
+      .contact-card p {
+        color: var(--muted);
+        margin: 0 0 20px;
+        line-height: 1.6;
+      }
+
+      .contact-card a.email-link {
+        display: inline-block;
+        padding: 14px 32px;
+        background: var(--incredible-bg);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 0.2px;
+        transition: opacity 0.2s;
+      }
+
+      .contact-card a.email-link:hover {
+        opacity: 0.85;
+      }
+
+      .faq h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 24px;
+        color: var(--incredible-bg);
+        margin: 0 0 24px;
+      }
+
+      details {
+        border-bottom: 1px solid var(--border);
+      }
+
+      details:last-of-type {
+        border-bottom: none;
+      }
+
+      summary {
+        padding: 16px 0;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+
+      summary::-webkit-details-marker { display: none; }
+
+      summary::after {
+        content: "+";
+        font-size: 22px;
+        color: var(--incredible-bg);
+        flex-shrink: 0;
+        transition: transform 0.2s;
+      }
+
+      details[open] summary::after {
+        transform: rotate(45deg);
+      }
+
+      details .answer {
+        padding: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      details .answer ol {
+        padding-left: 22px;
+      }
+
+      a {
+        color: var(--incredible-bg);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 24px;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .back-link:hover {
+        color: #ffffff;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (min-width: 900px) {
+        .hero { gap: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="hero">
+          <div class="hero__badge">
+            <img
+              src="../icon-3-512.png"
+              srcset="../icon-3-512.png 1x, ../icon-3-1024.png 2x"
+              alt="Sunset Score app icon"
+            />
+            Sunset Score
+          </div>
+          <h1 class="hero__title"><span>Support</span></h1>
+          <p class="hero__subtitle">Have a question about Sunset Score? Check the FAQ below or get in touch.</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="card contact-card">
+          <h2>Contact Us</h2>
+          <p>Can't find your answer below? Send us an email and we'll get back to you.</p>
+          <a class="email-link" href="mailto:info@sunset-score.com">info@sunset-score.com</a>
+        </section>
+
+        <section class="card faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <details>
+            <summary>What is Sunset Score?</summary>
+            <div class="answer">
+              <p>Sunset Score is a mobile app that predicts how beautiful upcoming sunrises and sunsets will be at your chosen location. Enter a city and get a forecast showing the expected visual quality of sunrises and sunsets over the coming days, scored on a simple scale.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How does the beauty score work?</summary>
+            <div class="answer">
+              <p>We combine weather data (cloud cover, visibility, humidity, dust) with astronomical calculations (sun position and azimuth) to estimate how visually striking a sunrise or sunset will be. The score reflects the overall atmospheric conditions that contribute to colorful, dramatic skies.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How accurate are the forecasts?</summary>
+            <div class="answer">
+              <p>Our forecasts are based on weather prediction models, which become less certain further into the future. Forecasts for the next day or two tend to be the most reliable. Because weather and atmospheric conditions are inherently unpredictable, please treat the scores as guidance rather than a guarantee.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Do I need an account to use the app?</summary>
+            <div class="answer">
+              <p>No. You do not need to create an account or log in. Simply open the app, search for a city, and view your forecast.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How do I get a forecast?</summary>
+            <div class="answer">
+              <ol>
+                <li>Open the app and search for a city.</li>
+                <li>Select your city from the suggestions.</li>
+                <li>View the forecast cards showing beauty scores for upcoming sunrises and sunsets.</li>
+              </ol>
+            </div>
+          </details>
+
+          <details>
+            <summary>Is the app free?</summary>
+            <div class="answer">
+              <p>Sunset Score requires a subscription to access forecasts. You can subscribe through the Apple App Store or Google Play Store. Subscription management and cancellation are handled through your app store settings.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>How do I cancel my subscription?</summary>
+            <div class="answer">
+              <p>You can cancel your subscription at any time in your Apple App Store or Google Play subscription settings. Your access will continue until the end of the current billing period.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Does the app use my location?</summary>
+            <div class="answer">
+              <p>The app can use your device's location to fetch weather data for your area, but your location is never sent to or stored on our servers. All location processing happens on your device. You can also manually search for any city without enabling location services.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Does the app work offline?</summary>
+            <div class="answer">
+              <p>No. Sunset Score needs an internet connection to fetch up-to-date weather data and calculate beauty scores. Without a connection, the app cannot generate forecasts.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>What do the different score levels mean?</summary>
+            <div class="answer">
+              <p>The beauty score ranges from low to high, indicating how visually impressive the sunrise or sunset is expected to be. Higher scores mean conditions are more favorable for vibrant colors, dramatic clouds, and striking skies. Lower scores suggest overcast, hazy, or otherwise unfavorable conditions.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>The app crashed or something went wrong</summary>
+            <div class="answer">
+              <p>Try closing and reopening the app. If the issue persists, email us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a> with a description of what happened and which device you're using. If you opted into crash reporting, we may already have the details to help diagnose the issue.</p>
+            </div>
+          </details>
+        </section>
+
+        <div style="text-align: center;">
+          <a class="back-link" href="../">&larr; Privacy Policy &amp; Terms and Conditions</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
