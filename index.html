@@ -33,10 +33,10 @@
 
         --ink: #172236;
         --muted: #42546f;
-        --card: rgba(255, 255, 255, 0.9);
-        --border: rgba(23, 34, 54, 0.12);
-        --shadow: 0 22px 60px rgba(40, 66, 125, 0.18);
-        --radius: 22px;
+        --card: #fffaf5;
+        --border: rgba(23, 34, 54, 0.1);
+        --shadow: 0 18px 44px rgba(23, 34, 54, 0.18);
+        --radius: 8px;
       }
 
       * {
@@ -68,18 +68,9 @@
       }
 
       .page {
-        max-width: 1040px;
+        max-width: 1180px;
         margin: 0 auto;
-        padding: 36px 20px 44px;
-      }
-
-      .apps {
-        background: var(--card);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow);
-        border-radius: var(--radius);
+        padding: 34px 22px 44px;
       }
 
       h1,
@@ -89,53 +80,146 @@
       }
 
       h1 {
-        font-size: clamp(30px, 5.3vw, 50px);
+        font-size: clamp(32px, 4.6vw, 48px);
         line-height: 1.05;
+        color: #fff;
+        text-shadow: 0 2px 18px rgba(23, 34, 54, 0.25);
       }
 
       .stack {
         display: grid;
-        gap: 18px;
+        gap: 20px;
       }
 
       .apps {
-        padding: 24px;
         animation: rise 0.6s ease-out both;
       }
 
       .app-grid {
-        margin-top: 16px;
         display: grid;
-        gap: 14px;
+        gap: 20px;
+        align-items: stretch;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       }
 
       .app-card {
-        background: #fff;
-        border-radius: 16px;
-        border: 1px solid rgba(23, 34, 54, 0.1);
-        padding: 16px;
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        padding: 20px;
         display: grid;
-        gap: 10px;
+        grid-template-rows: auto auto auto auto;
+        gap: 16px;
         align-content: start;
       }
 
-      .app-card img {
-        width: 74px;
-        height: 74px;
-        border-radius: 18px;
-        border: 2px solid rgba(23, 34, 54, 0.12);
+      .app-heading {
+        display: flex;
+        align-items: center;
+        gap: 14px;
       }
 
-      .app-card h3 {
+      .app-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 18px;
+        border: 2px solid rgba(23, 34, 54, 0.12);
+        flex: 0 0 auto;
+      }
+
+      .app-copy {
+        min-width: 0;
+      }
+
+      .app-card h2 {
         margin: 0;
         font-family: "Fraunces", "Times New Roman", serif;
-        font-size: 24px;
+        font-size: clamp(24px, 2.5vw, 30px);
+        line-height: 1.05;
       }
 
       .app-card p {
-        margin: 0;
+        margin: 5px 0 0;
         color: var(--muted);
+        line-height: 1.35;
+      }
+
+      .store-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .store-badge {
+        width: 158px;
+        height: 48px;
+        border-radius: var(--radius);
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 7px 12px;
+        color: #fff;
+        background: #101318;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        text-decoration: none;
+        box-shadow: 0 10px 24px rgba(16, 19, 24, 0.18);
+        white-space: nowrap;
+      }
+
+      .store-badge-soon {
+        color: rgba(23, 34, 54, 0.76);
+        background: rgba(255, 255, 255, 0.68);
+        border-color: rgba(23, 34, 54, 0.16);
+        box-shadow: none;
+      }
+
+      .store-badge span {
+        display: block;
+        font-size: 10px;
+        line-height: 1;
+        font-weight: 500;
+      }
+
+      .store-badge strong {
+        display: block;
+        font-size: 16px;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .store-icon {
+        width: 25px;
+        height: 25px;
+        flex: 0 0 auto;
+      }
+
+      .shot-strip {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        align-items: stretch;
+      }
+
+      .app-shot {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1284 / 2778;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: var(--radius);
+        border: 1px solid rgba(23, 34, 54, 0.12);
+        box-shadow: 0 14px 26px rgba(23, 34, 54, 0.14);
+        background: #101318;
+      }
+
+      .resource-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        align-items: center;
       }
 
       a {
@@ -166,27 +250,195 @@
           transform: translateY(0);
         }
       }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 24px 14px 36px;
+        }
+
+        .app-card {
+          padding: 15px;
+          gap: 14px;
+        }
+
+        .app-heading {
+          align-items: flex-start;
+        }
+
+        .app-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 16px;
+        }
+
+        .store-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .store-badge {
+          justify-content: center;
+          padding-inline: 8px;
+        }
+
+        .shot-strip {
+          display: flex;
+          gap: 10px;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          padding-bottom: 6px;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .app-shot {
+          width: 68%;
+          max-width: 68%;
+          flex: 0 0 68%;
+          scroll-snap-align: start;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="page">
       <div class="stack">
         <section class="apps">
-          <h1>Mobile Applications</h1>
           <div class="app-grid">
             <article class="app-card">
-              <img src="sunset-score/icon-3-512.png" alt="Sunset Score icon" />
-              <h3>Sunset Score</h3>
-              <p>Don't miss the next incredible sunset in your area!</p>
-              <a href="/sunset-score/">Privacy Policy and Terms</a>
-              <a href="/sunset-score/support/">Support &amp; FAQ</a>
+              <div class="app-heading">
+                <img
+                  class="app-icon"
+                  src="sunset-score/icon-3-512.png"
+                  alt="Sunset Score icon"
+                />
+                <div class="app-copy">
+                  <h2>Sunset Score</h2>
+                  <p>Don't miss the next incredible sunset in your area!</p>
+                </div>
+              </div>
+              <div class="store-row" aria-label="Sunset Score store links">
+                <a
+                  class="store-badge"
+                  href="https://play.google.com/store/apps/details?id=com.sunsetforecast"
+                  aria-label="Get Sunset Score on Google Play"
+                >
+                  <svg class="store-icon" aria-hidden="true" viewBox="0 0 28 28">
+                    <path d="M4 3.3v21.4l11-10.7z" fill="#34a853" />
+                    <path d="M15 14 4 3.3l15.4 8.4z" fill="#4285f4" />
+                    <path d="M15 14 4 24.7l15.4-8.4z" fill="#fbbc04" />
+                    <path d="m19.4 11.7 3.6 2.1-3.6 2.5L15 14z" fill="#ea4335" />
+                  </svg>
+                  <span><span>Get it on</span><strong>Google Play</strong></span>
+                </a>
+                <span
+                  class="store-badge store-badge-soon"
+                  aria-label="Sunset Score App Store coming soon"
+                >
+                  <svg class="store-icon" aria-hidden="true" viewBox="0 0 28 28">
+                    <path
+                      d="M8.2 21.5 14 6.5l5.8 15M10.3 16.2h7.4M6.8 21.5h14.4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span><span>Coming soon on</span><strong>App Store</strong></span>
+                </span>
+              </div>
+              <div class="shot-strip" aria-label="Sunset Score screenshots">
+                <img
+                  class="app-shot"
+                  src="assets/screenshots/sunset-score/01-get-notified-before-a-sunset.jpg"
+                  alt="Sunset Score notification screenshot"
+                  decoding="async"
+                />
+                <img
+                  class="app-shot"
+                  src="assets/screenshots/sunset-score/02-know-which-days-are-stunning.jpg"
+                  alt="Sunset Score daily forecast screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="app-shot"
+                  src="assets/screenshots/sunset-score/03-find-the-best-sunset-this-week.jpg"
+                  alt="Sunset Score weekly forecast screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="resource-links">
+                <a href="/sunset-score/">Privacy Policy and Terms</a>
+                <a href="/sunset-score/support/">Support &amp; FAQ</a>
+              </div>
             </article>
             <article class="app-card">
-              <img src="icon-9-1024.png" alt="Double You icon" />
-              <h3>Double You</h3>
-              <p>Clone yourself in a video.</p>
-              <a href="/double-you/">Privacy Policy and Terms</a>
-              <a href="/double-you/support/">Support &amp; FAQ</a>
+              <div class="app-heading">
+                <img class="app-icon" src="icon-9-1024.png" alt="Double You icon" />
+                <div class="app-copy">
+                  <h2>Double You</h2>
+                  <p>Clone yourself in a video.</p>
+                </div>
+              </div>
+              <div class="store-row" aria-label="Double You store links">
+                <a
+                  class="store-badge"
+                  href="https://play.google.com/store/apps/details?id=com.doubletake"
+                  aria-label="Get Double You on Google Play"
+                >
+                  <svg class="store-icon" aria-hidden="true" viewBox="0 0 28 28">
+                    <path d="M4 3.3v21.4l11-10.7z" fill="#34a853" />
+                    <path d="M15 14 4 3.3l15.4 8.4z" fill="#4285f4" />
+                    <path d="M15 14 4 24.7l15.4-8.4z" fill="#fbbc04" />
+                    <path d="m19.4 11.7 3.6 2.1-3.6 2.5L15 14z" fill="#ea4335" />
+                  </svg>
+                  <span><span>Get it on</span><strong>Google Play</strong></span>
+                </a>
+                <span
+                  class="store-badge store-badge-soon"
+                  aria-label="Double You App Store coming soon"
+                >
+                  <svg class="store-icon" aria-hidden="true" viewBox="0 0 28 28">
+                    <path
+                      d="M8.2 21.5 14 6.5l5.8 15M10.3 16.2h7.4M6.8 21.5h14.4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span><span>Coming soon on</span><strong>App Store</strong></span>
+                </span>
+              </div>
+              <div class="shot-strip" aria-label="Double You screenshots">
+                <img
+                  class="app-shot"
+                  src="assets/screenshots/double-you/01-clone-yourself-in-video.jpg"
+                  alt="Double You clone yourself in video screenshot"
+                  decoding="async"
+                />
+                <img
+                  class="app-shot"
+                  src="assets/screenshots/double-you/02-line-up-your-second-take.jpg"
+                  alt="Double You line up your second take screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="app-shot"
+                  src="assets/screenshots/double-you/03-paint-where-you-appear.jpg"
+                  alt="Double You paint where you appear screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="resource-links">
+                <a href="/double-you/">Privacy Policy and Terms</a>
+                <a href="/double-you/support/">Support &amp; FAQ</a>
+              </div>
             </article>
           </div>
         </section>
