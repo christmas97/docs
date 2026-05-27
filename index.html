@@ -109,7 +109,7 @@
         box-shadow: var(--shadow);
         padding: 20px;
         display: grid;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         gap: 16px;
         align-content: start;
       }
@@ -152,46 +152,58 @@
       }
 
       .store-badge {
-        width: 158px;
-        height: 48px;
+        width: 170px;
+        height: 50px;
         border-radius: var(--radius);
         display: inline-flex;
         align-items: center;
+        justify-content: flex-start;
         gap: 9px;
-        padding: 7px 12px;
+        padding: 8px 11px;
         color: #fff;
         background: #101318;
         border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 9px 20px rgba(16, 19, 24, 0.16);
         text-decoration: none;
-        box-shadow: 0 10px 24px rgba(16, 19, 24, 0.18);
         white-space: nowrap;
+        overflow: hidden;
+        position: relative;
       }
 
       .store-badge-soon {
-        color: rgba(23, 34, 54, 0.76);
-        background: rgba(255, 255, 255, 0.68);
-        border-color: rgba(23, 34, 54, 0.16);
-        box-shadow: none;
-      }
-
-      .store-badge span {
-        display: block;
-        font-size: 10px;
-        line-height: 1;
-        font-weight: 500;
-      }
-
-      .store-badge strong {
-        display: block;
-        font-size: 16px;
-        line-height: 1.08;
-        letter-spacing: 0;
+        cursor: default;
       }
 
       .store-icon {
-        width: 25px;
-        height: 25px;
+        display: block;
+        width: 30px;
+        height: 30px;
         flex: 0 0 auto;
+      }
+
+      .store-copy {
+        display: block;
+        min-width: 0;
+      }
+
+      .store-copy span,
+      .store-copy strong {
+        display: block;
+      }
+
+      .store-copy span {
+        font-size: 9px;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      .store-copy strong {
+        margin-top: 2px;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0;
       }
 
       .shot-strip {
@@ -210,9 +222,42 @@
         object-fit: cover;
         object-position: center top;
         border-radius: var(--radius);
-        border: 1px solid rgba(23, 34, 54, 0.12);
-        box-shadow: 0 14px 26px rgba(23, 34, 54, 0.14);
+        border: 1px solid rgba(23, 34, 54, 0.08);
+        box-shadow: 0 10px 22px rgba(23, 34, 54, 0.1);
         background: #101318;
+      }
+
+      .feature-list {
+        list-style: none;
+        margin: 0;
+        padding: 12px 0 0;
+        border-top: 1px solid rgba(23, 34, 54, 0.1);
+        display: grid;
+        gap: 7px;
+      }
+
+      .feature-list li {
+        position: relative;
+        margin: 0;
+        padding-left: 15px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      .feature-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.55em;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--great-bg);
+      }
+
+      .app-card:nth-child(2) .feature-list li::before {
+        background: #ff512f;
       }
 
       .resource-links {
@@ -224,6 +269,9 @@
 
       .resource-links a {
         font-size: 14px;
+        color: rgba(66, 84, 111, 0.86);
+        font-weight: 400;
+        text-decoration-thickness: 1px;
       }
 
       a {
@@ -281,8 +329,9 @@
         }
 
         .store-badge {
-          justify-content: center;
-          padding-inline: 8px;
+          width: 100%;
+          height: 48px;
+          padding-inline: 9px;
         }
 
         .shot-strip {
@@ -321,21 +370,12 @@
                 </div>
               </div>
               <div class="store-row" aria-label="Sunset Score store links">
-                <span
-                  class="store-badge store-badge-soon"
-                  aria-label="Sunset Score App Store coming soon"
-                >
-                  <svg class="store-icon" aria-hidden="true" viewBox="0 0 28 28">
-                    <path
-                      d="M8.2 21.5 14 6.5l5.8 15M10.3 16.2h7.4M6.8 21.5h14.4"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span><span>Coming soon on</span><strong>App Store</strong></span>
+                <span class="store-badge store-badge-soon" aria-label="Sunset Score App Store coming soon">
+                  <img class="store-icon" src="assets/badges/app-store-icon.svg" alt="" />
+                  <span class="store-copy">
+                    <span>Coming soon on</span>
+                    <strong>App Store</strong>
+                  </span>
                 </span>
                 <a
                   class="store-badge"
@@ -348,7 +388,10 @@
                     <path d="M15 14 4 24.7l15.4-8.4z" fill="#fbbc04" />
                     <path d="m19.4 11.7 3.6 2.1-3.6 2.5L15 14z" fill="#ea4335" />
                   </svg>
-                  <span><span>Get it on</span><strong>Google Play</strong></span>
+                  <span class="store-copy">
+                    <span>Get it on</span>
+                    <strong>Google Play</strong>
+                  </span>
                 </a>
               </div>
               <div class="shot-strip" aria-label="Sunset Score screenshots">
@@ -373,6 +416,11 @@
                   decoding="async"
                 />
               </div>
+              <ul class="feature-list" aria-label="Sunset Score features">
+                <li>Get notified before rare GREAT or STUNNING skies</li>
+                <li>0-100 sunrise and sunset beauty scores</li>
+                <li>Search cities worldwide and plan days ahead</li>
+              </ul>
               <div class="resource-links">
                 <a href="/sunset-score/">Privacy Policy and Terms</a>
                 <a href="/sunset-score/support/">Support &amp; FAQ</a>
@@ -387,21 +435,12 @@
                 </div>
               </div>
               <div class="store-row" aria-label="Double You store links">
-                <span
-                  class="store-badge store-badge-soon"
-                  aria-label="Double You App Store coming soon"
-                >
-                  <svg class="store-icon" aria-hidden="true" viewBox="0 0 28 28">
-                    <path
-                      d="M8.2 21.5 14 6.5l5.8 15M10.3 16.2h7.4M6.8 21.5h14.4"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span><span>Coming soon on</span><strong>App Store</strong></span>
+                <span class="store-badge store-badge-soon" aria-label="Double You App Store coming soon">
+                  <img class="store-icon" src="assets/badges/app-store-icon.svg" alt="" />
+                  <span class="store-copy">
+                    <span>Coming soon on</span>
+                    <strong>App Store</strong>
+                  </span>
                 </span>
                 <a
                   class="store-badge"
@@ -414,7 +453,10 @@
                     <path d="M15 14 4 24.7l15.4-8.4z" fill="#fbbc04" />
                     <path d="m19.4 11.7 3.6 2.1-3.6 2.5L15 14z" fill="#ea4335" />
                   </svg>
-                  <span><span>Get it on</span><strong>Google Play</strong></span>
+                  <span class="store-copy">
+                    <span>Get it on</span>
+                    <strong>Google Play</strong>
+                  </span>
                 </a>
               </div>
               <div class="shot-strip" aria-label="Double You screenshots">
@@ -439,6 +481,11 @@
                   decoding="async"
                 />
               </div>
+              <ul class="feature-list" aria-label="Double You features">
+                <li>Classic clone effect from two steady takes</li>
+                <li>Paint-to-reveal masking for precise control</li>
+                <li>Offline, private, no account, no watermark</li>
+              </ul>
               <div class="resource-links">
                 <a href="/double-you/">Privacy Policy and Terms</a>
                 <a href="/double-you/support/">Support &amp; FAQ</a>
