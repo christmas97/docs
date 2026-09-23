@@ -1,299 +1,457 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy — Sunset Score</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="icon-3-512.png" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
-
-      :root {
-        color-scheme: light;
-        --incredible-bg: #cf3833;
-        --incredible-tx: #a6cace;
-        --great-bg: #cf5735;
-        --great-tx: #b9d7bb;
-        --good-bg: #f1bd45;
-        --good-tx: #1d452c;
-        --okay-bg: #dbb4b6;
-        --okay-tx: #28427d;
-        --poor-bg: #a5cbcf;
-        --poor-tx: #cf3833;
-        --bleak-bg: #b9d7bb;
-        --bleak-tx: #cf5735;
-        --absent-bg: #28427d;
-        --absent-tx: #dbb4b6;
-
-        --ink: #1e2a3a;
-        --muted: #4a6272;
-        --card: #ffffff;
-        --border: rgba(40, 66, 125, 0.08);
-        --shadow: 0 24px 60px rgba(40, 66, 125, 0.1);
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunset Score Privacy Policy &amp; Terms</title>
+  <meta name="description" content="Privacy policy and terms for Sunset Score. Contact details, data practices and terms of use.">
+  <link rel="canonical" href="https://sunset-score.com/sunset-score/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#fffaf3">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sunset Score &amp; Double You">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Sunset Score Privacy Policy &amp; Terms">
+  <meta property="og:description" content="Privacy policy and terms for Sunset Score. Contact details, data practices and terms of use.">
+  <meta property="og:url" content="https://sunset-score.com/sunset-score/">
+  <meta property="og:image" content="https://sunset-score.com/assets/social/sunset-score.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sunset Score app screenshots">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sunset Score Privacy Policy &amp; Terms">
+  <meta name="twitter:description" content="Privacy policy and terms for Sunset Score. Contact details, data practices and terms of use.">
+  <meta name="twitter:image" content="https://sunset-score.com/assets/social/sunset-score.png">
+  <meta name="twitter:image:alt" content="Sunset Score app screenshots">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sunset-score.com/#website",
+      "url": "https://sunset-score.com/",
+      "name": "Sunset Score & Double You",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sunset-score.com/sunset-score/#webpage",
+      "url": "https://sunset-score.com/sunset-score/",
+      "name": "Sunset Score Privacy Policy & Terms",
+      "description": "Privacy policy and terms for Sunset Score. Contact details, data practices and terms of use.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://sunset-score.com/#website"
+      },
+      "about": {
+        "@id": "https://sunset-score.com/apps/sunset-score/#app"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://sunset-score.com/assets/social/sunset-score.png"
+      },
+      "breadcrumb": {
+        "@id": "https://sunset-score.com/sunset-score/#breadcrumb"
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        font-family: "Space Grotesk", "Segoe UI", sans-serif;
-        background-color: var(--absent-bg);
-        background-image:
-          linear-gradient(
-            180deg,
-            var(--poor-bg) 0%,
-            var(--poor-bg) 18%,
-            var(--okay-bg) 18%,
-            var(--okay-bg) 36%,
-            var(--good-bg) 36%,
-            var(--good-bg) 52%,
-            var(--great-bg) 52%,
-            var(--great-bg) 68%,
-            var(--incredible-bg) 68%,
-            var(--incredible-bg) 82%,
-            var(--absent-bg) 82%,
-            var(--absent-bg) 100%
-          );
-        color: var(--ink);
-        position: relative;
-        overflow-x: hidden;
-      }
-
-      body::before,
-      body::after {
-        content: none;
-      }
-
-      body::before {
-        animation: none;
-      }
-
-      body::after {
-        animation: none;
-      }
-
-      .page::before {
-        content: none;
-      }
-
-      .page {
-        position: relative;
-        z-index: 1;
-      }
-
-      header {
-        padding: 56px 20px 32px;
-      }
-
-      .hero {
-        max-width: 960px;
-        margin: 0 auto;
-        display: grid;
-        gap: 16px;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-      }
-
-      .hero__badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 20px 12px 14px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        box-shadow: 0 10px 25px rgba(40, 66, 125, 0.12);
-        font-weight: 600;
-        letter-spacing: 0.2px;
-        color: var(--absent-bg);
-        width: fit-content;
-      }
-
-      .hero__badge img {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-        border: 2px solid var(--incredible-bg);
-        background: rgba(255, 255, 255, 0.9);
-      }
-
-      .hero__title {
-        font-family: "Fraunces", "Times New Roman", serif;
-        font-size: clamp(32px, 4.6vw, 54px);
-        line-height: 1.05;
-        margin: 8px 0 8px;
-        color: #fff;
-        text-shadow: 0 2px 16px rgba(40, 66, 125, 0.25);
-      }
-
-      .hero__title span {
-        color: var(--incredible-bg);
-      }
-
-      .hero__subtitle {
-        margin: 0;
-        color: rgba(255, 255, 255, 0.88);
-        font-size: 17px;
-        max-width: 560px;
-        text-shadow: 0 1px 6px rgba(40, 66, 125, 0.15);
-      }
-
-      main {
-        max-width: 920px;
-        margin: 0 auto 72px;
-        padding: 0 20px;
-      }
-
-      .card {
-        background: var(--card);
-        border-radius: 22px;
-        padding: 32px;
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-        animation: rise 0.8s ease-out both;
-      }
-
-      #content h1,
-      #content h2 {
-        margin-top: 36px;
-        font-size: 24px;
-        color: var(--incredible-bg);
-        font-family: "Fraunces", "Times New Roman", serif;
-      }
-
-      #content h3 {
-        margin-top: 28px;
-        font-size: 20px;
-        color: var(--absent-bg);
-      }
-
-      #content h4 {
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--incredible-bg);
-      }
-
-      p,
-      li {
-        line-height: 1.6;
-      }
-
-      ul,
-      ol {
-        padding-left: 22px;
-      }
-
-      .meta {
-        font-weight: bold;
-      }
-
-      a {
-        color: var(--incredible-bg);
-      }
-
-      .loading {
-        color: var(--muted);
-        letter-spacing: 0.2px;
-      }
-
-      @keyframes rise {
-        from {
-          opacity: 0;
-          transform: translateY(18px);
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sunset-score.com/sunset-score/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sunset-score.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sunset Score privacy & terms",
+          "item": "https://sunset-score.com/sunset-score/"
         }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header wrap"><a class="brand" href="/apps/sunset-score/"><img src="/sunset-score/icon-3-512.png" alt="" width="38" height="38">Sunset Score</a><nav class="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/sunset-score/support/">Support</a></nav></header>
+<main id="main" class="wrap"><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><span aria-current="page">Sunset Score privacy &amp; terms</span></li></ol></nav><header class="page-intro"><p class="eyebrow">Sunset Score</p><h1>Privacy &amp; terms</h1><p>Information about your data and the terms for using Sunset Score.</p><a class="text-link" href="/sunset-score/support/">Looking for help with the app? <span aria-hidden="true">→</span></a></header><article class="legal" aria-label="Sunset Score privacy policy and terms">
+<!-- policy-content:start -->
+<h2 id="privacy-notice">PRIVACY POLICY</h2>
+<p>Last updated February 17, 2026</p>
+<p>This Privacy Notice for <strong>CHRISTMAS SERVICES SRL</strong> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), describes how and why we might access, collect, store, use, and/or share (&quot;process&quot;) your personal information when you use our services (&quot;Services&quot;), including when you:</p>
+<ul>
+<li>Use our mobile app, Sunset Score, on iOS or Android, or any other product of ours that links to this Privacy Notice</li>
+<li>Engage with us in other related ways, including any sales, marketing, or events</li>
+</ul>
+<p><strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<h3 id="summary-of-key-points">SUMMARY OF KEY POINTS</h3>
+<ul>
+<li>This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. *</li>
+</ul>
+<p><strong>What personal information do we process?</strong> We do not collect or store personal information on our servers. The app runs on your device. Limited data may be processed by third parties we use (weather APIs and Sentry) as described below.</p>
+<p><strong>Do we process any sensitive personal information?</strong> Some of the information may be considered &quot;special&quot; or &quot;sensitive&quot; in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.</p>
+<p><strong>Do we collect any information from third parties?</strong> We do not collect information from third parties beyond the external APIs we call to provide the service and our crash reporting provider.</p>
+<p><strong>Do we use cookies, ads, or Google Analytics?</strong> No. We do not use cookies or third-party advertising, and we do not use Google Analytics.</p>
+<p><strong>Do we use crash reporting?</strong> Yes. We use Sentry for crash reporting and diagnostics (see details below).</p>
+<p><strong>How do we process your information?</strong> We do not process or store personal information on our servers. Any processing happens on your device, or by third-party providers (weather APIs and Sentry) that help the app function and improve stability.</p>
+<p><strong>In what situations and with which types of parties do we share personal information?</strong> We only share data with third-party providers that power app functionality and diagnostics (weather APIs, Sentry, and app store payment processors).</p>
+<p><strong>How do we keep your information safe?</strong> We have adequate organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.</p>
+<p><strong>Notification of Breaches:</strong> In the event of a security breach that may pose a risk to your rights and freedoms under the General Data Protection Regulation (GDPR), we are committed to notifying affected users and relevant supervisory authorities without undue delay and, where feasible, within 72 hours of becoming aware of the breach. This includes providing details about the nature of the breach, the categories and number of affected users, and any measures taken to address the breach.</p>
+<p>If the breach is likely to result in a high risk to your rights and freedoms, we will communicate the breach directly to you using the contact details you have provided to us. However, this communication may not occur if technical measures were in place to render your personal data unintelligible, such as encryption.</p>
+<p><strong>What are your rights?</strong> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information.</p>
+<p><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by visiting email at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.</p>
+<h3 id="table-of-contents">TABLE OF CONTENTS</h3>
+<ul>
+<li><a href="#infoCollect">1. WHAT INFORMATION DO WE COLLECT?</a></li>
+<li><a href="#processInfo">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+<li><a href="#legalBases">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</a></li>
+<li><a href="#shareInfo">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
+<li><a href="#transferInfo">6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</a></li>
+<li><a href="#infoRetention">7. HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
+<li><a href="#infoSafety">8. HOW DO WE KEEP YOUR INFORMATION SAFE?</a></li>
+<li><a href="#minorsInfo">9. DO WE COLLECT INFORMATION FROM MINORS?</a></li>
+<li><a href="#privacyRights">10. WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+<li><a href="#doNotTrack">11. CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+<li><a href="#usRights">12. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+<li><a href="#regionRights">13. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+<li><a href="#noticeUpdates">14. DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+<li><a href="#contact">15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+<li><a href="#reviewUpdateDelete">16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
+</ul>
+<h3 id="infoCollect">1. WHAT INFORMATION DO WE COLLECT?</h3>
+<h4 id="personal-information-you-disclose-to-us">Personal information you disclose to us</h4>
+<p><em>In Short:</em> We do not collect personal information through the app.</p>
+<p>We do not operate a server that receives or stores user data. The app runs on your device. If you contact us directly by email, we will receive the information you choose to include in that email and use it only to respond.</p>
+<p><strong>Sensitive Information.</strong> We do not process sensitive information.</p>
+<p><strong>Payment Data.</strong> Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store). We do not receive your payment details. Any payment data you provide is handled by Apple or Google in accordance with their privacy policies.</p>
+<h4 id="information-automatically-collected">Information automatically collected</h4>
+<p><em>In Short:</em> We do not collect automatic usage or device data on our servers.</p>
+<p>The app does not send usage, device, or location data to our servers because we do not operate servers for the app. We do not use cookies or similar tracking technologies, and we do not serve ads.</p>
+<p>The only automated data flows are:</p>
+<ul>
+<li><strong>Crash and Diagnostics Data (Sentry).</strong> To improve app stability and fix bugs, we use <strong>Sentry</strong>, a third-party error monitoring service, to collect anonymous crash reports and diagnostic data when the App encounters an error.</li>
+</ul>
+<p><strong>What Sentry collects:</strong></p>
+<ul>
+<li>Device type and model (e.g., &quot;iPhone 14 Pro&quot;, &quot;Samsung Galaxy S23&quot;)</li>
+<li>Operating system and version (e.g., &quot;iOS 17.2&quot;, &quot;Android 14&quot;)</li>
+<li>App version</li>
+<li>Crash logs, stack traces, and error messages</li>
+<li>General device state at time of crash (memory usage, battery state)</li>
+<li>Anonymous session identifiers (non-personally-identifiable)</li>
+</ul>
+<p><strong>What Sentry does NOT collect:</strong></p>
+<ul>
+<li>Your IP address (we have configured Sentry to scrub/block IP addresses)</li>
+<li>Your name, email, or any personal identifiers</li>
+<li>Your location (GPS or otherwise)</li>
+<li>Any content you create or view within the App</li>
+</ul>
+<p><strong>Legal basis for processing (GDPR):</strong> Legitimate interest in maintaining and improving app stability.</p>
+<ul>
+<li><strong>Weather API Requests.</strong> If you enable location on your device, the app uses that location locally to make weather API requests. We do not receive, read, or store your location.</li>
+</ul>
+<p>Apple/Google: Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store) under their respective terms and privacy policies.</p>
+<h3 id="processInfo">2. HOW DO WE PROCESS YOUR INFORMATION?</h3>
+<p><em>In Short:</em> We do not process or store personal information on our servers. Any processing happens on your device, or by third-party providers that help the app function and improve stability.</p>
+<p>We process information only in these limited ways:</p>
+<ul>
+<li><strong>To deliver the app’s functionality.</strong> Weather data is fetched from third-party APIs directly from your device.</li>
+<li><strong>To improve stability.</strong> Sentry processes crash and diagnostics data.</li>
+<li><strong>To respond to you.</strong> If you contact us by email, we use your message to reply.</li>
+</ul>
+<h3 id="legalBases">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</h3>
+<p><em>In Short:</em> We do not process or store personal information on our servers. If you contact us by email, we rely on our legitimate interests to respond. If applicable law requires consent for any processing, we will obtain it.</p>
+<p>If you are located in the EU or UK, this means we rely on:</p>
+<ul>
+<li><strong>Legitimate Interests.</strong> To respond to inquiries you send us directly (for example, by email).</li>
+<li><strong>Consent (when required).</strong> If we need to process information for any other purpose that requires consent under applicable law.</li>
+</ul>
+<h3 id="shareInfo">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h3>
+<p><em>In Short:</em> We only share data with providers that power app functionality and diagnostics.</p>
+<p>The app uses the following third-party services:</p>
+<ul>
+<li><strong>Weather API providers.</strong> Requests are made from your device to fetch weather data.</li>
+<li><strong>Sentry (Error Monitoring).</strong> We use Sentry to collect crash reports and diagnostic data. Sentry is a reputable third-party service with strong privacy practices.<ul>
+<li><strong>Provider:</strong> Functional Software, Inc. (Sentry)</li>
+<li><strong>Privacy Policy:</strong> <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></li>
+<li><strong>Data Processing Agreement:</strong> We have a data processing agreement with Sentry that complies with GDPR requirements</li>
+<li><strong>IP Address Handling:</strong> We have configured Sentry to NOT collect or store user IP addresses</li>
+</ul>
+</li>
+<li><strong>Apple App Store / Google Play.</strong> If you purchase a subscription, payment processing is handled by Apple or Google.</li>
+</ul>
+<p>We do not share personal information with advertisers, data brokers, or analytics platforms.</p>
+<h3 id="transferInfo">6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</h3>
+<p><em>In Short:</em> We do not operate servers that store personal information. Third-party providers we use may process data in other countries.</p>
+<p>Our company is based in Romania (EU). Crash report data collected via Sentry is processed and stored in the <strong>European Union (EU)</strong>. We have configured Sentry to scrub/block IP addresses and we do not intentionally send personal data or content to Sentry. The app also communicates directly with weather API providers, which may process data in countries outside your own, under their respective privacy policies and safeguards. Apple and Google may process payment-related data under their own privacy policies.</p>
+<h3 id="infoRetention">7. HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
+<p><em>In Short:</em> We do not store your personal information on our servers.</p>
+<p>The app runs on your device and does not send personal information to our servers. Crash reports and diagnostic data sent to Sentry are retained for up to <strong>30 days</strong>, after which they are deleted or anonymized by Sentry. Any other retention is governed by the third-party services you use through the app, such as the weather API providers.</p>
+<h3 id="infoSafety">8. HOW DO WE KEEP YOUR INFORMATION SAFE?</h3>
+<p><em>In Short:</em> We aim to protect your personal information through a system of organizational and technical security measures.</p>
+<p>We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.</p>
+<h3 id="minorsInfo">9. DO WE COLLECT INFORMATION FROM MINORS?</h3>
+<p><em>In Short:</em> We do not knowingly collect data from or market to children under 18 years of age.</p>
+<p>We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<h3 id="privacyRights">10. WHAT ARE YOUR PRIVACY RIGHTS?</h3>
+<p><em>In Short:</em> Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information.</p>
+<p>In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a> below.</p>
+<p>Because we do not collect or store personal information on our servers, we may have no data to provide, correct, or delete. We will consider and act upon any request in accordance with applicable data protection laws.</p>
+<p>If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your <a href="https://edpb.europa.eu/about-edpb/board/members_en">Member State data protection authority</a> or <a href="https://ico.org.uk/global/contact-us/">UK data protection authority</a>.</p>
+<p>If you are located in Switzerland, you may contact the <a href="https://www.edoeb.admin.ch/edoeb/en/home.html">Federal Data Protection and Information Commissioner</a>.</p>
+<p><strong>Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a> below.</p>
+<p>However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.</p>
+<p><strong>Opting out of marketing and promotional communications:</strong> You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section <a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a> below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of the Services, to respond to service requests, or for other non-marketing purposes.</p>
+<p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<h3 id="doNotTrack">11. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
+<p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (&quot;DNT&quot;) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.</p>
+<p>California law requires us to let you know how we respond to web browser DNT signals. Because there currently is not an industry or legal standard for recognizing or honoring DNT signals, we do not respond to them at this time.</p>
+<h3 id="usRights">12. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h3>
+<p><em>In Short:</em> Depending on your state, you may have privacy rights. Because we do not collect or store personal information on our servers, there may be no data for us to provide or delete.</p>
+<p>If you want to make a request, you can contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>. We do not sell or share personal information, and we do not use personal information for targeted advertising.</p>
+<h3 id="regionRights">13. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?</h3>
+<p><em>In Short:</em> If you are in the EEA, UK, Switzerland, Canada, Australia, New Zealand, South Africa, or other regions, you may have privacy rights under local law. Because we do not collect or store personal information on our servers, there may be no data for us to provide, correct, or delete.</p>
+<p>You can contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a> with any privacy questions or requests.</p>
+<h3 id="noticeUpdates">14. DO WE MAKE UPDATES TO THIS NOTICE?</h3>
+<p><em>In Short:</em> Yes, we will update this notice as necessary to stay compliant with relevant laws.</p>
+<p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated &quot;Revised&quot; date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.</p>
+<h3 id="contact">15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
+<h3 id="completeness-of-privacy-notice">Completeness of Privacy Notice</h3>
+<p>We have made every effort to ensure this Privacy Policy fully explains our data practices and your rights. If any information or disclosure is unintentionally missing, please understand that this is not deliberate. We are committed to promptly addressing any omissions or clarifications needed to comply with applicable data protection laws. If you have any questions or identify missing information, please reach out to us, and we will update this Privacy Policy as necessary.</p>
+<p>If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO) by email at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p>
+<p>If you are a resident in the European Economic Area or Switzerland, we are the &quot;data controller&quot; of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the EEA and Switzerland. You can contact them directly regarding our processing of your information, by email at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<p>If you are a resident in the United Kingdom, we are the &quot;data controller&quot; of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p>
+<h3 id="reviewUpdateDelete">16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h3>
+<p>We do not collect or store personal information on our servers. If you have questions or requests, contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<hr>
+<h2 id="terms-and-conditions">TERMS AND CONDITIONS</h2>
+<p>Last updated February 17, 2026</p>
+<h3 id="agreement-to-our-legal-terms">AGREEMENT TO OUR LEGAL TERMS</h3>
+<p>We are <strong>CHRISTMAS SERVICES SRL</strong> (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;).</p>
+<p>We provide the Sunset Score mobile app for iOS and Android (the &quot;App&quot;), as well as any other related products and services that refer or link to these legal terms (the &quot;Legal Terms&quot;) (collectively, the &quot;Services&quot;).</p>
+<h4 id="description-of-sunset-score-and-its-services">Description of Sunset Score and Its Services</h4>
+<p>Sunset Score is a mobile app dedicated to helping users anticipate the beauty of upcoming sunrises and sunsets in their chosen location. By entering a city, users can receive a tailored forecast indicating how visually striking the sunrises and sunsets are expected to be in the coming days. Our forecasts are designed for sunrise and sunset enthusiasts, photographers, and anyone interested in planning their day around these natural events.</p>
+<p><strong>Product and Features</strong> Sunset Score allows users to conveniently search for and access sunrise and sunset forecasts for any city they wish to explore. No account or login is required. The app is designed to be accessible and user-friendly. As our service evolves, we plan to introduce optional client-side notifications, configurable in the app, that alert users when high beauty-score sunrises or sunsets are forecast based on their preferences. These notifications will allow subscribers to stay informed and capture these memorable moments wherever they are.</p>
+<p><strong>Disclaimer on Forecast Accuracy</strong> While Sunset Score aims to provide the most accurate beauty forecasts possible, the natural variability and complexity of weather and atmospheric conditions mean that these predictions are not guaranteed. We use various environmental factors and models to estimate the beauty of sunrises and sunsets, but we cannot account for every change in weather patterns or local conditions. As a result, users should view these forecasts as guidance rather than guaranteed outcomes.</p>
+<p>You can contact us by email at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p>
+<p>These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (&quot;you&quot;), and CHRISTMAS SERVICES SRL, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</p>
+<p>Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms at any time and for any reason. We will alert you about any changes by updating the &quot;Last updated&quot; date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.</p>
+<p>The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use the Services.</p>
+<p>We recommend that you print a copy of these Legal Terms for your records.</p>
+<h3 id="table-of-contents-2">TABLE OF CONTENTS</h3>
+<ol>
+<li><a href="#our-services">OUR SERVICES</a></li>
+<li><a href="#intellectual-property-rights">INTELLECTUAL PROPERTY RIGHTS</a></li>
+<li><a href="#user-representations">USER REPRESENTATIONS</a></li>
+<li><a href="#no-account-required">NO ACCOUNT REQUIRED</a></li>
+<li><a href="#purchases-and-payment">PURCHASES AND PAYMENT</a></li>
+<li><a href="#subscriptions">SUBSCRIPTIONS</a></li>
+<li><a href="#prohibited-activities">PROHIBITED ACTIVITIES</a></li>
+<li><a href="#user-generated-contributions">USER GENERATED CONTRIBUTIONS</a></li>
+<li><a href="#contribution-license">CONTRIBUTION LICENSE</a></li>
+<li><a href="#guidelines-for-reviews">GUIDELINES FOR REVIEWS</a></li>
+<li><a href="#third-party-websites-and-content">THIRD-PARTY WEBSITES AND CONTENT</a></li>
+<li><a href="#services-management">SERVICES MANAGEMENT</a></li>
+<li><a href="#privacy-policy">PRIVACY POLICY</a></li>
+<li><a href="#term-and-termination">TERM AND TERMINATION</a></li>
+<li><a href="#modifications-and-interruptions">MODIFICATIONS AND INTERRUPTIONS</a></li>
+<li><a href="#governing-law">GOVERNING LAW</a></li>
+<li><a href="#dispute-resolution">DISPUTE RESOLUTION</a></li>
+<li><a href="#corrections">CORRECTIONS</a></li>
+<li><a href="#disclaimer">DISCLAIMER</a></li>
+<li><a href="#limitations-of-liability">LIMITATIONS OF LIABILITY</a></li>
+<li><a href="#indemnification">INDEMNIFICATION</a></li>
+<li><a href="#user-data">USER DATA</a></li>
+<li><a href="#electronic-communications-transactions-and-signatures">ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</a></li>
+<li><a href="#california-users-and-residents">CALIFORNIA USERS AND RESIDENTS</a></li>
+<li><a href="#miscellaneous">MISCELLANEOUS</a></li>
+<li><a href="#contact-us">CONTACT US</a></li>
+</ol>
+<h3 id="our-services">1. OUR SERVICES</h3>
+<p>The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Services from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.</p>
+<p>The Services are not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use the Services. You may not use the Services in a way that would violate the Gramm-Leach-Bliley Act (GLBA).</p>
+<h3 id="intellectual-property-rights">2. INTELLECTUAL PROPERTY RIGHTS</h3>
+<h4 id="our-intellectual-property">Our intellectual property</h4>
+<p>We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the &quot;Content&quot;), as well as the trademarks, service marks, and logos contained therein (the &quot;Marks&quot;).</p>
+<p>Our Content and Marks are protected by copyright and trademark laws (and various other intellectual property rights and unfair competition laws) and treaties in the United States and around the world.</p>
+<p>The Content and Marks are provided in or through the Services &quot;AS IS&quot; for your personal, non-commercial use only.</p>
+<h4 id="your-use-of-our-services">Your use of our Services</h4>
+<p>Subject to your compliance with these Legal Terms, including the <a href="#prohibited-activities">PROHIBITED ACTIVITIES</a> section below, we grant you a non-exclusive, non-transferable, revocable license to:</p>
+<ul>
+<li>access the Services; and</li>
+<li>download or print a copy of any portion of the Content to which you have properly gained access.</li>
+</ul>
+<p>solely for your personal, non-commercial use.</p>
+<p>Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+<p>If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.</p>
+<p>We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.</p>
+<p>Any breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately.</p>
+<h4 id="your-submissions">Your submissions</h4>
+<p>Please review this section and the <a href="#prohibited-activities">PROHIBITED ACTIVITIES</a> section carefully prior to using our Services to understand the (a) rights you give us and (b) obligations you have when you post or upload any content through the Services.</p>
+<p><strong>Submissions:</strong> By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services (&quot;Submissions&quot;), you agree to assign to us all intellectual property rights in such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and dissemination for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you.</p>
+<h4 id="you-are-responsible-for-what-you-post-or-upload">You are responsible for what you post or upload</h4>
+<p>By sending us Submissions through any part of the Services you:</p>
+<ul>
+<li>confirm that you have read and agree with our <a href="#prohibited-activities">PROHIBITED ACTIVITIES</a> and will not post, send, publish, upload, or transmit through the Services any Submission that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group, sexually explicit, false, inaccurate, deceitful, or misleading;</li>
+<li>to the extent permissible by applicable law, waive any and all moral rights to any such Submission;</li>
+<li>warrant that any such Submission are original to you or that you have the necessary rights and licenses to submit such Submissions and that you have full authority to grant us the above-mentioned rights in relation to your Submissions; and</li>
+<li>warrant and represent that your Submissions do not constitute confidential information.</li>
+</ul>
+<p>You are solely responsible for your Submissions and you expressly agree to reimburse us for any and all losses that we may suffer because of your breach of (a) this section, (b) any third party’s intellectual property rights, or (c) applicable law.</p>
+<h3 id="user-representations">3. USER REPRESENTATIONS</h3>
+<p>By using the Services, you represent and warrant that: (1) all information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update it as necessary; (3) you have the legal capacity and you agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Services through automated or non-human means, whether through a bot, script or otherwise; (6) you will not use the Services for any illegal or unauthorized purpose; and (7) your use of the Services will not violate any applicable law or regulation.</p>
+<p>If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your access to the Services and refuse any and all current or future use of the Services (or any portion thereof).</p>
+<h3 id="no-account-required">4. NO ACCOUNT REQUIRED</h3>
+<p>We do not require account creation or login to use the Services.</p>
+<h3 id="purchases-and-payment">5. PURCHASES AND PAYMENT</h3>
+<p>We accept the following forms of payment:</p>
+<ul>
+<li>Apple App Store</li>
+<li>Google Play Store</li>
+</ul>
+<p>You agree to provide current, complete, and accurate purchase information for all purchases made via the Services. Payment processing is handled by Apple or Google, and your payment method details are governed by their terms and privacy policies. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in US dollars.</p>
+<p>You agree to pay all charges at the prices then in effect for your purchases and any applicable fees, and you authorize Apple or Google (as applicable) to charge your chosen payment method upon placing your order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment.</p>
+<p>We reserve the right to refuse any order placed through the Services. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order. These restrictions may include orders placed by or under the same payment method and/or billing address. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers, or distributors.</p>
+<h3 id="subscriptions">6. SUBSCRIPTIONS</h3>
+<h4 id="billing-and-renewal">Billing and Renewal</h4>
+<p>Your subscription will continue and automatically renew unless canceled. You consent to Apple or Google (as applicable) charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel the applicable order. The length of your billing cycle will depend on the type of subscription plan you choose when you subscribed to the Services.</p>
+<h4 id="cancellation-and-refunds">Cancellation and Refunds</h4>
+<p>You can cancel your subscription at any time in your Apple App Store or Google Play subscription settings. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<p><strong>Refund Policy:</strong> As per EU consumer protection laws, if you are a resident of the European Union, you have the right to withdraw from your purchase within 14 days (&quot;cooling-off period&quot;) of completing the transaction, provided you have not accessed or used the digital content or services. Once you access the service or its content, you agree to waive this right, and no refunds will be issued.</p>
+<p>Please note that for non-EU residents, all purchases are final and non-refundable, except as required by applicable laws in your jurisdiction.</p>
+<p><strong>Service Discontinuation During a Paid Term:</strong> We may suspend, remove, or discontinue the Services (in whole or in part) at any time, for any reason, and without prior notice, including during an active subscription period.</p>
+<p><strong>No Prorated Refunds or Continued Access After Discontinuation:</strong> If access ends before the end of your current billing period, we are not obligated to provide prorated refunds, credits, or continued access through the remainder of that period, except where required by applicable law or by Apple/Google policies.</p>
+<h4 id="fee-changes">Fee Changes</h4>
+<p>We may, from time to time, make changes to the subscription fee and will communicate any price changes to you in accordance with applicable law.</p>
+<h3 id="prohibited-activities">7. PROHIBITED ACTIVITIES</h3>
+<p>You may not access or use the Services for any purpose other than that for which we make the Services available. The Services may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.</p>
+<p>As a user of the Services, you agree not to:</p>
+<ul>
+<li>Systematically retrieve data or other content from the Services to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</li>
+<li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive information or access credentials.</li>
+<li>Circumvent, disable, or otherwise interfere with security-related features of the Services, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Services and/or the Content contained therein.</li>
+<li>Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Services.</li>
+<li>Use any information obtained from the Services in order to harass, abuse, or harm another person.</li>
+<li>Make improper use of our support services or submit false reports of abuse or misconduct.</li>
+<li>Use the Services in a manner inconsistent with any applicable laws or regulations.</li>
+<li>Engage in unauthorized framing of or linking to the Services.</li>
+<li>Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Services or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Services.</li>
+<li>Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.</li>
+<li>Delete the copyright or other proprietary rights notice from any Content.</li>
+<li>Attempt to impersonate another person.</li>
+<li>Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (&quot;gifs&quot;), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as &quot;spyware&quot; or &quot;passive collection mechanisms&quot; or &quot;pcms&quot;).</li>
+<li>Interfere with, disrupt, or create an undue burden on the Services or the networks or services connected to the Services.</li>
+<li>Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you.</li>
+<li>Attempt to bypass any measures of the Services designed to prevent or restrict access to the Services, or any portion of the Services.</li>
+<li>Copy or adapt the Services’ software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.</li>
+<li>Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Services.</li>
+<li>Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Services, or use or launch any unauthorized script or other software.</li>
+<li>Use a buying agent or purchasing agent to make purchases on the Services.</li>
+<li>Make any unauthorized use of the Services, including collecting email addresses of users by electronic or other means for the purpose of sending unsolicited email.</li>
+<li>Use the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise.</li>
+<li>Sell or otherwise transfer your access.</li>
+<li>Use the Services to advertise or offer to sell goods and services.</li>
+<li>Engage in data scraping, crawling, or data extraction.</li>
+<li>Attempt to gain unauthorized access to other users’ data or the platform’s internal systems.</li>
+<li>Use automated tools (bots) to access or interact with the site.</li>
+<li>Engage in any behavior that disrupts or negatively impacts other users’ experience on the platform.</li>
+<li>Engage in any behavior that misleads, fraudulently represents, or promotes harmful activities.</li>
+<li>Engage in any behavior that violates any applicable laws or policies.</li>
+</ul>
+<h3 id="user-generated-contributions">8. USER GENERATED CONTRIBUTIONS</h3>
+<p>The Services does not offer users to submit or post content. We may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, &quot;Contributions&quot;). Contributions may be viewable by other users of the Services and through third-party websites. As such, any Contributions you transmit may be treated in accordance with the Services’ Privacy Policy. When you create or make available any Contributions, you thereby represent and warrant that:</p>
+<ul>
+<li>The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.</li>
+<li>You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Services, and other users of the Services to use your Contributions in any manner contemplated by the Services and these Legal Terms.</li>
+<li>You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Services and these Legal Terms.</li>
+<li>Your Contributions are not false, inaccurate, or misleading.</li>
+<li>Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.</li>
+<li>Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).</li>
+<li>Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.</li>
+<li>Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and to promote violence against a specific person or class of people.</li>
+<li>Your Contributions do not violate any applicable law, regulation, or rule.</li>
+<li>Your Contributions do not violate the privacy or publicity rights of any third party.</li>
+<li>Your Contributions do not violate any applicable law concerning child pornography, or otherwise intended to protect the health or well-being of minors.</li>
+<li>Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.</li>
+<li>Your Contributions do not otherwise violate, or link to material that violates, any provision of these Legal Terms, or any applicable law or regulation.</li>
+</ul>
+<p>Any use of the Services in violation of the foregoing violates these Legal Terms and may result in, among other things, termination or suspension of your rights to use the Services.</p>
+<h3 id="contribution-license">9. CONTRIBUTION LICENSE</h3>
+<p>You and Services agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings).</p>
+<p>By submitting suggestions or other feedback regarding the Services, you agree that we can use and share such feedback for any purpose without compensation to you.</p>
+<p>We do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any statements or representations in your Contributions provided by you in any area on the Services. You are solely responsible for your Contributions to the Services and you expressly agree to exonerate us from any and all responsibility and to refrain from any legal action against us regarding your Contributions.</p>
+<h3 id="guidelines-for-reviews">10. GUIDELINES FOR REVIEWS</h3>
+<p>We may provide you areas on the Services to leave reviews or ratings. When posting a review, you must comply with the following criteria: (1) you should have firsthand experience with the person/entity being reviewed; (2) your reviews should not contain offensive profanity or abusive, racist, offensive, or hateful language; (3) your reviews should not contain discriminatory references based on religion, race, gender, national origin, age, marital status, sexual orientation, or disability; (4) your reviews should not contain references to illegal activity; (5) you should not be affiliated with competitors if posting negative reviews; (6) you should not make any conclusions as to the legality of conduct; (7) you may not post any false or misleading statements; and (8) you may not organize a campaign encouraging others to post reviews, whether positive or negative.</p>
+<p>We may accept, reject, or remove reviews in our sole discretion. We have absolutely no obligation to screen reviews or to delete reviews, even if anyone considers reviews objectionable or inaccurate. Reviews are not endorsed by us, and do not necessarily represent our opinions or the views of any of our affiliates or partners. We do not assume liability for any review or for any claims, liabilities, or losses resulting from any review. By posting a review, you hereby grant to us a perpetual, non-exclusive, worldwide, royalty-free, fully paid, assignable, and sublicensable right and license to reproduce, modify, translate, transmit by any means, display, perform, and/or distribute all content relating to reviews.</p>
+<h3 id="third-party-websites-and-content">11. THIRD-PARTY WEBSITES AND CONTENT</h3>
+<p>The Services may contain (or you may be sent via the Site) links to other websites (&quot;Third-Party Websites&quot;) as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties (&quot;Third-Party Content&quot;). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. Our Services also use third-party services, including the Google Maps API, Sentry (for crash reporting and diagnostics), and Apple/Google app store services, to provide location-based features, improve app stability, and handle subscription/payment processing, respectively. By using these features, you agree to be bound by the respective third-party&#39;s Terms of Service and Privacy Policy, which govern your use of these services within our platform. For more information, please review:</p>
+<ul>
+<li><strong>Google Maps:</strong> <a href="https://maps.google.com/help/terms_maps/">Google&#39;s Terms of Service</a> and <a href="https://policies.google.com/privacy">Google&#39;s Privacy Policy</a>.</li>
+<li><strong>Sentry:</strong> <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></li>
+<li><strong>Apple:</strong> <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+<li><strong>Google:</strong> <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+<p>By accessing third-party services integrated within our platform, such as the Google Maps API and Apple/Google app store services, you acknowledge and agree to be bound by the respective third-party&#39;s terms and policies, even while using our Services. All Third-Party Content is provided on an &quot;as-is&quot; basis, and we make no warranties or representations of any kind regarding its accuracy, reliability, or completeness. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases, which are exclusively between you and the applicable third party. We expressly disclaim all liability for any harm, damages, or losses that may arise from your use of, reliance on, or interaction with any Third-Party Websites or Third-Party Content. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites. We recommend that you review the privacy policies and terms of service for any Third-Party Websites or Third-Party Content before engaging with them, as their data practices may differ from ours. Our use of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Limited Use requirements</a>.</p>
+<h3 id="services-management">12. SERVICES MANAGEMENT</h3>
+<p>We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Services in a manner designed to protect our rights and property and to facilitate the proper functioning of the Services.</p>
+<h3 id="privacy-policy">13. PRIVACY POLICY</h3>
+<p>We care about data privacy and security. Please review our Privacy Policy: <a href="https://sunset-score.com/sunset-score/">www.sunset-score.com/sunset-score</a>. By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms.</p>
+<h3 id="term-and-termination">14. TERM AND TERMINATION</h3>
+<p>These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.</p>
+<p>If we terminate or suspend your access for any reason, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.</p>
+<h3 id="modifications-and-interruptions">15. MODIFICATIONS AND INTERRUPTIONS</h3>
+<p>We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.</p>
+<p>We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith. Except where required by applicable law, suspension or discontinuance of the Services does not create any obligation for us to provide prorated refunds, credits, or continued access through the end of any paid subscription term.</p>
+<h3 id="governing-law">16. GOVERNING LAW</h3>
+<p>These Legal Terms are governed by and interpreted following the laws of Romania, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law in your country to residence. CHRISTMAS SERVICES SRL and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Timis, which means that you may make a claim to defend your consumer protection rights in regards to these Legal Terms in Romania, or in the EU country in which you reside.</p>
+<p>Nothing in these Terms shall exclude or limit any statutory rights you may have as a consumer under applicable law.</p>
+<h3 id="dispute-resolution">17. DISPUTE RESOLUTION</h3>
+<h4 id="informal-negotiations">Informal Negotiations</h4>
+<p>To expedite resolution and control the cost of any dispute, controversy, or claim related to these Legal Terms (each a &quot;Dispute&quot; and collectively, the &quot;Disputes&quot;) brought by either you or us (individually, a &quot;Party&quot; and collectively, the &quot;Parties&quot;), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least sixty (60) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.</p>
+<h4 id="binding-arbitration">Binding Arbitration</h4>
+<p>Any dispute arising from the relationships between the Parties to these Legal Terms shall be determined by one arbitrator who will be chosen in accordance with the Arbitration and Internal Rules of the European Court of Arbitration being part of the European Centre of Arbitration having its seat in Strasbourg, and which are in force at the time the application for arbitration is filed, and of which adoption of this clause constitutes acceptance. The seat of arbitration shall be Timisoara, Romania. The language of the proceedings shall be English / Romanian. Applicable rules of substantive law shall be the law of Romania.</p>
+<h4 id="restrictions">Restrictions</h4>
+<p>The Parties agree that any arbitration shall be strictly limited to resolving the Dispute between the Parties on an individual basis only. To the fullest extent permitted by applicable law, (a) no arbitration or other legal proceeding shall be joined or consolidated with any other, and no Dispute may be arbitrated or litigated on a class, collective, or representative action basis; (b) there is no right or authority for any Dispute to be arbitrated or resolved on a class-action basis or to utilize class-action procedures; and (c) there is no right or authority for any Dispute to be brought or litigated in a purported representative capacity on behalf of the general public or any other persons.</p>
+<h4 id="exceptions-to-informal-negotiations-and-arbitration">Exceptions to Informal Negotiations and Arbitration</h4>
+<p>The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party; (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.</p>
+<h3 id="corrections">18. CORRECTIONS</h3>
+<p>There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.</p>
+<h3 id="disclaimer">19. DISCLAIMER</h3>
+<p>THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES&#39; CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.</p>
+<h3 id="limitations-of-liability">20. LIMITATIONS OF LIABILITY</h3>
+<p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOST DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE SIX (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING.</p>
+<p>NOTHING IN THESE TERMS SHALL EXCLUDE OR LIMIT ANY STATUTORY RIGHTS YOU MAY HAVE AS A CONSUMER UNDER APPLICABLE LAW.</p>
+<p>CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.</p>
+<h3 id="indemnification">21. INDEMNIFICATION</h3>
+<p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys&#39; fees and expenses, made by any third party due to or arising out of: (1) use of the Services; (2) breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Services with whom you connected via the Services. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
+<h3 id="user-data">22. USER DATA</h3>
+<p>We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.</p>
+<h3 id="electronic-communications-transactions-and-signatures">23. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h3>
+<p>Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.</p>
+<h3 id="california-users-and-residents">24. CALIFORNIA USERS AND RESIDENTS</h3>
+<p>If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.</p>
+<h3 id="miscellaneous">25. MISCELLANEOUS</h3>
+<p>These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time.</p>
+<p>We shall not be held responsible for any failure or delay in our performance due to events beyond our reasonable control, including but not limited to acts of God, natural disasters, government actions, wars, cyberattacks, technical failures, or interruptions in service caused by third-party providers (&quot;Force Majeure Events&quot;). In such cases, our obligations under these Terms shall be deemed suspended for the duration of the Force Majeure Event, and we shall make all reasonable efforts to resume services as soon as possible.</p>
+<p>If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment, or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms.</p>
+<h3 id="contact-us">26. CONTACT US</h3>
+<h3 id="completeness-of-terms">Completeness of Terms</h3>
+<p>We strive to ensure that these Terms and Conditions comprehensively cover all relevant aspects of your interaction with our Services. However, if any provision or detail necessary for compliance is inadvertently omitted, this omission is unintentional. We reserve the right to amend these Terms and Conditions as needed to address any identified gaps or to ensure continued compliance with applicable laws. Please contact us if you have questions or notice any missing information, and we will address it promptly.</p>
+<p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at: <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p>
+<!-- policy-content:end -->
+</article></main><footer class="site-footer compact-footer wrap"><nav class="app-links" aria-label="Sunset Score information"><a href="/sunset-score/">Privacy Policy and Terms</a><a href="/sunset-score/support/">Support &amp; FAQ</a></nav><div class="contact-line"><p>Contact: <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p><a href="/about/">About</a></div></footer>
+</body>
 
-      @keyframes floatOne {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(-20px, 15px, 0);
-        }
-      }
-
-      @keyframes floatTwo {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(20px, -10px, 0);
-        }
-      }
-
-      @media (min-width: 900px) {
-        .hero {
-          gap: 18px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        <div class="hero">
-          <div class="hero__badge">
-            <img
-              src="icon-3-512.png"
-              srcset="icon-3-512.png 1x, icon-3-1024.png 2x"
-              alt="Sunset Score app icon"
-            />
-            Sunset Score
-          </div>
-          <h1 class="hero__title"><span>Privacy Policy</span> &amp; Terms and Conditions</h1>
-          <p class="hero__subtitle">How the Sunset Score app handles your data and protects your privacy.</p>
-        </div>
-      </header>
-
-      <main>
-        <section class="card">
-          <div id="content" class="loading">Loading policy content...</div>
-        </section>
-        <div style="text-align: center; margin-top: 24px;">
-          <a href="support/" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 15px;">Support &amp; FAQ &rarr;</a>
-        </div>
-      </main>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      const content = document.getElementById('content');
-
-      const renderError = () => {
-        content.classList.remove('loading');
-        content.innerHTML = '<p>Unable to load the policy right now. Please try again later.</p>';
-      };
-
-      fetch('privacy-policy.md', { cache: 'no-store' })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Failed to load policy markdown.');
-          }
-          return response.text();
-        })
-        .then((markdown) => {
-          content.classList.remove('loading');
-          content.innerHTML = marked.parse(markdown);
-        })
-        .catch((error) => {
-          console.error(error);
-          renderError();
-        });
-    </script>
-  </body>
 </html>

@@ -1,0 +1,11 @@
+{
+  "name": "sunset-score-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:policies": "node scripts/render-policies.mjs"
+  },
+  "devDependencies": {
+    "marked": "17.0.5"
+  }
+}
