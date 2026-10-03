@@ -12,7 +12,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Open [the local homepage](http://127.0.0.1:8765/). Use the server rather than double-clicking an HTML file, because navigation and assets use paths relative to the domain root.
 
-- `/`: shared bio link, showing both apps and their store buttons immediately.
+- `/`: shared bio link with a complete card for each app. On mobile, app-name shortcuts above the cards keep both apps easy to find.
 - `/apps/sunset-score/`: Sunset Score product page and direct ad destination.
 - `/apps/double-you/`: Double You product page and direct ad destination.
 - `/how-it-works/`: explanation of Sunset Score forecasts.
@@ -41,7 +41,7 @@ MobileApplication data describes the actual apps. It does not claim Google app r
 
 ## Publication checklist
 
-1. Review the copy, About page and current pricing model. The site describes Sunset Score as a subscription app and Double You as a one-time purchase, without fixed regional prices.
+1. Review the copy, About page and current pricing. The owner-approved pricing bullets are $0.99/month or $7.99/year for Sunset Score and $2 once for Double You. Keep the homepage and app pages in sync when prices change; app stores show the price in each region.
 2. Review the existing Sunset Score privacy policy against the current app implementation. It says weather requests/processing happen on-device and there is no server receiving user data. The app-store privacy disclosures describe additional data categories. The SEO work preserves the existing policy text and does not validate these claims.
 3. Confirm GitHub Pages uses `sunset-score.com` and enable **Enforce HTTPS**. This is a hosting setting, not something an HTML tag can enforce. Verify HTTP and `www` variants redirect to the preferred HTTPS host.
 4. After an approved push and deployment, submit `https://sunset-score.com/sitemap.xml` in Search Console and inspect the homepage and new product/content pages. Local previews cannot be indexed or tested through Google's URL inspection.
