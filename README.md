@@ -12,7 +12,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Open [the local homepage](http://127.0.0.1:8765/). Use the server rather than double-clicking an HTML file, because navigation and assets use paths relative to the domain root.
 
-- `/`: shared bio link with a complete card for each app. On mobile, app-name shortcuts above the cards keep both apps easy to find.
+- `/`: shared bio link with a complete card for each app, stacked on mobile.
 - `/apps/sunset-score/`: Sunset Score product page and direct ad destination.
 - `/apps/double-you/`: Double You product page and direct ad destination.
 - `/how-it-works/`: explanation of Sunset Score forecasts.
@@ -21,6 +21,8 @@ Open [the local homepage](http://127.0.0.1:8765/). Use the server rather than do
 - `/sunset-score/` and `/double-you/`: original privacy/terms URLs, preserved for existing store and app links.
 
 Shared styling lives in `assets/site.css`. The homepage retains its original striped background, and the website uses the original Double You browser icon. Existing screenshots and store links have been retained. All copy and FAQ answers are in the HTML, including when JavaScript is disabled.
+
+The stylesheet links include a `?v=` content hash. Whenever `assets/site.css` changes, update that value in every HTML page to the first 12 characters of its SHA-256 hash before publishing. This gives returning visitors the matching stylesheet instead of a cached earlier version. Check an ordinary reload as well as a fresh visit.
 
 ## Policy maintenance
 
