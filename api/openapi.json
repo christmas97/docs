@@ -44,17 +44,6 @@
             "example": -87.6298
           },
           {
-            "name": "timezone",
-            "in": "query",
-            "required": false,
-            "description": "IANA timezone for local calendar days. UTC by default.",
-            "schema": {
-              "type": "string",
-              "default": "UTC"
-            },
-            "example": "America/Chicago"
-          },
-          {
             "name": "days",
             "in": "query",
             "required": false,
@@ -263,7 +252,8 @@
               },
               "timezone": {
                 "type": "string",
-                "example": "America/Chicago"
+                "example": "America/Chicago",
+                "description": "IANA timezone detected automatically from the requested coordinates. Event times are UTC."
               }
             }
           },

@@ -65,7 +65,6 @@
   --get 'https://api.sunset-score.com/v1/api/forecast' \
   --data-urlencode 'latitude=41.8781' \
   --data-urlencode 'longitude=-87.6298' \
-  --data-urlencode 'timezone=America/Chicago' \
   --data-urlencode 'days=3'</code></pre></div>
   <p id="copy-status" class="api-small" role="status" aria-live="polite">The response is JSON. Errors are printed, and requests time out after 60 seconds.</p>
   <div class="api-note"><p>Requests share a daily allowance. A <code>429</code> response means a quota has been reached; wait for <code>Retry-After</code> before trying again. For a production integration or higher volume, contact us at info@sunset-score.com.</p></div>
@@ -78,9 +77,9 @@
   <div class="api-code"><div class="api-code-head"><span>TERMINAL · CODEX</span></div><pre tabindex="0" aria-label="Codex MCP connection command"><code>codex mcp add sunset-score --url https://api.sunset-score.com/mcp</code></pre></div>
   <p>In other clients that support remote MCP servers, enter the server URL above and choose no authentication. Custom MCP connections in ChatGPT depend on your account and workspace permissions.</p>
   <h3>Call the forecast tool</h3>
-  <p>Call <code>get_sunset_forecast</code> with coordinates and optional timezone and days:</p>
-  <div class="api-code"><div class="api-code-head"><span>TOOL ARGUMENTS · CHICAGO</span></div><pre tabindex="0" aria-label="MCP forecast tool arguments"><code>{"latitude":41.8781,"longitude":-87.6298,"timezone":"America/Chicago","days":1}</code></pre></div>
-  <p><code>latitude</code> and <code>longitude</code> are required. <code>timezone</code> defaults to <code>UTC</code>; <code>days</code> accepts 1–3 and defaults to 3. The <a href="#request">request parameters</a> and forecast results are the same as REST, with rate-limit information added.</p>
+  <p>Call <code>get_sunset_forecast</code> with coordinates and optional days:</p>
+  <div class="api-code"><div class="api-code-head"><span>TOOL ARGUMENTS · CHICAGO</span></div><pre tabindex="0" aria-label="MCP forecast tool arguments"><code>{"latitude":41.8781,"longitude":-87.6298,"days":1}</code></pre></div>
+  <p><code>latitude</code> and <code>longitude</code> are required. The timezone is detected automatically from the coordinates. <code>days</code> accepts 1–3 and defaults to 3. The <a href="#request">request parameters</a> and forecast results are the same as REST, with rate-limit information added.</p>
   <div class="api-note"><p>REST and MCP share the same allowance: 300 requests per UTC day across all callers, 20 per network per UTC day, and 5 per network per calendar minute. Clients sharing a network address share its allowance. Both use one concurrent forecast job, a 45-second forecast timeout, and the same operator kill switch.</p><p>The MCP adapter waits at most 50 seconds and never automatically retries. Admitted calls that fail still count. Respect <code>retryAfterSeconds</code> in tool errors before retrying.</p></div>
   <p class="api-small">Connecting a client does not automatically publish a public directory or MCP Registry listing. Self-service payments and paid-account linking are not available.</p>
 </section>
@@ -90,10 +89,9 @@
   <div class="api-table-wrap"><table class="api-table"><thead><tr><th scope="col">Parameter</th><th scope="col">Required</th><th scope="col">Description</th></tr></thead><tbody>
     <tr><td><code>latitude</code></td><td>Yes</td> <td>Decimal degrees, from −90 to 90.</td></tr>
     <tr><td><code>longitude</code></td><td>Yes</td><td>Decimal degrees, from −180 to 180.</td></tr>
-    <tr><td><code>timezone</code></td><td>No</td><td>IANA name, such as <code>America/Chicago</code> or <code>Europe/Bucharest</code>. Defaults to <code>UTC</code>. Use the location’s timezone for its local calendar days.</td></tr>
     <tr><td><code>days</code></td><td>No</td><td>1–3 calendar days. Defaults to 3.</td></tr>
   </tbody></table></div>
-  <p class="api-small">One location per request. Dates start today in the selected timezone, or tomorrow after today’s sunrise and sunset are over. Today’s past sunrise may still appear. Historical dates, place names, batching and extra parameters are not supported.</p>
+  <p class="api-small">One location per request. The timezone is detected automatically from the coordinates and returned in <code>location.timezone</code>. Dates start today in that timezone, or tomorrow after today’s sunrise and sunset are over. Today’s past sunrise may still appear. Historical dates, place names, batching and extra parameters are not supported.</p>
 </section>
 <section class="api-section" id="response">
   <h2>Response</h2>
@@ -121,7 +119,7 @@
     }
   ]
 }</code></pre></div>
-  <div class="api-grid"><div><h3>Reading the forecast</h3><p class="api-small"><code>type</code> is <code>Sunrise</code> or <code>Sunset</code>. <code>timeUTC</code> is the event time in UTC; convert it to your display timezone. <code>score</code> is an integer from 0 to 100. <code>label</code> is a lowercase description, such as <code>great</code> or <code>stunning</code>.</p></div><div><h3>Working with changing weather</h3><p class="api-small">Scores change as forecasts update. <code>generatedAt</code> records when the response was produced. Polar day or night, or missing weather coverage, can produce fewer events or an empty <code>results</code> array. The scoring model version may change while the v1 response format stays compatible.</p></div></div>
+  <div class="api-grid"><div><h3>Reading the forecast</h3><p class="api-small"><code>type</code> is <code>Sunrise</code> or <code>Sunset</code>. <code>timeUTC</code> is the event time in UTC; use the detected <code>location.timezone</code> to display local time. <code>score</code> is an integer from 0 to 100. <code>label</code> is a lowercase description, such as <code>great</code> or <code>stunning</code>.</p></div><div><h3>Working with changing weather</h3><p class="api-small">Scores change as forecasts update. <code>generatedAt</code> records when the response was produced. Polar day or night, or missing weather coverage, can produce fewer events or an empty <code>results</code> array. The scoring model version may change while the v1 response format stays compatible.</p></div></div>
 </section>
 <section class="api-section" id="limits">
   <h2>API limits</h2>
@@ -135,7 +133,7 @@
   "message": "The shared daily API quota has been reached."
 } }</code></pre></div>
   <div class="api-table-wrap"><table class="api-table"><thead><tr><th scope="col">HTTP</th><th scope="col">Meaning</th><th scope="col">What to do</th></tr></thead><tbody>
-    <tr><td>400</td><td>Invalid parameters</td><td>Check coordinates, timezone and days.</td></tr><tr><td>405</td><td>Unsupported method</td><td>Use GET.</td></tr><tr><td>429</td><td>Daily or minute quota reached</td><td>Wait for the number of seconds in <code>Retry-After</code>. Avoid repeated immediate retries.</td></tr><tr><td>502 / 504</td><td>Forecast unavailable or timed out</td><td>Retry later, with backoff. The accepted request still counts.</td></tr><tr><td>503</td><td>API paused, busy, or temporarily unavailable</td><td>Respect <code>Retry-After</code>. Paused access may last longer than the suggested retry delay.</td></tr>
+    <tr><td>400</td><td>Invalid parameters</td><td>Check coordinates and days.</td></tr><tr><td>405</td><td>Unsupported method</td><td>Use GET.</td></tr><tr><td>429</td><td>Daily or minute quota reached</td><td>Wait for the number of seconds in <code>Retry-After</code>. Avoid repeated immediate retries.</td></tr><tr><td>502 / 504</td><td>Forecast unavailable or timed out</td><td>Retry later, with backoff. The accepted request still counts.</td></tr><tr><td>503</td><td>API paused, busy, or temporarily unavailable</td><td>Respect <code>Retry-After</code>. Paused access may last longer than the suggested retry delay.</td></tr>
   </tbody></table></div>
 </section>
 <section class="api-section"><h2>Building something with it?</h2><p>Tell us what you’re making and the volume you expect. We’re exploring integrations for travel, photography, outdoor planning and agents.</p><p>Contact us at info@sunset-score.com.</p></section>
