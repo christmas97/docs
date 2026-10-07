@@ -36,6 +36,7 @@
     .api-table-wrap { overflow:auto; }
     .api-table { border-collapse:collapse;width:100%;font-size:14px;text-align:left; }
     .api-table th,.api-table td { padding:15px 12px;border-bottom:1px solid var(--line);vertical-align:top; }
+    .api-table td:first-child code { white-space:nowrap;overflow-wrap:normal;word-break:normal; }
     .api-table th { font-size:12px;color:var(--muted); }
     .api-table th:first-child,.api-table td:first-child { padding-left:0; }
     .api-note { background:var(--cream);border-left:3px solid #cf5735;padding:18px 22px;font-size:14px;margin:24px 0; }
@@ -56,7 +57,6 @@
   <p class="lead">Add sunrise and sunset quality forecasts to your app, travel experience, or agent. Send coordinates. Get a score from 0 to 100.</p>
 </section>
 <section class="api-section" id="quickstart">
-  <div class="api-note" role="status"><p>The forecast endpoint is awaiting activation. The command below currently returns HTTP 404; it will return forecast JSON once the service is enabled.</p></div>
   <h2>Your first forecast</h2>
   <p>Copy this command into your terminal to request a three-day forecast in Chicago.</p>
   <div class="api-code"><div class="api-code-head"><span>TERMINAL · CHICAGO</span><button class="api-copy" id="copy-curl" type="button">Copy curl</button></div><pre tabindex="0" aria-label="curl command"><code id="curl-command">curl --fail-with-body --show-error \
@@ -66,8 +66,8 @@
   --data-urlencode 'longitude=-87.6298' \
   --data-urlencode 'timezone=America/Chicago' \
   --data-urlencode 'days=3'</code></pre></div>
-  <p id="copy-status" class="api-small" role="status" aria-live="polite">When enabled, the response is JSON. Errors are printed, and requests time out after 60 seconds.</p>
-  <div class="api-note"><p>Requests share a daily allowance. A <code>429</code> response means a quota has been reached; wait for <code>Retry-After</code> before trying again. For a production integration or higher volume, <a href="mailto:info@sunset-score.com?subject=Sunset%20Score%20API%20integration">get in touch</a>.</p></div>
+  <p id="copy-status" class="api-small" role="status" aria-live="polite">The response is JSON. Errors are printed, and requests time out after 60 seconds.</p>
+  <div class="api-note"><p>Requests share a daily allowance. A <code>429</code> response means a quota has been reached; wait for <code>Retry-After</code> before trying again. For a production integration or higher volume, contact us at info@sunset-score.com.</p></div>
 </section>
 <section class="api-section" id="request">
   <h2>Request</h2>
@@ -95,10 +95,7 @@
   "days": 3,
   "attribution": {
     "name": "Sunset Score",
-    "url": "https://sunset-score.com",
-    "weatherSource": "Open-Meteo",
-    "weatherUrl": "https://open-meteo.com/",
-    "notice": "Sunset Score forecasts derived from Open-Meteo weather data."
+    "url": "https://sunset-score.com"
   },
   "results": [
     {
@@ -110,14 +107,11 @@
   ]
 }</code></pre></div>
   <div class="api-grid"><div><h3>Reading the forecast</h3><p class="api-small"><code>type</code> is <code>Sunrise</code> or <code>Sunset</code>. <code>timeUTC</code> is the event time in UTC; convert it to your display timezone. <code>score</code> is an integer from 0 to 100. Use <code>status.label</code> for the accompanying description.</p></div><div><h3>Working with changing weather</h3><p class="api-small">Scores change as forecasts update. <code>generatedAt</code> records when the response was produced. Polar day or night, or missing weather coverage, can produce fewer events or an empty <code>results</code> array. The scoring model version may change while the v1 response format stays compatible.</p></div></div>
-  <p class="api-small">When displaying forecasts, credit <a href="https://sunset-score.com/">Sunset Score</a> and <a href="https://open-meteo.com/">Open-Meteo</a>. The response includes attribution text and links.</p>
 </section>
 <section class="api-section" id="limits">
   <h2>API limits</h2>
+  <p>This API is currently for experimenting and seeing whether Sunset Score is useful for your project. We don’t have self-service billing yet, and this access isn’t ready for production use. If you’d like to use it in your product, contact us at info@sunset-score.com and we’ll work out access with you.</p>
   <div class="api-table-wrap"><table class="api-table"><thead><tr><th scope="col">Allowance</th><th scope="col">Initial limit</th></tr></thead><tbody><tr><td>Shared across all callers</td><td>300 requests per UTC day</td></tr><tr><td>Per network address</td><td>20 requests per UTC day</td></tr><tr><td>Per network address, short bursts</td><td>5 requests per calendar minute</td></tr></tbody></table></div>
-  <p class="api-small">Daily limits reset at 00:00 UTC. People behind the same public IP share an allowance; IPv6 addresses share a /64 network allowance. Accepted requests count even if the forecast fails. Invalid requests and quota or capacity rejections do not count. Limits may change as the service evolves.</p>
-  <p class="api-small">Response headers report your daily <code>X-RateLimit-Limit</code>, <code>X-RateLimit-Remaining</code> and <code>X-RateLimit-Reset</code> (Unix timestamp). <code>X-Global-RateLimit-Limit</code> and <code>X-Global-RateLimit-Remaining</code> describe the shared daily allowance. Error responses include <code>Retry-After</code> where retrying is appropriate.</p>
-  <p class="api-small">Reuse responses in your product rather than fetching on every page view. Browser GET requests support CORS. The API has limited concurrent capacity, no uptime guarantee, and may be paused. Contact us before depending on it for a production rollout.</p>
 </section>
 <section class="api-section" id="errors">
   <h2>Errors and retries</h2>
@@ -129,7 +123,7 @@
     <tr><td>400</td><td>Invalid parameters</td><td>Check coordinates, timezone and days.</td></tr><tr><td>405</td><td>Unsupported method</td><td>Use GET.</td></tr><tr><td>429</td><td>Daily or minute quota reached</td><td>Wait for the number of seconds in <code>Retry-After</code>. Avoid repeated immediate retries.</td></tr><tr><td>502 / 504</td><td>Forecast unavailable or timed out</td><td>Retry later, with backoff. The accepted request still counts.</td></tr><tr><td>503</td><td>API paused, busy, or temporarily unavailable</td><td>Respect <code>Retry-After</code>. Paused access may last longer than the suggested retry delay.</td></tr>
   </tbody></table></div>
 </section>
-<section class="api-section"><h2>Building something with it?</h2><p>Tell us what you’re making and the volume you expect. We’re exploring integrations for travel, photography, outdoor planning and agents.</p><p><a href="mailto:info@sunset-score.com?subject=Sunset%20Score%20API%20integration">info@sunset-score.com ↗</a></p></section>
+<section class="api-section"><h2>Building something with it?</h2><p>Tell us what you’re making and the volume you expect. We’re exploring integrations for travel, photography, outdoor planning and agents.</p><p>Contact us at info@sunset-score.com.</p></section>
 </main>
 <footer class="api-footer"><span>Sunset Score · API documentation</span><a href="openapi.json">Download OpenAPI JSON</a></footer>
 </div>

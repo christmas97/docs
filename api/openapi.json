@@ -3,7 +3,7 @@
   "info": {
     "title": "Sunset Score API",
     "version": "1.0.0",
-    "description": "Sunrise and sunset quality forecasts. Quotas: 300 requests per UTC day shared across all callers, 20 per network per UTC day, and 5 per network per calendar minute. IPv6 uses /64. Keep Sunset Score and Open-Meteo attribution when displaying results. The forecast endpoint is awaiting activation.",
+    "description": "Sunrise and sunset quality forecasts for experimentation. Self-service billing is not available yet, and this access is not ready for production use. To arrange access for a product integration, contact info@sunset-score.com. Limits: 300 requests per day shared across all callers, 20 per IP per day, and 5 per IP per minute.",
     "contact": {
       "email": "info@sunset-score.com"
     }
@@ -276,25 +276,13 @@
             "type": "object",
             "required": [
               "name",
-              "url",
-              "weatherSource",
-              "weatherUrl",
-              "notice"
+              "url"
             ],
             "properties": {
               "name": {
                 "type": "string"
               },
               "url": {
-                "type": "string"
-              },
-              "weatherSource": {
-                "type": "string"
-              },
-              "weatherUrl": {
-                "type": "string"
-              },
-              "notice": {
                 "type": "string"
               }
             }
