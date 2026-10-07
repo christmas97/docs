@@ -297,7 +297,7 @@
                 "type",
                 "timeUTC",
                 "score",
-                "status"
+                "label"
               ],
               "properties": {
                 "type": {
@@ -316,22 +316,10 @@
                   "minimum": 0,
                   "maximum": 100
                 },
-                "status": {
-                  "type": "object",
-                  "required": [
-                    "tier",
-                    "label"
-                  ],
-                  "properties": {
-                    "tier": {
-                      "type": "string",
-                      "example": "GREAT"
-                    },
-                    "label": {
-                      "type": "string",
-                      "example": "GREAT"
-                    }
-                  }
+                "label": {
+                  "type": "string",
+                  "description": "Lowercase description of predicted sky quality.",
+                  "example": "stunning"
                 }
               }
             }

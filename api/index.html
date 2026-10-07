@@ -55,6 +55,7 @@
 <section class="api-hero">
   <h1>Sunset Score API</h1>
   <p class="lead">Add sunrise and sunset quality forecasts to your app, travel experience, or agent. Send coordinates. Get a score from 0 to 100.</p>
+  <p>For your own sunrise and sunset forecasts, you can use the <a href="/">Sunset Score mobile app</a>.</p>
 </section>
 <section class="api-section" id="quickstart">
   <h2>Your first forecast</h2>
@@ -102,11 +103,11 @@
       "type": "Sunset",
       "timeUTC": "2026-10-07T23:23:00Z",
       "score": 74,
-      "status": { "tier": "GREAT", "label": "GREAT" }
+      "label": "great"
     }
   ]
 }</code></pre></div>
-  <div class="api-grid"><div><h3>Reading the forecast</h3><p class="api-small"><code>type</code> is <code>Sunrise</code> or <code>Sunset</code>. <code>timeUTC</code> is the event time in UTC; convert it to your display timezone. <code>score</code> is an integer from 0 to 100. Use <code>status.label</code> for the accompanying description.</p></div><div><h3>Working with changing weather</h3><p class="api-small">Scores change as forecasts update. <code>generatedAt</code> records when the response was produced. Polar day or night, or missing weather coverage, can produce fewer events or an empty <code>results</code> array. The scoring model version may change while the v1 response format stays compatible.</p></div></div>
+  <div class="api-grid"><div><h3>Reading the forecast</h3><p class="api-small"><code>type</code> is <code>Sunrise</code> or <code>Sunset</code>. <code>timeUTC</code> is the event time in UTC; convert it to your display timezone. <code>score</code> is an integer from 0 to 100. <code>label</code> is a lowercase description, such as <code>great</code> or <code>stunning</code>.</p></div><div><h3>Working with changing weather</h3><p class="api-small">Scores change as forecasts update. <code>generatedAt</code> records when the response was produced. Polar day or night, or missing weather coverage, can produce fewer events or an empty <code>results</code> array. The scoring model version may change while the v1 response format stays compatible.</p></div></div>
 </section>
 <section class="api-section" id="limits">
   <h2>API limits</h2>
