@@ -1,0 +1,378 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Sunset Score API",
+    "version": "1.0.0",
+    "description": "Sunrise and sunset quality forecasts. Quotas: 300 requests per UTC day shared across all callers, 20 per network per UTC day, and 5 per network per calendar minute. IPv6 uses /64. Keep Sunset Score and Open-Meteo attribution when displaying results. The forecast endpoint is awaiting activation.",
+    "contact": {
+      "email": "info@sunset-score.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.sunset-score.com"
+    }
+  ],
+  "security": [],
+  "paths": {
+    "/v1/api/forecast": {
+      "get": {
+        "operationId": "getSunsetForecast",
+        "summary": "Forecast sunrise and sunset visual quality for one location",
+        "description": "Supply finite coordinates. Scores range from 0 to 100 and are quality estimates, not probabilities. Unknown and repeated parameters are rejected. Reuse responses; respect Retry-After on failures.",
+        "parameters": [
+          {
+            "name": "latitude",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "example": 41.8781
+          },
+          {
+            "name": "longitude",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "example": -87.6298
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "required": false,
+            "description": "IANA timezone for local calendar days. UTC by default.",
+            "schema": {
+              "type": "string",
+              "default": "UTC"
+            },
+            "example": "America/Chicago"
+          },
+          {
+            "name": "days",
+            "in": "query",
+            "required": false,
+            "description": "Local days beginning today, or tomorrow after today\u2019s events have ended.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 3,
+              "default": 3
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Forecast. Accepted requests consume quotas, including when weather or scoring later fails.",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "description": "Per-network daily allowance.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "X-RateLimit-Remaining": {
+                "description": "Per-network daily requests remaining after this admission.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "X-RateLimit-Reset": {
+                "description": "Next UTC midnight, Unix timestamp in seconds.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "X-Global-RateLimit-Limit": {
+                "description": "Shared daily allowance.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "X-Global-RateLimit-Remaining": {
+                "description": "Shared daily requests remaining after this admission.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Forecast"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid or unknown query parameters (invalid_request).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Unsupported method (method_not_allowed). Use GET.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "global_daily_limit, ip_daily_limit or ip_minute_limit. Wait for Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Delay in seconds before retrying.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "forecast_unavailable. Request still counts.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Delay in seconds before retrying.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "api_disabled, api_unavailable, or busy. No quota consumed.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Delay in seconds before retrying.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "forecast_timeout. Request still counts.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Delay in seconds before retrying.",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Forecast": {
+        "type": "object",
+        "required": [
+          "apiVersion",
+          "algorithmVersion",
+          "generatedAt",
+          "location",
+          "days",
+          "attribution",
+          "results"
+        ],
+        "properties": {
+          "apiVersion": {
+            "type": "string",
+            "enum": [
+              "v1"
+            ]
+          },
+          "algorithmVersion": {
+            "type": "integer",
+            "example": 436
+          },
+          "generatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "location": {
+            "type": "object",
+            "required": [
+              "latitude",
+              "longitude",
+              "timezone"
+            ],
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              "longitude": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              },
+              "timezone": {
+                "type": "string",
+                "example": "America/Chicago"
+              }
+            }
+          },
+          "days": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "attribution": {
+            "type": "object",
+            "required": [
+              "name",
+              "url",
+              "weatherSource",
+              "weatherUrl",
+              "notice"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "weatherSource": {
+                "type": "string"
+              },
+              "weatherUrl": {
+                "type": "string"
+              },
+              "notice": {
+                "type": "string"
+              }
+            }
+          },
+          "results": {
+            "type": "array",
+            "maxItems": 6,
+            "description": "Chronological events. Can be empty during polar day/night or missing weather coverage.",
+            "items": {
+              "type": "object",
+              "required": [
+                "type",
+                "timeUTC",
+                "score",
+                "status"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Sunrise",
+                    "Sunset"
+                  ]
+                },
+                "timeUTC": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "score": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "status": {
+                  "type": "object",
+                  "required": [
+                    "tier",
+                    "label"
+                  ],
+                  "properties": {
+                    "tier": {
+                      "type": "string",
+                      "example": "GREAT"
+                    },
+                    "label": {
+                      "type": "string",
+                      "example": "GREAT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "object",
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

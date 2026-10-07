@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunset Score API — Developer documentation</title>
+  <meta name="description" content="Add sunrise and sunset quality forecasts to your product. Sunset Score API reference, limits, and a ready-to-run curl example.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fffaf3">
+  <link rel="canonical" href="https://sunset-score.com/api/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/site.css?v=0b2696fe0cc0">
+  <style>
+    .api-wrap { width:min(1040px,calc(100% - 48px));margin:auto; }
+    .api-header { display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0;border-bottom:1px solid var(--line); }
+    .api-header a { font-size:14px; }
+    .api-header .brand { font-size:18px; }
+    .api-hero { padding:48px 0 32px;max-width:820px; }
+    .api-hero h1 { font-size:clamp(38px,5vw,56px); }
+    .api-hero .lead { font-size:19px;max-width:690px;color:var(--muted); }
+    .api-section { padding:38px 0;border-top:1px solid var(--line); }
+    .api-section h2 { font-size:30px; }
+    .api-code { background:var(--blue);color:var(--paper);border:1px solid rgba(23,34,54,.12);border-radius:var(--radius);overflow:hidden;margin:22px 0; }
+    .api-code-head { display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid rgba(255,250,243,.22);font-size:12px;color:var(--paper); }
+    .api-code pre { padding:20px;margin:0;overflow:auto;font-size:13px;line-height:1.75;tab-size:2; }
+    .api-code code { background:none;color:inherit;padding:0;word-break:normal; }
+    code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;background:var(--cream);border-radius:3px;padding:2px 5px;overflow-wrap:anywhere; }
+    .api-copy { border:1px solid #f1bd45;background:#f1bd45;color:var(--ink);border-radius:var(--radius);padding:8px 14px;font:inherit;font-weight:600;cursor:pointer;min-height:44px; }
+    .api-copy:hover { background:#f8cf6c;border-color:#f8cf6c; }
+    button:focus-visible { outline:3px solid #f1bd45;outline-offset:3px; }
+    .api-table-wrap { overflow:auto; }
+    .api-table { border-collapse:collapse;width:100%;font-size:14px;text-align:left; }
+    .api-table th,.api-table td { padding:15px 12px;border-bottom:1px solid var(--line);vertical-align:top; }
+    .api-table th { font-size:12px;color:var(--muted); }
+    .api-table th:first-child,.api-table td:first-child { padding-left:0; }
+    .api-note { background:var(--cream);border-left:3px solid #cf5735;padding:18px 22px;font-size:14px;margin:24px 0; }
+    .api-note p:last-child { margin-bottom:0; }
+    .api-grid { display:grid;grid-template-columns:1fr 1fr;gap:34px; }
+    .api-small { font-size:14px;color:var(--muted); }
+    .api-footer { display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:30px 0 44px;border-top:1px solid var(--line);font-size:13px; }
+    @media(max-width:600px) { .api-wrap { width:calc(100% - 32px); }.api-hero { padding-top:40px; }.api-header .brand { font-size:15px; }.api-header { gap:10px; }.api-grid { grid-template-columns:1fr;gap:16px; }.api-code pre { font-size:12px;padding:16px; }.api-table th,.api-table td { padding:12px 8px; }.api-section { padding:30px 0; } }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="api-wrap">
+<header class="api-header"><a class="brand" href="/apps/sunset-score/"><img src="/sunset-score/icon-3-512.png" alt="" width="38" height="38">Sunset Score</a><a href="openapi.json" aria-label="OpenAPI specification JSON">OpenAPI JSON ↗</a></header>
+<main id="main">
+<section class="api-hero">
+  <h1>Sunset Score API</h1>
+  <p class="lead">Add sunrise and sunset quality forecasts to your app, travel experience, or agent. Send coordinates. Get a score from 0 to 100.</p>
+</section>
+<section class="api-section" id="quickstart">
+  <div class="api-note" role="status"><p>The forecast endpoint is awaiting activation. The command below currently returns HTTP 404; it will return forecast JSON once the service is enabled.</p></div>
+  <h2>Your first forecast</h2>
+  <p>Copy this command into your terminal to request a three-day forecast in Chicago.</p>
+  <div class="api-code"><div class="api-code-head"><span>TERMINAL · CHICAGO</span><button class="api-copy" id="copy-curl" type="button">Copy curl</button></div><pre tabindex="0" aria-label="curl command"><code id="curl-command">curl --fail-with-body --show-error \
+  --connect-timeout 10 --max-time 60 \
+  --get 'https://api.sunset-score.com/v1/api/forecast' \
+  --data-urlencode 'latitude=41.8781' \
+  --data-urlencode 'longitude=-87.6298' \
+  --data-urlencode 'timezone=America/Chicago' \
+  --data-urlencode 'days=3'</code></pre></div>
+  <p id="copy-status" class="api-small" role="status" aria-live="polite">When enabled, the response is JSON. Errors are printed, and requests time out after 60 seconds.</p>
+  <div class="api-note"><p>Requests share a daily allowance. A <code>429</code> response means a quota has been reached; wait for <code>Retry-After</code> before trying again. For a production integration or higher volume, <a href="mailto:info@sunset-score.com?subject=Sunset%20Score%20API%20integration">get in touch</a>.</p></div>
+</section>
+<section class="api-section" id="request">
+  <h2>Request</h2>
+  <p><code>GET https://api.sunset-score.com/v1/api/forecast</code></p>
+  <div class="api-table-wrap"><table class="api-table"><thead><tr><th scope="col">Parameter</th><th scope="col">Required</th><th scope="col">Description</th></tr></thead><tbody>
+    <tr><td><code>latitude</code></td><td>Yes</td> <td>Decimal degrees, from −90 to 90.</td></tr>
+    <tr><td><code>longitude</code></td><td>Yes</td><td>Decimal degrees, from −180 to 180.</td></tr>
+    <tr><td><code>timezone</code></td><td>No</td><td>IANA name, such as <code>America/Chicago</code> or <code>Europe/Bucharest</code>. Defaults to <code>UTC</code>. Use the location’s timezone for its local calendar days.</td></tr>
+    <tr><td><code>days</code></td><td>No</td><td>1–3 calendar days. Defaults to 3.</td></tr>
+  </tbody></table></div>
+  <p class="api-small">One location per request. Dates start today in the selected timezone, or tomorrow after today’s sunrise and sunset are over. Today’s past sunrise may still appear. Historical dates, place names, batching and extra parameters are not supported.</p>
+</section>
+<section class="api-section" id="response">
+  <h2>Response</h2>
+  <p>Events are ordered by time. Each score estimates how visually impressive the sky will be. It is a quality score, not a percentage chance of a sunset.</p>
+  <div class="api-code"><div class="api-code-head"><span>ILLUSTRATIVE RESPONSE · ONE EVENT SHOWN</span></div><pre tabindex="0" aria-label="Example JSON response"><code>{
+  "apiVersion": "v1",
+  "algorithmVersion": 436,
+  "generatedAt": "2026-10-07T12:00:00Z",
+  "location": {
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "timezone": "America/Chicago"
+  },
+  "days": 3,
+  "attribution": {
+    "name": "Sunset Score",
+    "url": "https://sunset-score.com",
+    "weatherSource": "Open-Meteo",
+    "weatherUrl": "https://open-meteo.com/",
+    "notice": "Sunset Score forecasts derived from Open-Meteo weather data."
+  },
+  "results": [
+    {
+      "type": "Sunset",
+      "timeUTC": "2026-10-07T23:23:00Z",
+      "score": 74,
+      "status": { "tier": "GREAT", "label": "GREAT" }
+    }
+  ]
+}</code></pre></div>
+  <div class="api-grid"><div><h3>Reading the forecast</h3><p class="api-small"><code>type</code> is <code>Sunrise</code> or <code>Sunset</code>. <code>timeUTC</code> is the event time in UTC; convert it to your display timezone. <code>score</code> is an integer from 0 to 100. Use <code>status.label</code> for the accompanying description.</p></div><div><h3>Working with changing weather</h3><p class="api-small">Scores change as forecasts update. <code>generatedAt</code> records when the response was produced. Polar day or night, or missing weather coverage, can produce fewer events or an empty <code>results</code> array. The scoring model version may change while the v1 response format stays compatible.</p></div></div>
+  <p class="api-small">When displaying forecasts, credit <a href="https://sunset-score.com/">Sunset Score</a> and <a href="https://open-meteo.com/">Open-Meteo</a>. The response includes attribution text and links.</p>
+</section>
+<section class="api-section" id="limits">
+  <h2>API limits</h2>
+  <div class="api-table-wrap"><table class="api-table"><thead><tr><th scope="col">Allowance</th><th scope="col">Initial limit</th></tr></thead><tbody><tr><td>Shared across all callers</td><td>300 requests per UTC day</td></tr><tr><td>Per network address</td><td>20 requests per UTC day</td></tr><tr><td>Per network address, short bursts</td><td>5 requests per calendar minute</td></tr></tbody></table></div>
+  <p class="api-small">Daily limits reset at 00:00 UTC. People behind the same public IP share an allowance; IPv6 addresses share a /64 network allowance. Accepted requests count even if the forecast fails. Invalid requests and quota or capacity rejections do not count. Limits may change as the service evolves.</p>
+  <p class="api-small">Response headers report your daily <code>X-RateLimit-Limit</code>, <code>X-RateLimit-Remaining</code> and <code>X-RateLimit-Reset</code> (Unix timestamp). <code>X-Global-RateLimit-Limit</code> and <code>X-Global-RateLimit-Remaining</code> describe the shared daily allowance. Error responses include <code>Retry-After</code> where retrying is appropriate.</p>
+  <p class="api-small">Reuse responses in your product rather than fetching on every page view. Browser GET requests support CORS. The API has limited concurrent capacity, no uptime guarantee, and may be paused. Contact us before depending on it for a production rollout.</p>
+</section>
+<section class="api-section" id="errors">
+  <h2>Errors and retries</h2>
+  <div class="api-code"><div class="api-code-head"><span>ERROR FORMAT</span></div><pre tabindex="0" aria-label="Example error response"><code>{ "error": {
+  "code": "global_daily_limit",
+  "message": "The shared daily API quota has been reached."
+} }</code></pre></div>
+  <div class="api-table-wrap"><table class="api-table"><thead><tr><th scope="col">HTTP</th><th scope="col">Meaning</th><th scope="col">What to do</th></tr></thead><tbody>
+    <tr><td>400</td><td>Invalid parameters</td><td>Check coordinates, timezone and days.</td></tr><tr><td>405</td><td>Unsupported method</td><td>Use GET.</td></tr><tr><td>429</td><td>Daily or minute quota reached</td><td>Wait for the number of seconds in <code>Retry-After</code>. Avoid repeated immediate retries.</td></tr><tr><td>502 / 504</td><td>Forecast unavailable or timed out</td><td>Retry later, with backoff. The accepted request still counts.</td></tr><tr><td>503</td><td>API paused, busy, or temporarily unavailable</td><td>Respect <code>Retry-After</code>. Paused access may last longer than the suggested retry delay.</td></tr>
+  </tbody></table></div>
+</section>
+<section class="api-section"><h2>Building something with it?</h2><p>Tell us what you’re making and the volume you expect. We’re exploring integrations for travel, photography, outdoor planning and agents.</p><p><a href="mailto:info@sunset-score.com?subject=Sunset%20Score%20API%20integration">info@sunset-score.com ↗</a></p></section>
+</main>
+<footer class="api-footer"><span>Sunset Score · API documentation</span><a href="openapi.json">Download OpenAPI JSON</a></footer>
+</div>
+<script>
+  document.getElementById('copy-curl').addEventListener('click', async function () {
+    const command = document.getElementById('curl-command').textContent.trim();
+    const status = document.getElementById('copy-status');
+    try {
+      await navigator.clipboard.writeText(command);
+      this.textContent = 'Copied!';
+      status.textContent = 'Copied. Paste the command into your terminal and press Enter.';
+      setTimeout(() => { this.textContent = 'Copy curl'; }, 2500);
+    } catch (_) {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById('curl-command'));
+      selection.removeAllRanges();
+      selection.addRange(range);
+      status.textContent = 'Clipboard access is unavailable. The command is selected; press Ctrl+C or Command+C to copy.';
+    }
+  });
+</script>
+</body>
+</html>
