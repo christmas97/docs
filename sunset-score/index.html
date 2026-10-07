@@ -88,7 +88,8 @@
 <main id="main" class="wrap"><nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><span aria-current="page">Sunset Score privacy &amp; terms</span></li></ol></nav><header class="page-intro"><p class="eyebrow">Sunset Score</p><h1>Privacy &amp; terms</h1><p>Information about your data and the terms for using Sunset Score.</p><a class="text-link" href="/sunset-score/support/">Looking for help with the app? <span aria-hidden="true">→</span></a></header><article class="legal" aria-label="Sunset Score privacy policy and terms">
 <!-- policy-content:start -->
 <h2 id="privacy-notice">PRIVACY POLICY</h2>
-<p>Last updated February 17, 2026</p>
+<p>Last updated October 7, 2026</p>
+<p><strong>Developer API and MCP:</strong> The server-side data practices in <a href="#developer-api-and-mcp-privacy">Section 17</a> apply to these services and take precedence over conflicting statements elsewhere in this notice, including statements that we do not receive or store data on our servers.</p>
 <p>This Privacy Notice for <strong>CHRISTMAS SERVICES SRL</strong> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), describes how and why we might access, collect, store, use, and/or share (&quot;process&quot;) your personal information when you use our services (&quot;Services&quot;), including when you:</p>
 <ul>
 <li>Use our mobile app, Sunset Score, on iOS or Android, or any other product of ours that links to this Privacy Notice</li>
@@ -128,6 +129,7 @@
 <li><a href="#noticeUpdates">14. DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
 <li><a href="#contact">15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
 <li><a href="#reviewUpdateDelete">16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
+<li><a href="#developer-api-and-mcp-privacy">17. DEVELOPER API AND MCP PRIVACY</a></li>
 </ul>
 <h3 id="infoCollect">1. WHAT INFORMATION DO WE COLLECT?</h3>
 <h4 id="personal-information-you-disclose-to-us">Personal information you disclose to us</h4>
@@ -235,6 +237,15 @@
 <p>If you are a resident in the United Kingdom, we are the &quot;data controller&quot; of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p>
 <h3 id="reviewUpdateDelete">16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h3>
 <p>We do not collect or store personal information on our servers. If you have questions or requests, contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<hr>
+<h3 id="developer-api-and-mcp-privacy">17. DEVELOPER API AND MCP PRIVACY</h3>
+<p><em>In Short:</em> We process forecast inputs and limited technical records to provide and protect the developer API and MCP service. No account or payment details are required.</p>
+<p>This section covers requests to <code>api.sunset-score.com/v1/api/forecast</code> and <code>api.sunset-score.com/mcp</code>. <strong>CHRISTMAS SERVICES SRL</strong>, based in Romania, is the controller. Contact us at <a href="mailto:info@sunset-score.com">info@sunset-score.com</a>.</p>
+<p><strong>Information and purposes.</strong> We process submitted coordinates and requested days to calculate forecasts and determine the location’s timezone. We use the connection’s IP address to enforce usage limits and prevent abuse, and keep operational records for troubleshooting and abuse protection. Coordinates may relate to a person’s location. We do not use these records for advertising or profiling.</p>
+<p><strong>Operational records and retention.</strong> Usage counters and request history use a salted network identifier that changes each UTC day. These records are pseudonymous, not anonymous. Request history records UTC request times, REST or MCP access, coordinates rounded to 0.1°, requested days, the detected timezone, response status, processing duration, and forecast score or error summaries. It excludes raw IP addresses, credentials, headers, and full request bodies; access is restricted to the operator. History keeps the current and previous UTC days, with cleanup on writes and at UTC midnight; missed cleanup runs after downtime. Older usage-counter rows are removed on the next admitted request, so they may remain longer while the service is idle.</p>
+<p><strong>Other server logs.</strong> Routine proxy access logging is not enabled. Service diagnostics include operational errors and startup messages; weather errors can include coordinates and upstream request URLs. System journals are retained according to storage-size and free-space limits, without a fixed age limit. Forwarded system logs rotate weekly, keeping four archives plus the current file. These logs are separate from the short-lived request history and may remain longer.</p>
+<p><strong>Service providers and transfers.</strong> Hetzner hosts the API/MCP server in Germany. Our weather-data provider is based in Switzerland and receives forecast coordinates, nearby sampling points, requested dates, and our server’s IP address, without the caller’s IP address or network identifier. Its published privacy notice states that API logs may contain coordinates and are deleted after 90 days. Switzerland has an <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU adequacy decision</a>. Your AI client or platform handles its own prompts and tool results under its privacy policy.</p>
+<p><strong>Legal basis and your rights.</strong> Where the GDPR applies, we rely on our legitimate interests in providing requested forecasts, maintaining reliability, and preventing misuse. The rights and request procedures in <a href="#privacyRights">Sections 10</a>, <a href="#usRights">12</a>, and <a href="#contact">15</a> apply where relevant, including the right to object to processing based on legitimate interests.</p>
 <hr>
 <h2 id="terms-and-conditions">TERMS AND CONDITIONS</h2>
 <p>Last updated February 17, 2026</p>

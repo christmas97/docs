@@ -1,6 +1,8 @@
 # PRIVACY POLICY
 
-Last updated February 17, 2026
+Last updated October 7, 2026
+
+**Developer API and MCP:** The server-side data practices in [Section 17](#developer-api-and-mcp-privacy) apply to these services and take precedence over conflicting statements elsewhere in this notice, including statements that we do not receive or store data on our servers.
 
 This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
@@ -54,6 +56,7 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 - [14. DO WE MAKE UPDATES TO THIS NOTICE?](#noticeUpdates)
 - [15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)
 - [16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#reviewUpdateDelete)
+- [17. DEVELOPER API AND MCP PRIVACY](#developer-api-and-mcp-privacy)
 
 ## 1. WHAT INFORMATION DO WE COLLECT?
 
@@ -216,6 +219,24 @@ If you are a resident in the United Kingdom, we are the "data controller" of you
 ## 16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
 We do not collect or store personal information on our servers. If you have questions or requests, contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
+
+---
+
+## 17. DEVELOPER API AND MCP PRIVACY
+
+*In Short:* We process forecast inputs and limited technical records to provide and protect the developer API and MCP service. No account or payment details are required.
+
+This section covers requests to `api.sunset-score.com/v1/api/forecast` and `api.sunset-score.com/mcp`. **CHRISTMAS SERVICES SRL**, based in Romania, is the controller. Contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
+
+**Information and purposes.** We process submitted coordinates and requested days to calculate forecasts and determine the location’s timezone. We use the connection’s IP address to enforce usage limits and prevent abuse, and keep operational records for troubleshooting and abuse protection. Coordinates may relate to a person’s location. We do not use these records for advertising or profiling.
+
+**Operational records and retention.** Usage counters and request history use a salted network identifier that changes each UTC day. These records are pseudonymous, not anonymous. Request history records UTC request times, REST or MCP access, coordinates rounded to 0.1°, requested days, the detected timezone, response status, processing duration, and forecast score or error summaries. It excludes raw IP addresses, credentials, headers, and full request bodies; access is restricted to the operator. History keeps the current and previous UTC days, with cleanup on writes and at UTC midnight; missed cleanup runs after downtime. Older usage-counter rows are removed on the next admitted request, so they may remain longer while the service is idle.
+
+**Other server logs.** Routine proxy access logging is not enabled. Service diagnostics include operational errors and startup messages; weather errors can include coordinates and upstream request URLs. System journals are retained according to storage-size and free-space limits, without a fixed age limit. Forwarded system logs rotate weekly, keeping four archives plus the current file. These logs are separate from the short-lived request history and may remain longer.
+
+**Service providers and transfers.** Hetzner hosts the API/MCP server in Germany. Our weather-data provider is based in Switzerland and receives forecast coordinates, nearby sampling points, requested dates, and our server’s IP address, without the caller’s IP address or network identifier. Its published privacy notice states that API logs may contain coordinates and are deleted after 90 days. Switzerland has an [EU adequacy decision](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en). Your AI client or platform handles its own prompts and tool results under its privacy policy.
+
+**Legal basis and your rights.** Where the GDPR applies, we rely on our legitimate interests in providing requested forecasts, maintaining reliability, and preventing misuse. The rights and request procedures in [Sections 10](#privacyRights), [12](#usRights), and [15](#contact) apply where relevant, including the right to object to processing based on legitimate interests.
 
 ---
 
