@@ -19,7 +19,7 @@
       "get": {
         "operationId": "getSunsetForecast",
         "summary": "Forecast sunrise and sunset visual quality for one location",
-        "description": "Supply finite coordinates. Scores range from 0 to 100 and are quality estimates, not probabilities. Unknown and repeated parameters are rejected. Reuse responses; respect Retry-After on failures.",
+        "description": "Send latitude and longitude, with optional days. The server detects the timezone automatically from the coordinates and returns it in location.timezone. Do not send a timezone parameter; it is not accepted. Scores range from 0 to 100 and are quality estimates, not probabilities. Unknown and repeated parameters are rejected. Reuse responses; respect Retry-After on failures.",
         "parameters": [
           {
             "name": "latitude",
@@ -252,8 +252,9 @@
               },
               "timezone": {
                 "type": "string",
+                "readOnly": true,
                 "example": "America/Chicago",
-                "description": "IANA timezone detected automatically from the requested coordinates. Event times are UTC."
+                "description": "Response only: IANA timezone detected automatically from the requested coordinates. Always included in the response; never supplied by the caller. Event times are UTC."
               }
             }
           },
