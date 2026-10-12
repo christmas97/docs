@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<title>Sunset Score — MCP review walkthrough</title>
+<style>body{margin:0;background:#111318;color:#e9edf3;font:16px/1.6 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:36px 24px}h1{font-size:32px;line-height:1.2;margin:10px 0 16px}h2{font-size:22px;margin-top:34px}.eyebrow{color:#ffbd79;letter-spacing:.08em;font-size:13px;font-weight:700}p{max-width:950px}video{display:block;width:100%;background:#08090b;border-radius:12px;border:1px solid #343842}a{color:#ffbd79}small,.muted{color:#aeb7c6}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #343842;vertical-align:top}th{color:#aeb7c6;font-size:13px}code{color:#ffcd9b;overflow-wrap:anywhere}.note{border-left:3px solid #ffbd79;padding:12px 18px;background:#1c2028;border-radius:0 8px 8px 0}footer{margin-top:40px;color:#aeb7c6;font-size:14px}@media(max-width:600px){main{padding:24px 16px}h1{font-size:28px}th,td{padding:8px 6px;font-size:14px}}</style>
+</head>
+<body><main>
+<div class="eyebrow">SUNSET SCORE · REVIEW MATERIAL</div>
+<h1>Chicago forecast walkthrough</h1>
+<p>Actual ChatGPT browser interactions with the private Sunset Score test connection, recorded on <strong>12 October 2026</strong>. The connection uses the same hosted MCP endpoint as the submission draft. No reviewer login is required to watch.</p>
+<video controls playsinline preload="metadata" poster="poster.jpg" aria-label="Sunset Score Chicago MCP test walkthrough"><source src="sunset-score-chicago-walkthrough.mp4" type="video/mp4">Your browser does not support embedded video. <a href="sunset-score-chicago-walkthrough.mp4">Open the MP4 recording.</a></video>
+<p class="muted">4 minutes 30 seconds · 1600 × 900 · Silent, with case labels. Captured browser frames preserve the actual prompts and responses; idle gaps are shortened. <a href="sunset-score-chicago-walkthrough.mp4">Open MP4</a>.</p>
+<h2>Cases demonstrated</h2>
+<table><thead><tr><th>Time</th><th>Case</th><th>Observed result</th></tr></thead><tbody>
+<tr><td>0:00</td><td>P1 · Explicit Chicago coordinates</td><td>One day at 41.8781, −87.6298, using the requested destination and America/Chicago timezone.</td></tr>
+<tr><td>0:32</td><td>P2 · Named city and two-day sunsets</td><td>ChatGPT resolves Chicago’s approximate center. October 13’s sunset ranks above October 12’s.</td></tr>
+<tr><td>1:07</td><td>P3 · Three-day sunrise comparison</td><td>October 14’s sunrise has the highest returned sunrise score.</td></tr>
+<tr><td>1:40</td><td>P4 · Default forecast horizon</td><td>A fresh chat requests no day count; the tool returns three local calendar days.</td></tr>
+<tr><td>2:24</td><td>P5 · Local time and score meaning</td><td>Local times and actual scores are shown. Quality scores are explicitly distinguished from probabilities.</td></tr>
+<tr><td>3:13</td><td>N2 · Unsupported historical date</td><td>Tokyo on January 1, 2020 is declined without substituting a current forecast.</td></tr>
+<tr><td>3:38</td><td>N3 · Unsupported purchases and alerts</td><td>No purchase or alert is created; the response explains the plugin’s limits.</td></tr>
+<tr><td>4:13</td><td>N1 · Missing client location</td><td>An earlier same-day real-client test returns <code>location_unavailable</code> and declines to guess personal location.</td></tr>
+</tbody></table>
+<h2>Tool scope</h2>
+<p><code>get_sunset_forecast</code> accepts numeric latitude, longitude, and optional days (1–3) for a user-chosen forecast destination. For a city name, the assistant resolves an approximate public city center; the server does not geocode names. <code>get_local_sunset_forecast</code> uses client-shared approximate location for near-me requests. Both are read-only and return forecast data; there is no custom widget, account, payment, subscription, or alert tool.</p>
+<p><a href="https://sunset-score.com/api/">API documentation</a> · <a href="https://sunset-score.com/sunset-score/#developer-api-and-mcp-privacy">Privacy policy</a> · <a href="https://sunset-score.com/sunset-score/#terms-and-conditions">Terms</a></p>
+<h2>Verification scope</h2>
+<p>The five Chicago cases ran against MCP 1.2.0. Server audit records confirmed five successful forecast calls with horizons 1, 2, 3, 3, 1, all in America/Chicago. The historical and purchase/alert cases made no additional forecast calls. The local adapter and integration suites passed 22 and 8 tests respectively using mocked weather.</p>
+<div class="note"><strong>Coverage notes.</strong> The missing-location browser result shown at the end was captured earlier that day on MCP 1.1.1. Missing-location rejection was also rechecked directly on the deployed 1.2.0 endpoint. This recording demonstrates desktop Chrome; native mobile ChatGPT remains unverified. The OpenAI automated scan reported no findings for both tools, which is not directory approval.</div>
+<footer>Sunset Score · CHRISTMAS SERVICES S.R.L. · <a href="https://sunset-score.com/sunset-score/support/">Support</a></footer>
+</main></body></html>
