@@ -77,9 +77,9 @@
   <h3>Connect Codex</h3>
   <div class="api-code"><div class="api-code-head"><span>TERMINAL · CODEX</span></div><pre tabindex="0" aria-label="Codex MCP connection command"><code>codex mcp add sunset-score --url https://api.sunset-score.com/mcp</code></pre></div>
   <p>In other clients that support remote MCP servers, enter the server URL above and choose no authentication. Custom MCP connections in ChatGPT depend on your account and workspace permissions.</p>
-  <h3>Local forecasts in ChatGPT</h3>
-  <p>The ChatGPT-specific endpoint is <code>https://api.sunset-score.com/mcp/chatgpt</code>, with no authentication. Its <code>get_local_sunset_forecast</code> tool accepts only <code>days</code> (1–3, default 3) and uses the approximate location shared by the client. It returns event scores, times, attribution and timezone without echoing coordinates.</p>
-  <p>If the client does not share a usable location, the tool returns <code>location_unavailable</code> without making a forecast request. It cannot look up another destination, historical dates, alerts or subscriptions. Public directory review is separate from connecting this endpoint.</p>
+  <h3>Destination and nearby forecasts in ChatGPT</h3>
+  <p>The ChatGPT-specific endpoint is <code>https://api.sunset-score.com/mcp/chatgpt</code>, with no authentication. Use <code>get_sunset_forecast</code> with numeric <code>latitude</code>, <code>longitude</code> and optional <code>days</code> (1–3, default 3) for a chosen destination. For a named city, the assistant can resolve its approximate center before calling the tool; the server does not geocode names. Use <code>get_local_sunset_forecast</code> with <code>days</code> for the approximate location shared by the client. Both return event scores, times, attribution and timezone without echoing coordinates.</p>
+  <p>Destination forecasts work without device location and take precedence over it. Without usable client metadata, the near-me tool returns <code>location_unavailable</code> without making a forecast request. Neither tool retrieves historical forecasts, creates alerts or manages subscriptions. Public directory review is separate from connecting this endpoint.</p>
   <h3>Call the forecast tool</h3>
   <p>Call <code>get_sunset_forecast</code> with coordinates and optional days:</p>
   <div class="api-code"><div class="api-code-head"><span>TOOL ARGUMENTS · CHICAGO</span></div><pre tabindex="0" aria-label="MCP forecast tool arguments"><code>{"latitude":41.8781,"longitude":-87.6298,"days":1}</code></pre></div>
