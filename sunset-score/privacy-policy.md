@@ -1,8 +1,8 @@
 # PRIVACY POLICY
 
-Last updated October 7, 2026
+Last updated October 28, 2026
 
-**Developer API and MCP:** The server-side data practices in [Section 17](#developer-api-and-mcp-privacy) apply to these services and take precedence over conflicting statements elsewhere in this notice, including statements that we do not receive or store data on our servers.
+**Developer API and MCP:** [Section 17](#developer-api-and-mcp-privacy) describes how we process data for these services.
 
 This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
 
@@ -15,7 +15,7 @@ This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), descr
 
 * This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. *
 
-**What personal information do we process?** We do not collect or store personal information on our servers. The app runs on your device. Limited data may be processed by third parties we use (weather APIs and Sentry) as described below.
+**What personal information do we process?** We process forecast locations, app installation identifiers, subscription records and notification settings on our servers. Limited data may be processed by third parties we use (weather APIs and Sentry) as described below.
 
 **Do we process any sensitive personal information?** Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
 
@@ -25,7 +25,7 @@ This Privacy Notice for **CHRISTMAS SERVICES SRL** ("we," "us," or "our"), descr
 
 **Do we use crash reporting?** Yes. We use Sentry for crash reporting and diagnostics (see details below).
 
-**How do we process your information?** We do not process or store personal information on our servers. Any processing happens on your device, or by third-party providers (weather APIs and Sentry) that help the app function and improve stability.
+**How do we process your information?** We use data to provide forecasts and alerts, verify subscriptions, respond to support requests and protect the service. Processing takes place on your device, our servers and through third-party providers (weather APIs and Sentry).
 
 **In what situations and with which types of parties do we share personal information?** We only share data with third-party providers that power app functionality and diagnostics (weather APIs, Sentry, and app store payment processors).
 
@@ -62,21 +62,21 @@ If the breach is likely to result in a high risk to your rights and freedoms, we
 
 ### Personal information you disclose to us
 
-*In Short:* We do not collect personal information through the app.
+*In Short:* We receive data needed to provide the app.
 
-We do not operate a server that receives or stores user data. The app runs on your device. If you contact us directly by email, we will receive the information you choose to include in that email and use it only to respond.
+Our servers process the locations you request, app installation identifiers, subscription records and alert settings. No account sign-up is required. If you contact us directly by email, we will receive the information you choose to include in that email and use it only to respond.
 
 **Sensitive Information.** We do not process sensitive information.
 
-**Payment Data.** Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store). We do not receive your payment details. Any payment data you provide is handled by Apple or Google in accordance with their privacy policies.
+**Payment Data.** Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store). We do not receive your card or bank account details. We receive subscription status and transaction identifiers to verify access. Any payment data you provide is handled by Apple or Google in accordance with their privacy policies.
 
 ### Information automatically collected
 
-*In Short:* We do not collect automatic usage or device data on our servers.
+*In Short:* Our servers receive technical data needed to run and protect the app.
 
-The app does not send usage, device, or location data to our servers because we do not operate servers for the app. We do not use cookies or similar tracking technologies, and we do not serve ads.
+This includes app installation identifiers, connection information and subscription records. If you use alerts, we also store notification tokens, device details and your alert settings. We do not use cookies or similar tracking technologies, and we do not serve ads.
 
-The only automated data flows are:
+The app also uses the following services:
 
 - **Crash and Diagnostics Data (Sentry).** To improve app stability and fix bugs, we use **Sentry**, a third-party error monitoring service, to collect anonymous crash reports and diagnostic data when the App encounters an error.
 
@@ -97,28 +97,29 @@ The only automated data flows are:
 - Any content you create or view within the App
 
 **Legal basis for processing (GDPR):** Legitimate interest in maintaining and improving app stability.
-- **Weather API Requests.** If you enable location on your device, the app uses that location locally to make weather API requests. We do not receive, read, or store your location.
+- **Forecast Requests.** The app sends the selected location to our servers to calculate a forecast. If you use your current location, this includes coordinates from your device. We store the locations you select for alerts.
 
 Apple/Google: Purchases and subscriptions are processed by Apple (App Store) or Google (Play Store) under their respective terms and privacy policies.
 
 ## 2. HOW DO WE PROCESS YOUR INFORMATION?
 
-*In Short:* We do not process or store personal information on our servers. Any processing happens on your device, or by third-party providers that help the app function and improve stability.
+*In Short:* We process data on your device, our servers and through service providers to run and protect the app.
 
 We process information only in these limited ways:
 
-- **To deliver the app’s functionality.** Weather data is fetched from third-party APIs directly from your device.
+- **To deliver the app’s functionality.** Our servers process forecast requests, manage alerts and verify subscription access.
 - **To improve stability.** Sentry processes crash and diagnostics data.
 - **To respond to you.** If you contact us by email, we use your message to reply.
 
 ## 3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
 
-*In Short:* We do not process or store personal information on our servers. If you contact us by email, we rely on our legitimate interests to respond. If applicable law requires consent for any processing, we will obtain it.
+*In Short:* We process data to provide the service you request, protect the service and respond to you.
 
-If you are located in the EU or UK, this means we rely on:
+If you are located in the EU or UK, we rely on:
 
-- **Legitimate Interests.** To respond to inquiries you send us directly (for example, by email).
-- **Consent (when required).** If we need to process information for any other purpose that requires consent under applicable law.
+- **Performance of a contract.** To provide app forecasts and alerts and verify subscription access.
+- **Legitimate Interests.** To maintain stability, prevent misuse and respond to support requests.
+- **Consent (when required).** Where applicable law requires consent, we obtain it.
 
 ## 4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 
@@ -126,7 +127,8 @@ If you are located in the EU or UK, this means we rely on:
 
 The app uses the following third-party services:
 
-- **Weather API providers.** Requests are made from your device to fetch weather data.
+- **Weather API providers.** Our servers send forecast coordinates to weather providers. Older app versions may make these requests directly from your device.
+- **Hosting and notification providers.** These providers process the data needed to operate our servers and deliver alerts.
 - **Sentry (Error Monitoring).** We use Sentry to collect crash reports and diagnostic data. Sentry is a reputable third-party service with strong privacy practices.
   - **Provider:** Functional Software, Inc. (Sentry)
   - **Privacy Policy:** [https://sentry.io/privacy/](https://sentry.io/privacy/)
@@ -138,15 +140,15 @@ We do not share personal information with advertisers, data brokers, or analytic
 
 ## 6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?
 
-*In Short:* We do not operate servers that store personal information. Third-party providers we use may process data in other countries.
+*In Short:* Our servers and service providers may process data outside your country.
 
-Our company is based in Romania (EU). Crash report data collected via Sentry is processed and stored in the **European Union (EU)**. We have configured Sentry to scrub/block IP addresses and we do not intentionally send personal data or content to Sentry. The app also communicates directly with weather API providers, which may process data in countries outside your own, under their respective privacy policies and safeguards. Apple and Google may process payment-related data under their own privacy policies.
+Our company is based in Romania (EU). Crash report data collected via Sentry is processed and stored in the **European Union (EU)**. We have configured Sentry to scrub/block IP addresses and we do not intentionally send personal data or content to Sentry. Our forecast server is hosted in Germany. Our weather-data provider is based in Switzerland and receives forecast coordinates. Older app versions may contact weather providers directly. Apple and Google may process payment-related data under their own privacy policies.
 
 ## 7. HOW LONG DO WE KEEP YOUR INFORMATION?
 
-*In Short:* We do not store your personal information on our servers.
+*In Short:* Retention depends on the type of record and why we need it.
 
-The app runs on your device and does not send personal information to our servers. Crash reports and diagnostic data sent to Sentry are retained for up to **30 days**, after which they are deleted or anonymized by Sentry. Any other retention is governed by the third-party services you use through the app, such as the weather API providers.
+We retain server records while needed to provide forecasts and alerts, maintain subscription access, resolve support issues, meet legal requirements or prevent misuse. [Section 17](#developer-api-and-mcp-privacy) gives separate retention details for the developer API and MCP. Crash reports and diagnostic data sent to Sentry are retained for up to **30 days**, after which they are deleted or anonymized by Sentry. Third-party providers also apply their own retention rules.
 
 ## 8. HOW DO WE KEEP YOUR INFORMATION SAFE?
 
@@ -166,7 +168,7 @@ We do not knowingly collect, solicit data from, or market to children under 18 y
 
 In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact) below.
 
-Because we do not collect or store personal information on our servers, we may have no data to provide, correct, or delete. We will consider and act upon any request in accordance with applicable data protection laws.
+We will consider and act upon requests to access, correct or delete your data in accordance with applicable data protection laws.
 
 If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your [Member State data protection authority](https://edpb.europa.eu/about-edpb/board/members_en) or [UK data protection authority](https://ico.org.uk/global/contact-us/).
 
@@ -188,13 +190,13 @@ California law requires us to let you know how we respond to web browser DNT sig
 
 ## 12. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
 
-*In Short:* Depending on your state, you may have privacy rights. Because we do not collect or store personal information on our servers, there may be no data for us to provide or delete.
+*In Short:* Depending on your state, you may have rights to access, correct or delete your personal information.
 
 If you want to make a request, you can contact us at [info@sunset-score.com](mailto:info@sunset-score.com). We do not sell or share personal information, and we do not use personal information for targeted advertising.
 
 ## 13. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?
 
-*In Short:* If you are in the EEA, UK, Switzerland, Canada, Australia, New Zealand, South Africa, or other regions, you may have privacy rights under local law. Because we do not collect or store personal information on our servers, there may be no data for us to provide, correct, or delete.
+*In Short:* If you are in the EEA, UK, Switzerland, Canada, Australia, New Zealand, South Africa, or other regions, you may have privacy rights under local law.
 
 You can contact us at [info@sunset-score.com](mailto:info@sunset-score.com) with any privacy questions or requests.
 
@@ -206,19 +208,13 @@ We may update this Privacy Notice from time to time. The updated version will be
 
 ## 15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 
-## Completeness of Privacy Notice
 
-We have made every effort to ensure this Privacy Policy fully explains our data practices and your rights. If any information or disclosure is unintentionally missing, please understand that this is not deliberate. We are committed to promptly addressing any omissions or clarifications needed to comply with applicable data protection laws. If you have any questions or identify missing information, please reach out to us, and we will update this Privacy Policy as necessary.
 
-If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO) by email at [info@sunset-score.com](mailto:info@sunset-score.com)
-
-If you are a resident in the European Economic Area or Switzerland, we are the "data controller" of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the EEA and Switzerland. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com).
-
-If you are a resident in the United Kingdom, we are the "data controller" of your personal information. We have appointed CHRISTMAS SERVICES SRL to be our representative in the UK. You can contact them directly regarding our processing of your information, by email at [info@sunset-score.com](mailto:info@sunset-score.com)
+**CHRISTMAS SERVICES SRL**, based in Romania, is responsible for processing your personal information. For privacy questions or requests, email [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ## 16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
-We do not collect or store personal information on our servers. If you have questions or requests, contact us at [info@sunset-score.com](mailto:info@sunset-score.com).
+To request access to, correction of or deletion of your personal information, contact [info@sunset-score.com](mailto:info@sunset-score.com).
 
 ---
 
@@ -244,7 +240,7 @@ This section covers requests to `api.sunset-score.com/v1/api/forecast` and `api.
 
 # TERMS AND CONDITIONS
 
-Last updated February 17, 2026
+Last updated October 28, 2026
 
 ## AGREEMENT TO OUR LEGAL TERMS
 
@@ -351,7 +347,7 @@ You are solely responsible for your Submissions and you expressly agree to reimb
 
 ## 3. USER REPRESENTATIONS
 
-By using the Services, you represent and warrant that: (1) all information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update it as necessary; (3) you have the legal capacity and you agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Services through automated or non-human means, whether through a bot, script or otherwise; (6) you will not use the Services for any illegal or unauthorized purpose; and (7) your use of the Services will not violate any applicable law or regulation.
+By using the Services, you represent and warrant that: (1) all information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update it as necessary; (3) you have the legal capacity and you agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will use automated tools only through our published API and MCP endpoints, in accordance with their documentation and limits, or with our permission; (6) you will not use the Services for any illegal or unauthorized purpose; and (7) your use of the Services will not violate any applicable law or regulation.
 
 If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your access to the Services and refuse any and all current or future use of the Services (or any portion thereof).
 
@@ -382,7 +378,7 @@ Your subscription will continue and automatically renew unless canceled. You con
 
 You can cancel your subscription at any time in your Apple App Store or Google Play subscription settings. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at [info@sunset-score.com](mailto:info@sunset-score.com).
 
-**Refund Policy:** As per EU consumer protection laws, if you are a resident of the European Union, you have the right to withdraw from your purchase within 14 days ("cooling-off period") of completing the transaction, provided you have not accessed or used the digital content or services. Once you access the service or its content, you agree to waive this right, and no refunds will be issued.
+**Refund Policy:** As per EU consumer protection laws, if you are a resident of the European Union, you have the right to withdraw from your purchase within 14 days ("cooling-off period") of completing the transaction, provided you have not accessed or used the digital content or services. Once you access the service or its content, you agree to waive this right, and no refunds will be issued. (This does not limit your rights under EU or other applicable consumer law, or under Apple or Google policies.)
 
 Please note that for non-EU residents, all purchases are final and non-refundable, except as required by applicable laws in your jurisdiction.
 
@@ -397,6 +393,8 @@ We may, from time to time, make changes to the subscription fee and will communi
 ## 7. PROHIBITED ACTIVITIES
 
 You may not access or use the Services for any purpose other than that for which we make the Services available. The Services may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.
+
+The restrictions below on automated access and data retrieval do not prohibit use of our published API and MCP endpoints in accordance with their documentation and limits.
 
 As a user of the Services, you agree not to:
 
@@ -542,7 +540,7 @@ You agree to defend, indemnify, and hold us harmless, including our subsidiaries
 
 ## 22. USER DATA
 
-We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
+We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. You are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
 
 ## 23. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
 
@@ -562,8 +560,6 @@ If any provision or part of a provision of these Legal Terms is determined to be
 
 ## 26. CONTACT US
 
-## Completeness of Terms
 
-We strive to ensure that these Terms and Conditions comprehensively cover all relevant aspects of your interaction with our Services. However, if any provision or detail necessary for compliance is inadvertently omitted, this omission is unintentional. We reserve the right to amend these Terms and Conditions as needed to address any identified gaps or to ensure continued compliance with applicable laws. Please contact us if you have questions or notice any missing information, and we will address it promptly.
 
 In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at: [info@sunset-score.com](mailto:info@sunset-score.com)
