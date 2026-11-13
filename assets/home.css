@@ -1,0 +1,25 @@
+/* The adjacent text names these links. The icons are decorative. */
+.home-app-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+}
+.hub-card--sunset-score .home-app-icon { background: url("/sunset-score/icon-3-512.png") center / cover no-repeat; }
+.hub-card--double-you .home-app-icon { background: url("/icon-9-1024.png") center / cover no-repeat; }
+.home-store-icon { background: url("/assets/badges/app-store-icon.svg") center / contain no-repeat; }
+@media (max-width: 780px) {
+  .home-app-icon { width: 42px; height: 42px; border-radius: 10px; }
+}
+
+.home-faq {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fffaf5;
+}
+.home-faq > summary { min-height: 44px; padding: 8px 18px; }
+.home-faq > summary h2 { margin: 0; font: inherit; letter-spacing: normal; }
+.home-faq .answer { max-width: 72ch; padding: 0 18px 18px; }
+.home-faq h3 { margin: 22px 0 8px; font-size: 20px; }
+.home-faq h4 { margin: 16px 0 4px; font-size: 16px; color: var(--ink); }
+.home-faq p { margin: 0; }

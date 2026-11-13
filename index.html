@@ -31,6 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
   <link rel="stylesheet" href="/assets/site.css?v=0b2696fe0cc0">
+  <link rel="stylesheet" href="/assets/home.css?v=a7515793e154">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -79,6 +80,9 @@
             "url": "https://sunset-score.com/apps/double-you/"
           }
         ]
+      },
+      "hasPart": {
+        "@id": "https://sunset-score.com/#faq"
       }
     },
     {
@@ -169,19 +173,105 @@
         "eligibleRegion": "US",
         "url": "https://sunset-score.com/apps/double-you/#pricing"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sunset-score.com/#faq",
+      "isPartOf": {
+        "@id": "https://sunset-score.com/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/sunset-score/#app"
+          },
+          "name": "Is it free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app is free to download. Forecasts and alerts require a subscription. You’ll see the plans and price in the app before subscribing."
+          }
+        },
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/sunset-score/#app"
+          },
+          "name": "What does the score mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It estimates how impressive a sunrise or sunset could be, from 0 to 100. A score over 70 points to a rare, remarkable sky worth going out for. It is a quality score, not a percentage chance. Weather can change, so check again before heading out."
+          }
+        },
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/sunset-score/#app"
+          },
+          "name": "What is behind the forecast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We develop and test the model using thousands of sunrise and sunset observations from around the world. The focus is on telling ordinary skies from remarkable ones."
+          }
+        },
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/sunset-score/#app"
+          },
+          "name": "Do I need an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Subscriptions are handled through the App Store or Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/double-you/#app"
+          },
+          "name": "Can the two versions of me overlap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leave a gap between them. If both recordings put you in the same spot, one version can cover the other at the painted boundary."
+          }
+        },
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/double-you/#app"
+          },
+          "name": "Does it upload my videos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Recording, editing and export happen on your phone. Videos stay there unless you share them."
+          }
+        },
+        {
+          "@type": "Question",
+          "about": {
+            "@id": "https://sunset-score.com/apps/double-you/#app"
+          },
+          "name": "Is there a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Double You is a one-time purchase. Check your app store for the price in your region."
+          }
+        }
+      ]
     }
   ]
 }</script>
 </head>
 <body class="app-hub"><a class="skip-link" href="#main">Skip to content</a><main id="main" class="wrap"><h1 class="visually-hidden">Sunset Score &amp; Double You</h1><div class="hub-products"><article id="sunset-score" class="hub-card hub-card--sunset-score" aria-labelledby="sunset-score-title">
-  <div class="hub-card-heading"><a href="/apps/sunset-score/" tabindex="-1" aria-hidden="true"><img src="/sunset-score/icon-3-512.png" alt="" width="52" height="52"></a><div><h2 id="sunset-score-title"><a href="/apps/sunset-score/">Sunset Score <span class="app-arrow" aria-hidden="true">↗</span></a></h2><p>Don&#x27;t miss the next incredible sunset in your area!</p></div></div>
+  <div class="hub-card-heading"><a class="home-app-icon" href="/apps/sunset-score/" tabindex="-1" aria-hidden="true"></a><div><h2 id="sunset-score-title"><a href="/apps/sunset-score/">Sunset Score <span class="app-arrow" aria-hidden="true">↗</span></a></h2><p>Don&#x27;t miss the next incredible sunset in your area!</p></div></div>
   <div class="store-row" aria-label="Sunset Score store links">
                 <a
                   class="store-badge"
                   href="https://apps.apple.com/us/app/sunset-score-sky-alerts/id6771306019"
                   aria-label="Download Sunset Score on the App Store"
                 >
-                  <img class="store-icon" src="/assets/badges/app-store-icon.svg" alt="" width="30" height="30" />
+                  <span class="store-icon home-store-icon" aria-hidden="true"></span>
                   <span class="store-copy">
                     <span>Download on the</span>
                     <strong>App Store</strong>
@@ -207,14 +297,14 @@
 <div class="hub-gallery sunset-score" aria-label="Sunset Score screenshots and features"><figure class="gallery"><div class="shot-strip" tabindex="0" role="group" aria-label="Sunset Score screenshots; scroll to see more"><img class="app-shot" src="/assets/screenshots/sunset-score/01-get-notified-before-a-sunset.jpg" alt="Sunset Score alert: a Chicago sunset scored 92 out of 100 is six hours away." width="554" height="1200" decoding="async" fetchpriority="high"><img class="app-shot" src="/assets/screenshots/sunset-score/02-know-which-days-are-stunning.jpg" alt="Chicago forecast cards show sunrise and sunset times and scores, including a sunset rated Stunning." width="554" height="1200" decoding="async" loading="lazy"><img class="app-shot" src="/assets/screenshots/sunset-score/03-find-the-best-sunset-this-week.jpg" alt="Chicago sunset scores for three days: 19 on Wednesday, 84 on Thursday, and 62 on Friday." width="554" height="1200" decoding="async" loading="lazy"></div></figure><ul class="app-features"><li>Get notified before rare GREAT or STUNNING skies</li><li>0-100 sunrise and sunset beauty scores</li><li>Search cities worldwide and plan up to five days ahead</li><li id="sunset-score-pricing">$0.99/month or $7.99/year</li></ul><nav class="app-links" aria-label="Sunset Score information"><a href="/sunset-score/">Privacy Policy and Terms</a><a href="/sunset-score/support/">Support &amp; FAQ</a><a href="/api/">Developer API</a></nav></div>
 </article>
 <article id="double-you" class="hub-card hub-card--double-you" aria-labelledby="double-you-title">
-  <div class="hub-card-heading"><a href="/apps/double-you/" tabindex="-1" aria-hidden="true"><img src="/icon-9-1024.png" alt="" width="52" height="52"></a><div><h2 id="double-you-title"><a href="/apps/double-you/">Double You <span class="app-arrow" aria-hidden="true">↗</span></a></h2><p>Clone yourself in a video.</p></div></div>
+  <div class="hub-card-heading"><a class="home-app-icon" href="/apps/double-you/" tabindex="-1" aria-hidden="true"></a><div><h2 id="double-you-title"><a href="/apps/double-you/">Double You <span class="app-arrow" aria-hidden="true">↗</span></a></h2><p>Clone yourself in a video.</p></div></div>
   <div class="store-row" aria-label="Double You store links">
                 <a
                   class="store-badge"
                   href="https://apps.apple.com/us/app/double-you/id6772950182"
                   aria-label="Download Double You on the App Store"
                 >
-                  <img class="store-icon" src="/assets/badges/app-store-icon.svg" alt="" width="30" height="30" />
+                  <span class="store-icon home-store-icon" aria-hidden="true"></span>
                   <span class="store-copy">
                     <span>Download on the</span>
                     <strong>App Store</strong>
@@ -238,5 +328,27 @@
                 </a>
               </div>
 <div class="hub-gallery double-you" aria-label="Double You screenshots and features"><figure class="gallery"><div class="shot-strip" tabindex="0" role="group" aria-label="Double You screenshots; scroll to see more"><img class="app-shot" src="/assets/screenshots/double-you/01-clone-yourself-in-video.jpg" alt="In the finished video, a woman waves on the left and her double points to her from the right." width="554" height="1200" decoding="async" fetchpriority="high"><img class="app-shot" src="/assets/screenshots/double-you/02-line-up-your-second-take.jpg" alt="A faded image from the first take lines up with the live camera view for the second take." width="554" height="1200" decoding="async" loading="lazy"><img class="app-shot" src="/assets/screenshots/double-you/03-paint-where-you-appear.jpg" alt="A circular brush reveals the second recording on the right while the first stays visible on the left." width="554" height="1200" decoding="async" loading="lazy"></div></figure><ul class="app-features"><li>Classic clone effect from two steady takes</li><li>Paint-to-reveal masking for precise control</li><li>Offline, private, no account, no watermark</li><li id="double-you-pricing">$1.99 once. No subscription.</li></ul><nav class="app-links" aria-label="Double You information"><a href="/double-you/">Privacy Policy and Terms</a><a href="/double-you/support/">Support &amp; FAQ</a></nav></div>
-</article></div></main><footer class="site-footer compact-footer wrap"><div class="contact-line"><p>Contact: <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p><a href="/about/">About</a></div></footer></body>
+</article></div>
+<details class="home-faq" id="faq">
+  <summary><h2>FAQ</h2></summary>
+  <div class="answer">
+    <h3>Sunset Score</h3>
+    <h4>Is it free?</h4>
+    <p>The app is free to download. Forecasts and alerts require a subscription. You’ll see the plans and price in the app before subscribing.</p>
+    <h4>What does the score mean?</h4>
+    <p>It estimates how impressive a sunrise or sunset could be, from 0 to 100. A score over 70 points to a rare, remarkable sky worth going out for. It is a quality score, not a percentage chance. Weather can change, so check again before heading out.</p>
+    <h4>What is behind the forecast?</h4>
+    <p>We develop and test the model using thousands of sunrise and sunset observations from around the world. The focus is on telling ordinary skies from remarkable ones.</p>
+    <h4>Do I need an account?</h4>
+    <p>No. Subscriptions are handled through the App Store or Google Play.</p>
+    <h3>Double You</h3>
+    <h4>Can the two versions of me overlap?</h4>
+    <p>Leave a gap between them. If both recordings put you in the same spot, one version can cover the other at the painted boundary.</p>
+    <h4>Does it upload my videos?</h4>
+    <p>No. Recording, editing and export happen on your phone. Videos stay there unless you share them.</p>
+    <h4>Is there a subscription?</h4>
+    <p>No. Double You is a one-time purchase. Check your app store for the price in your region.</p>
+  </div>
+</details>
+</main><footer class="site-footer compact-footer wrap"><div class="contact-line"><p>Contact: <a href="mailto:info@sunset-score.com">info@sunset-score.com</a></p><a href="/about/">About</a></div></footer></body>
 </html>

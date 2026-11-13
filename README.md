@@ -24,6 +24,8 @@ Shared styling lives in `assets/site.css`. The homepage retains its original str
 
 The stylesheet links include a `?v=` content hash. Whenever `assets/site.css` changes, update that value in every HTML page to the first 12 characters of its SHA-256 hash before publishing. This gives returning visitors the matching stylesheet instead of a cached earlier version. Check an ordinary reload as well as a fresh visit.
 
+The homepage uses `assets/home.css` for the decorative icons and the expandable FAQ. Update its hash in `index.html` when it changes. Keep the homepage FAQ text and its JSON-LD answers identical. Use the published app FAQs as the copy source.
+
 ## Policy maintenance
 
 The original Markdown files remain the policy sources. Their wording has not been rewritten as part of the SEO changes. Render them into the policy HTML after editing them:
