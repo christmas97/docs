@@ -1,0 +1,27 @@
+# Sunset Score & Double You
+
+> Two apps for iPhone and Android. Sunset Score forecasts the quality of a sunrise or sunset. Double You combines two recordings so the same person can appear twice in one video.
+
+## Sunset Score
+
+- [App and store links](https://sunset-score.com/apps/sunset-score/): Check sunrise and sunset scores from 0 to 100 for cities around the world, up to five days ahead.
+- [Subscription prices](https://sunset-score.com/apps/sunset-score/#pricing): The download is free. In the US, forecasts and alerts cost $0.99 per month or $7.99 per year. Prices can vary by region.
+- [How the forecast works](https://sunset-score.com/how-it-works/): What the score measures and how to read it. A score of 80 is not an 80% chance of a beautiful sky.
+- [Support and FAQ](https://sunset-score.com/sunset-score/support/): Alerts, saved cities, location access and subscription cancellation.
+
+## Double You
+
+- [App and store links](https://sunset-score.com/apps/double-you/): Record two takes with the phone in the same position, then paint where the second take appears. Recording and editing work offline.
+- [Purchase price](https://sunset-score.com/apps/double-you/#pricing): $1.99 in the US, paid once. There is no subscription. Prices can vary by region.
+- [Support and FAQ](https://sunset-score.com/double-you/support/): Setting up the camera, lining up takes, using the brush and saving the finished video.
+
+## For developers
+
+- [Sunset Score API and MCP](https://sunset-score.com/api/): Request forecasts for coordinates. The public API covers up to three days.
+- [OpenAPI specification](https://sunset-score.com/api/openapi.json): Forecast request parameters and response formats.
+
+## Optional
+
+- [About and contact](https://sunset-score.com/about/)
+- [Sunset Score privacy policy and terms](https://sunset-score.com/sunset-score/)
+- [Double You privacy policy and terms](https://sunset-score.com/double-you/)
